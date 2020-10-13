@@ -1,0 +1,6 @@
+{
+  "cpu": {
+    "fqbn": "versioduo:samd:connect",
+    "name": "connect"
+  }
+}
