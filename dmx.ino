@@ -1,4 +1,4 @@
-// © Kay Sievers <kay@versioduo.com>, 2020-2022
+// © Kay Sievers <kay@versioduo.com>, 2020-2023
 // SPDX-License-Identifier: Apache-2.0
 
 #include <V2Buttons.h>
@@ -9,7 +9,7 @@
 #include <V2MIDI.h>
 #include <V2Music.h>
 
-V2DEVICE_METADATA("com.versioduo.dmx", 51, "versioduo:samd:dmx");
+V2DEVICE_METADATA("com.versioduo.dmx", 52, "versioduo:samd:dmx");
 
 static V2LED::WS2812 LED(2, PIN_LED_WS2812, &sercom2, SPI_PAD_0_SCK_1, PIO_SERCOM);
 static V2DMX DMX(PIN_DMX_TX, &sercom3, SPI_PAD_0_SCK_1, PIO_SERCOM);
@@ -45,6 +45,9 @@ public:
     Brightness = V2MIDI::CC::Controller3,
     Color      = V2MIDI::CC::Controller14,
     Saturation = V2MIDI::CC::Controller15,
+
+    EnvelopeAttack  = V2MIDI::CC::SoundController4,
+    EnvelopeRelease = V2MIDI::CC::SoundController3,
   };
 
   enum class State { Off, Config, MIDI, _count };
@@ -86,13 +89,13 @@ public:
     for (uint8_t ch = 0; ch < 16; ch++) {
       // Set default values from EEPROM.
       if (config.devices[ch].count >= 3 && config.devices[ch].v > 0) {
-        _devices[ch].h = (float)config.devices[ch].h / 127.f * 360.f;
-        _devices[ch].s = (float)config.devices[ch].s / 127.f;
-        _devices[ch].v.setFraction((uint8_t)CC::Brightness, (float)config.devices[ch].v / 127.f);
+        _devices[ch].cc.h = (float)config.devices[ch].h / 127.f * 360.f;
+        _devices[ch].cc.s = (float)config.devices[ch].s / 127.f;
+        _devices[ch].cc.v.setFraction((uint8_t)CC::Brightness, (float)config.devices[ch].v / 127.f);
         _devices[ch].mode = Mode::HSV;
 
         for (uint8_t i = 3; i < config.devices[ch].count; i++)
-          _devices[ch].channels[i] = config.devices[ch].channels[i];
+          _devices[ch].cc.channels[i] = config.devices[ch].channels[i];
         values = true;
 
       } else {
@@ -100,8 +103,8 @@ public:
           if (config.devices[ch].channels[i] == 0)
             continue;
 
-          _devices[ch].channels[i] = config.devices[ch].channels[i];
-          values                   = true;
+          _devices[ch].cc.channels[i] = config.devices[ch].channels[i];
+          values                      = true;
         }
       }
 
@@ -157,6 +160,7 @@ public:
   }
 
 private:
+  uint32_t _usec{};
   V2Music::ForcedStop _force;
   State _state{};
   const char *_programNames[(uint8_t)Program::_count]{"Channels", "Brightness"};
@@ -167,24 +171,43 @@ private:
   struct {
     Program program;
     uint16_t bank;
-
-    // Controllers
     Mode mode;
-    float h;
-    float s;
-    V2MIDI::CC::HighResolution<(uint8_t)CC::Brightness> v;
-    uint8_t channels[32];
 
-    // Notes
+    struct {
+      float h;
+      float s;
+      V2MIDI::CC::HighResolution<(uint8_t)CC::Brightness> v;
+      uint8_t channels[32];
+    } cc;
+
     struct {
       V2Music::Playing<88> playing;
       float aftertouch;
       float pitchbend;
+
+      struct {
+        float attack;
+        float release;
+      } envelope;
+
       float h;
       float s;
       float v;
       uint8_t channels[32];
     } note;
+
+    struct {
+      float h;
+      float s;
+      float v;
+      float vTarget;
+
+      struct {
+        bool active;
+        float speed;
+        uint32_t usec;
+      } fade;
+    } now;
   } _devices[16]{};
 
   // The currently selected channel in the user interface. Only a single channel
@@ -203,20 +226,46 @@ private:
     setState(State::Off);
   }
 
+  void handleLoop() override {
+    if (V2Base::getUsecSince(_usec) < 25 * 1000)
+      return;
+
+    _usec = V2Base::getUsec();
+
+    for (uint8_t ch = 0; ch < 16; ch++) {
+      if (!_devices[ch].now.fade.active)
+        continue;
+
+      const float passedSec      = (float)V2Base::getUsecSince(_devices[ch].now.fade.usec) / 1000000.f;
+      _devices[ch].now.fade.usec = V2Base::getUsec();
+
+      const float step    = _devices[ch].now.fade.speed * passedSec;
+      const float distance = _devices[ch].now.vTarget - _devices[ch].now.v;
+      if (step >= fabs(distance)) {
+        _devices[ch].now.v           = _devices[ch].now.vTarget;
+        _devices[ch].now.fade.active = false;
+
+      } else
+        _devices[ch].now.v += copysignf(step, distance);
+
+      updateDMXHSV(ch);
+    }
+  }
+
   void setMode(uint8_t channel, Mode mode) {
     _devices[channel].mode = mode;
 
     switch (mode) {
       case Mode::Channels:
-        _devices[channel].h = 0;
-        _devices[channel].s = 0;
-        _devices[channel].v.set((uint8_t)CC::Brightness, 0);
+        _devices[channel].cc.h = 0;
+        _devices[channel].cc.s = 0;
+        _devices[channel].cc.v.set((uint8_t)CC::Brightness, 0);
         break;
 
       case Mode::HSV:
-        _devices[channel].channels[0] = 0;
-        _devices[channel].channels[1] = 0;
-        _devices[channel].channels[2] = 0;
+        _devices[channel].cc.channels[0] = 0;
+        _devices[channel].cc.channels[1] = 0;
+        _devices[channel].cc.channels[2] = 0;
         break;
     }
   }
@@ -225,56 +274,58 @@ private:
     DMX.setChannel(config.devices[channel].address + address, roundf(fraction * 255.f));
   }
 
-  // Update the DMX RGB channels with the given HSV values.
-  void setDMXHSV(uint8_t channel, float h, float s, float v) {
+  void updateDMXHSV(uint8_t channel) {
     uint8_t r, g, b;
-    V2Color::HSVtoRGB(h, s, v, r, g, b);
+    V2Color::HSVtoRGB(_devices[channel].now.h, _devices[channel].now.s, _devices[channel].now.v, r, g, b);
     DMX.setChannel(config.devices[channel].address + 0, r);
     DMX.setChannel(config.devices[channel].address + 1, g);
     DMX.setChannel(config.devices[channel].address + 2, b);
   }
 
-  // Update the DMX channels for the duration of the notes. The brightness and color
-  // are also modulated by aftertouch and pitch bend.
-  void setDMXHSVNote(uint8_t channel) {
+  // Update the DMX channels, possibly overwriting the CC values for the duration
+  // of playing notes. The brightness and color of playing notes are modulated by
+  // aftertouch and pitch bend.
+  void updateHSV(uint8_t channel) {
     bool note{};
 
-    float h;
     if (_devices[channel].note.h > 0.f) {
-      h    = _devices[channel].note.h;
-      note = true;
+      _devices[channel].now.h = _devices[channel].note.h;
+      note                    = true;
 
     } else
-      h = _devices[channel].h;
+      _devices[channel].now.h = _devices[channel].cc.h;
 
-    float s;
     if (_devices[channel].note.s > 0.f) {
-      s    = _devices[channel].note.s;
-      note = true;
+      _devices[channel].now.s = _devices[channel].note.s;
+      note                    = true;
 
     } else
-      s = _devices[channel].s;
+      _devices[channel].now.s = _devices[channel].cc.s;
 
-    float v;
     if (_devices[channel].note.v > 0.f) {
-      v    = _devices[channel].note.v;
-      note = true;
+      _devices[channel].now.vTarget = _devices[channel].note.v;
+      note                          = true;
 
     } else
-      v = _devices[channel].v.getFraction();
+      _devices[channel].now.vTarget = _devices[channel].cc.v.getFraction();
 
     if (note) {
-      h += (_devices[channel].note.pitchbend * 180.f);
-      if (h > 360)
-        h -= 360;
-      else if (h < 0)
-        h += 360;
+      _devices[channel].now.h += (_devices[channel].note.pitchbend * 180.f);
+      if (_devices[channel].now.h > 360.f)
+        _devices[channel].now.h -= 360.f;
 
-      if (_devices[channel].note.aftertouch > 0)
-        v = _devices[channel].note.aftertouch;
+      else if (_devices[channel].now.h < 0.f)
+        _devices[channel].now.h += 360.f;
+
+      if (_devices[channel].note.aftertouch > 0.f)
+        _devices[channel].now.vTarget = _devices[channel].note.aftertouch;
     }
 
-    setDMXHSV(channel, h, s, v);
+    // Set the values immediately, loop() will do the fading if needed.
+    if (!_devices[channel].now.fade.active) {
+      _devices[channel].now.v = _devices[channel].now.vTarget;
+      updateDMXHSV(channel);
+    }
   }
 
   void updateChannel(uint8_t channel) {
@@ -289,26 +340,47 @@ private:
         for (uint8_t i = 0; i < config.devices[channel].count; i++) {
           if (_devices[channel].note.channels[i] > 0)
             setDMX(channel, i, (float)_devices[channel].note.channels[i] / 127.f);
+
           else
-            setDMX(channel, i, (float)_devices[channel].channels[i] / 127.f);
+            setDMX(channel, i, (float)_devices[channel].cc.channels[i] / 127.f);
         }
         break;
 
       case Mode::HSV:
-        setDMXHSVNote(channel);
+        updateHSV(channel);
 
         for (uint8_t i = 3; i < config.devices[channel].count; i++) {
           if (_devices[channel].note.channels[i] > 0)
             setDMX(channel, i, (float)_devices[channel].note.channels[i] / 127.f);
+
           else
-            setDMX(channel, i, (float)_devices[channel].channels[i] / 127.f);
+            setDMX(channel, i, (float)_devices[channel].cc.channels[i] / 127.f);
         }
         break;
     }
   }
 
+  void setEnvelope(uint8_t channel) {
+    const float durationSec = 5; // Nmber of seconds to transition the full range.
+
+    if (_devices[channel].note.v > 0.f && _devices[channel].note.envelope.attack > 0.f) {
+      _devices[channel].now.fade.usec   = V2Base::getUsec();
+      const float speedFraction         = powf(_devices[channel].note.envelope.attack, 2);
+      _devices[channel].now.fade.speed  = 1.f / (durationSec * speedFraction);
+      _devices[channel].now.fade.active = true;
+
+    } else if (_devices[channel].note.v <= 0.f && _devices[channel].note.envelope.release > 0.f) {
+      _devices[channel].now.fade.usec   = V2Base::getUsec();
+      const float speedFraction         = powf(_devices[channel].note.envelope.release, 2);
+      _devices[channel].now.fade.speed  = 1.f / (durationSec * speedFraction);
+      _devices[channel].now.fade.active = true;
+
+    } else
+      _devices[channel].now.fade.active = false;
+  }
+
   // Notes temporarily overwrite the values set by the controllers. The Note-Off will
-  // restore the value.
+  // restore the controller value.
   void handleNote(uint8_t channel, uint8_t note, uint8_t velocity) override {
     switch (_devices[channel].program) {
       case Program::Channels: {
@@ -317,6 +389,7 @@ private:
             if (config.devices[channel].count >= 3) {
               _devices[channel].note.v = (float)velocity / 127.f;
               setMode(channel, Mode::HSV);
+              setEnvelope(channel);
               updateChannel(channel);
             }
             break;
@@ -364,6 +437,7 @@ private:
         }
 
         _devices[channel].note.v = (float)velocity / 127.f;
+        setEnvelope(channel);
         updateChannel(channel);
         break;
     }
@@ -406,7 +480,7 @@ private:
         if (config.devices[channel].count < 3)
           break;
 
-        if (!_devices[channel].v.setByte(controller, value))
+        if (!_devices[channel].cc.v.setByte(controller, value))
           break;
 
         setMode(channel, Mode::HSV);
@@ -417,7 +491,7 @@ private:
         if (config.devices[channel].count < 3)
           break;
 
-        _devices[channel].h = (float)value / 127.f * 360.f;
+        _devices[channel].cc.h = (float)value / 127.f * 360.f;
         setMode(channel, Mode::HSV);
         updateChannel(channel);
         break;
@@ -426,22 +500,30 @@ private:
         if (config.devices[channel].count < 3)
           break;
 
-        _devices[channel].s = (float)value / 127.f;
+        _devices[channel].cc.s = (float)value / 127.f;
         setMode(channel, Mode::HSV);
         updateChannel(channel);
         break;
 
+      case (uint8_t)CC::EnvelopeAttack:
+        _devices[channel].note.envelope.attack = (float)value / 127.f;
+        break;
+
+      case (uint8_t)CC::EnvelopeRelease:
+        _devices[channel].note.envelope.release = (float)value / 127.f;
+        break;
+
       case V2MIDI::CC::GeneralPurpose1... V2MIDI::CC::GeneralPurpose1 + 15: {
-        const uint8_t address               = controller - V2MIDI::CC::GeneralPurpose1;
-        _devices[channel].channels[address] = value;
+        const uint8_t address                  = controller - V2MIDI::CC::GeneralPurpose1;
+        _devices[channel].cc.channels[address] = value;
         if (address <= 2)
           setMode(channel, Mode::Channels);
         updateChannel(channel);
       } break;
 
       case V2MIDI::CC::Controller102... V2MIDI::CC::Controller102 + 15: {
-        const uint8_t address               = 16 + (controller - V2MIDI::CC::Controller102);
-        _devices[channel].channels[address] = value;
+        const uint8_t address                  = 16 + (controller - V2MIDI::CC::Controller102);
+        _devices[channel].cc.channels[address] = value;
         updateChannel(channel);
       } break;
     }
@@ -615,7 +697,7 @@ private:
   }
 
   void exportConfiguration(JsonObject json) override {
-    json["#devices"]       = "The DMX device address, number of channels, default values.";
+    json["#devices"]      = "The DMX device address, number of channels, default values.";
     JsonArray jsonDevices = json.createNestedArray("devices");
     for (uint8_t ch = 0; ch < 16; ch++) {
       JsonObject jsonDevice = jsonDevices.createNestedObject();
@@ -659,18 +741,31 @@ private:
         JsonObject jsonBrightness   = jsonController.createNestedObject();
         jsonBrightness["name"]      = "Brightness";
         jsonBrightness["number"]    = (uint8_t)CC::Brightness;
-        jsonBrightness["value"]     = _devices[ch].v.getMSB();
-        jsonBrightness["valueFine"] = _devices[ch].v.getLSB();
+        jsonBrightness["value"]     = _devices[ch].cc.v.getMSB();
+        jsonBrightness["valueFine"] = _devices[ch].cc.v.getLSB();
 
         JsonObject jsonColor = jsonController.createNestedObject();
         jsonColor["name"]    = "Color";
         jsonColor["number"]  = (uint8_t)CC::Color;
-        jsonColor["value"]   = (uint8_t)(_devices[ch].h / 360.f * 127.f);
+        jsonColor["value"]   = (uint8_t)(_devices[ch].cc.h / 360.f * 127.f);
 
         JsonObject jsonSaturation = jsonController.createNestedObject();
         jsonSaturation["name"]    = "Saturation";
         jsonSaturation["number"]  = (uint8_t)CC::Saturation;
-        jsonSaturation["value"]   = (uint8_t)(_devices[ch].s * 127.f);
+        jsonSaturation["value"]   = (uint8_t)(_devices[ch].cc.s * 127.f);
+      }
+
+      {
+        JsonObject control = jsonController.createNestedObject();
+        control["name"]    = "Note Attack";
+        control["number"]  = (uint8_t)CC::EnvelopeAttack;
+        control["value"]   = (uint8_t)(_devices[ch].note.envelope.attack * 127.f);
+      }
+      {
+        JsonObject control = jsonController.createNestedObject();
+        control["name"]    = "Note Release";
+        control["number"]  = (uint8_t)CC::EnvelopeRelease;
+        control["value"]   = (uint8_t)(_devices[ch].note.envelope.release * 127.f);
       }
 
       for (uint8_t i = 0; i < config.devices[ch].count; i++) {
@@ -683,7 +778,7 @@ private:
           jsonControl["number"] = V2MIDI::CC::GeneralPurpose1 + i;
         else
           jsonControl["number"] = V2MIDI::CC::Controller102 + i - 16;
-        jsonControl["value"] = _devices[ch].channels[i];
+        jsonControl["value"] = _devices[ch].cc.channels[i];
       }
 
       // MIDI Program Change
