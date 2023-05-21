@@ -9,7 +9,7 @@
 #include <V2MIDI.h>
 #include <V2Music.h>
 
-V2DEVICE_METADATA("com.versioduo.dmx", 52, "versioduo:samd:dmx");
+V2DEVICE_METADATA("com.versioduo.dmx", 53, "versioduo:samd:dmx");
 
 static V2LED::WS2812 LED(2, PIN_LED_WS2812, &sercom2, SPI_PAD_0_SCK_1, PIO_SERCOM);
 static V2DMX DMX(PIN_DMX_TX, &sercom3, SPI_PAD_0_SCK_1, PIO_SERCOM);
@@ -24,9 +24,9 @@ public:
 
     help.device        = "Up to 16 DMX devices are mapped to 16 MIDI channels. The DMX devices are configured by "
                          "their base DMX address and the number of DMX channels to control.\n"
-                         "Control change messages are mapped to DMX channel values. Notes are used to temporarily "
-                         "overwrite a value during the duration of the note.\n"
-                         "For RGB devices, it is possible to use a separate set of more intuitive CC values to "
+                         "Control Change messages are mapped to DMX channel values. Notes are used to temporarily "
+                         "overwrite a control value for the duration of the note.\n"
+                         "For RGB devices it is possible to use a separate set of more intuitive CC values to "
                          "control Brightness, Color, Saturation; the controller will calculate the RGB channel "
                          "values accordingly.";
     help.configuration = "Default power-on values can be configured. An AllNotesOff control message will "
@@ -51,7 +51,7 @@ public:
   };
 
   enum class State { Off, Config, MIDI, _count };
-  enum class Program { Channels, Brightness, _count };
+  enum class Program { Brightness, Channels, _count };
 
   // Config, written to EEPROM
   struct {
@@ -163,7 +163,7 @@ private:
   uint32_t _usec{};
   V2Music::ForcedStop _force;
   State _state{};
-  const char *_programNames[(uint8_t)Program::_count]{"Channels", "Brightness"};
+  const char *_programNames[(uint8_t)Program::_count]{"Brightness", "Channels"};
 
   // The current mode of the first three channels;
   enum class Mode { Channels, HSV };
@@ -239,7 +239,7 @@ private:
       const float passedSec      = (float)V2Base::getUsecSince(_devices[ch].now.fade.usec) / 1000000.f;
       _devices[ch].now.fade.usec = V2Base::getUsec();
 
-      const float step    = _devices[ch].now.fade.speed * passedSec;
+      const float step     = _devices[ch].now.fade.speed * passedSec;
       const float distance = _devices[ch].now.vTarget - _devices[ch].now.v;
       if (step >= fabs(distance)) {
         _devices[ch].now.v           = _devices[ch].now.vTarget;
@@ -361,7 +361,8 @@ private:
   }
 
   void setEnvelope(uint8_t channel) {
-    const float durationSec = 5; // Nmber of seconds to transition the full range.
+    // Number of seconds to transition the full range.
+    const float durationSec = 5;
 
     if (_devices[channel].note.v > 0.f && _devices[channel].note.envelope.attack > 0.f) {
       _devices[channel].now.fade.usec   = V2Base::getUsec();
@@ -383,6 +384,27 @@ private:
   // restore the controller value.
   void handleNote(uint8_t channel, uint8_t note, uint8_t velocity) override {
     switch (_devices[channel].program) {
+      case Program::Brightness:
+        if (note < V2MIDI::A(-1))
+          return;
+
+        if (note >= V2MIDI::A(-1) + 88)
+          return;
+
+        _devices[channel].note.playing.update(note, velocity);
+        // Restore previous note.
+        if (velocity == 0) {
+          uint8_t n;
+          uint8_t v;
+          if (_devices[channel].note.playing.getLast(n, v))
+            velocity = v;
+        }
+
+        _devices[channel].note.v = (float)velocity / 127.f;
+        setEnvelope(channel);
+        updateChannel(channel);
+        break;
+
       case Program::Channels: {
         switch (note) {
           case V2MIDI::C(3):
@@ -419,27 +441,6 @@ private:
           } break;
         }
       } break;
-
-      case Program::Brightness:
-        if (note < V2MIDI::A(-1))
-          return;
-
-        if (note >= V2MIDI::A(-1) + 88)
-          return;
-
-        _devices[channel].note.playing.update(note, velocity);
-        // Restore previous note.
-        if (velocity == 0) {
-          uint8_t n;
-          uint8_t v;
-          if (_devices[channel].note.playing.getLast(n, v))
-            velocity = v;
-        }
-
-        _devices[channel].note.v = (float)velocity / 127.f;
-        setEnvelope(channel);
-        updateChannel(channel);
-        break;
     }
 
     setState(State::MIDI);
@@ -532,12 +533,8 @@ private:
   }
 
   void handleAftertouchChannel(uint8_t channel, uint8_t pressure) override {
-    switch (_devices[channel].program) {
-      case Program::Channels:
-        _devices[channel].note.aftertouch = (float)pressure / 127.f;
-        updateChannel(channel);
-        break;
-    }
+    _devices[channel].note.aftertouch = (float)pressure / 127.f;
+    updateChannel(channel);
   }
 
   void handlePitchBend(uint8_t channel, int16_t value) override {
@@ -795,12 +792,18 @@ private:
       }
 
       // Notes
+      JsonObject jsonAftertouch = jsonChannel.createNestedObject("aftertouch");
+      jsonAftertouch["value"]   = (uint8_t)(_devices[ch].note.aftertouch * 127.f);
+
       switch (_devices[ch].program) {
+        case Program::Brightness: {
+          JsonObject jsonChromatic = jsonChannel.createNestedObject("chromatic");
+          jsonChromatic["start"]   = V2MIDI::A(-1);
+          jsonChromatic["count"]   = 88;
+        } break;
+
         case Program::Channels:
           if (config.devices[ch].count >= 3) {
-            JsonObject jsonAftertouch = jsonChannel.createNestedObject("aftertouch");
-            jsonAftertouch["value"]   = (uint8_t)(_devices[ch].note.aftertouch * 127.f);
-
             JsonObject jsonPitchbend = jsonChannel.createNestedObject("pitchbend");
             jsonPitchbend["value"] =
               (int16_t)(_devices[ch].note.pitchbend * (_devices[ch].note.pitchbend < 0 ? 8192.f : 8191.f));
@@ -825,12 +828,6 @@ private:
             jsonNote["name"]   = name;
             jsonNote["number"] = V2MIDI::C(3) + 3 + i;
           }
-          break;
-
-        case Program::Brightness:
-          JsonObject jsonChromatic = jsonChannel.createNestedObject("chromatic");
-          jsonChromatic["start"]   = V2MIDI::A(-1);
-          jsonChromatic["count"]   = 88;
           break;
       }
     }
