@@ -9,7 +9,7 @@
 #include <V2MIDI.h>
 #include <V2Music.h>
 
-V2DEVICE_METADATA("com.versioduo.dmx", 53, "versioduo:samd:dmx");
+V2DEVICE_METADATA("com.versioduo.dmx", 54, "versioduo:samd:dmx");
 
 static V2LED::WS2812 LED(2, PIN_LED_WS2812, &sercom2, SPI_PAD_0_SCK_1, PIO_SERCOM);
 static V2DMX DMX(PIN_DMX_TX, &sercom3, SPI_PAD_0_SCK_1, PIO_SERCOM);
@@ -535,6 +535,27 @@ private:
   void handleAftertouchChannel(uint8_t channel, uint8_t pressure) override {
     _devices[channel].note.aftertouch = (float)pressure / 127.f;
     updateChannel(channel);
+  }
+
+  void handleAftertouch(uint8_t channel, uint8_t note, uint8_t pressure) override {
+    switch (_devices[channel].program) {
+      case Program::Brightness:
+        if (note < V2MIDI::A(-1))
+          break;
+
+        if (note >= V2MIDI::A(-1) + 88)
+          break;
+
+        handleAftertouchChannel(channel, pressure);
+        break;
+
+      case Program::Channels:
+        if (note != V2MIDI::C(3))
+          break;
+
+        handleAftertouchChannel(channel, pressure);
+        break;
+    }
   }
 
   void handlePitchBend(uint8_t channel, int16_t value) override {
