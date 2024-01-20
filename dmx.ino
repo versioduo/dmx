@@ -1,4 +1,4 @@
-// © Kay Sievers <kay@versioduo.com>, 2020-2023
+// © Kay Sievers <kay@versioduo.com>, 2020-2024
 // SPDX-License-Identifier: Apache-2.0
 
 #include <V2Buttons.h>
@@ -579,7 +579,7 @@ private:
   void exportSettings(JsonArray json) override {
     for (uint8_t ch = 0; ch < 16; ch++) {
       {
-        JsonObject setting = json.createNestedObject();
+        JsonObject setting = json.add<JsonObject>();
         setting["type"]    = "title";
 
         char name[16];
@@ -588,7 +588,7 @@ private:
       }
 
       {
-        JsonObject setting = json.createNestedObject();
+        JsonObject setting = json.add<JsonObject>();
         setting["type"]    = "number";
         setting["label"]   = "Channels";
         setting["max"]     = 32;
@@ -603,7 +603,7 @@ private:
         continue;
 
       {
-        JsonObject setting = json.createNestedObject();
+        JsonObject setting = json.add<JsonObject>();
         setting["type"]    = "text";
         setting["label"]   = "Name";
 
@@ -613,7 +613,7 @@ private:
       }
 
       {
-        JsonObject setting = json.createNestedObject();
+        JsonObject setting = json.add<JsonObject>();
         setting["type"]    = "number";
         setting["label"]   = "Address";
         setting["min"]     = 1;
@@ -625,7 +625,7 @@ private:
       }
 
       if (config.devices[ch].count >= 3) {
-        JsonObject setting = json.createNestedObject();
+        JsonObject setting = json.add<JsonObject>();
         setting["type"]    = "color";
         setting["ruler"]   = true;
 
@@ -635,7 +635,7 @@ private:
       }
 
       for (uint8_t i = 0; i < config.devices[ch].count; i++) {
-        JsonObject setting = json.createNestedObject();
+        JsonObject setting = json.add<JsonObject>();
         setting["type"]    = "number";
         if (i == 0)
           setting["ruler"] = true;
@@ -716,9 +716,9 @@ private:
 
   void exportConfiguration(JsonObject json) override {
     json["#devices"]      = "The DMX device address, number of channels, default values.";
-    JsonArray jsonDevices = json.createNestedArray("devices");
+    JsonArray jsonDevices = json["devices"].to<JsonArray>();
     for (uint8_t ch = 0; ch < 16; ch++) {
-      JsonObject jsonDevice = jsonDevices.createNestedObject();
+      JsonObject jsonDevice = jsonDevices.add<JsonObject>();
       jsonDevice["count"]   = config.devices[ch].count;
       jsonDevice["name"]    = config.devices[ch].name;
       jsonDevice["address"] = config.devices[ch].address + 1;
@@ -727,67 +727,67 @@ private:
         continue;
 
       if (config.devices[ch].count >= 3) {
-        JsonArray jsonColor = jsonDevice.createNestedArray("color");
+        JsonArray jsonColor = jsonDevice["color"].to<JsonArray>();
         jsonColor.add(config.devices[ch].h);
         jsonColor.add(config.devices[ch].s);
         jsonColor.add(config.devices[ch].v);
       }
 
-      JsonArray jsonChannels = jsonDevice.createNestedArray("channels");
+      JsonArray jsonChannels = jsonDevice["channels"].to<JsonArray>();
       for (uint8_t i = 0; i < config.devices[ch].count; i++)
         jsonChannels.add(config.devices[ch].channels[i]);
     }
   }
 
   void exportInput(JsonObject json) override {
-    JsonArray jsonChannels = json.createNestedArray("channels");
+    JsonArray jsonChannels = json["channels"].to<JsonArray>();
     for (uint8_t ch = 0; ch < 16; ch++) {
       if (config.devices[ch].count == 0)
         continue;
 
-      JsonObject jsonChannel = jsonChannels.createNestedObject();
+      JsonObject jsonChannel = jsonChannels.add<JsonObject>();
       jsonChannel["name"]    = config.devices[ch].name;
       jsonChannel["number"]  = ch;
 
       if (ch != _currentChannel)
         continue;
 
-      JsonArray jsonController = jsonChannel.createNestedArray("controllers");
-      JsonArray jsonNotes      = jsonChannel.createNestedArray("notes");
+      JsonArray jsonController = jsonChannel["controllers"].to<JsonArray>();
+      JsonArray jsonNotes      = jsonChannel["notes"].to<JsonArray>();
 
       if (config.devices[ch].count >= 3) {
-        JsonObject jsonBrightness   = jsonController.createNestedObject();
+        JsonObject jsonBrightness   = jsonController.add<JsonObject>();
         jsonBrightness["name"]      = "Brightness";
         jsonBrightness["number"]    = (uint8_t)CC::Brightness;
         jsonBrightness["value"]     = _devices[ch].cc.v.getMSB();
         jsonBrightness["valueFine"] = _devices[ch].cc.v.getLSB();
 
-        JsonObject jsonColor = jsonController.createNestedObject();
+        JsonObject jsonColor = jsonController.add<JsonObject>();
         jsonColor["name"]    = "Color";
         jsonColor["number"]  = (uint8_t)CC::Color;
         jsonColor["value"]   = (uint8_t)(_devices[ch].cc.h / 360.f * 127.f);
 
-        JsonObject jsonSaturation = jsonController.createNestedObject();
+        JsonObject jsonSaturation = jsonController.add<JsonObject>();
         jsonSaturation["name"]    = "Saturation";
         jsonSaturation["number"]  = (uint8_t)CC::Saturation;
         jsonSaturation["value"]   = (uint8_t)(_devices[ch].cc.s * 127.f);
       }
 
       {
-        JsonObject control = jsonController.createNestedObject();
+        JsonObject control = jsonController.add<JsonObject>();
         control["name"]    = "Note Attack";
         control["number"]  = (uint8_t)CC::EnvelopeAttack;
         control["value"]   = (uint8_t)(_devices[ch].note.envelope.attack * 127.f);
       }
       {
-        JsonObject control = jsonController.createNestedObject();
+        JsonObject control = jsonController.add<JsonObject>();
         control["name"]    = "Note Release";
         control["number"]  = (uint8_t)CC::EnvelopeRelease;
         control["value"]   = (uint8_t)(_devices[ch].note.envelope.release * 127.f);
       }
 
       for (uint8_t i = 0; i < config.devices[ch].count; i++) {
-        JsonObject jsonControl = jsonController.createNestedObject();
+        JsonObject jsonControl = jsonController.add<JsonObject>();
         char name[16];
         sprintf(name, "DMX #%d", i + 1);
         jsonControl["name"] = name;
@@ -801,9 +801,9 @@ private:
 
       // MIDI Program Change
       {
-        JsonArray jsonPrograms = jsonChannel.createNestedArray("programs");
+        JsonArray jsonPrograms = jsonChannel["programs"].to<JsonArray>();
         for (uint8_t i = 0; i < (uint8_t)Program::_count; i++) {
-          JsonObject jsonProgram = jsonPrograms.createNestedObject();
+          JsonObject jsonProgram = jsonPrograms.add<JsonObject>();
           jsonProgram["name"]    = _programNames[i];
           jsonProgram["number"]  = V2MIDI::GM::Program::FX5Brightness;
           jsonProgram["bank"]    = i;
@@ -813,37 +813,37 @@ private:
       }
 
       // Notes
-      JsonObject jsonAftertouch = jsonChannel.createNestedObject("aftertouch");
+      JsonObject jsonAftertouch = jsonChannel["aftertouch"].to<JsonObject>();
       jsonAftertouch["value"]   = (uint8_t)(_devices[ch].note.aftertouch * 127.f);
 
       switch (_devices[ch].program) {
         case Program::Brightness: {
-          JsonObject jsonChromatic = jsonChannel.createNestedObject("chromatic");
+          JsonObject jsonChromatic = jsonChannel["chromatic"].to<JsonObject>();
           jsonChromatic["start"]   = V2MIDI::A(-1);
           jsonChromatic["count"]   = 88;
         } break;
 
         case Program::Channels:
           if (config.devices[ch].count >= 3) {
-            JsonObject jsonPitchbend = jsonChannel.createNestedObject("pitchbend");
+            JsonObject jsonPitchbend = jsonChannel["pitchbend"].to<JsonObject>();
             jsonPitchbend["value"] =
               (int16_t)(_devices[ch].note.pitchbend * (_devices[ch].note.pitchbend < 0 ? 8192.f : 8191.f));
 
-            JsonObject jsonBrightness = jsonNotes.createNestedObject();
+            JsonObject jsonBrightness = jsonNotes.add<JsonObject>();
             jsonBrightness["name"]    = "Brightness";
             jsonBrightness["number"]  = (uint8_t)V2MIDI::C(3) + 0;
 
-            JsonObject jsonColor = jsonNotes.createNestedObject();
+            JsonObject jsonColor = jsonNotes.add<JsonObject>();
             jsonColor["name"]    = "Color";
             jsonColor["number"]  = (uint8_t)V2MIDI::C(3) + 1;
 
-            JsonObject jsonSaturation = jsonNotes.createNestedObject();
+            JsonObject jsonSaturation = jsonNotes.add<JsonObject>();
             jsonSaturation["name"]    = "Saturation";
             jsonSaturation["number"]  = (uint8_t)V2MIDI::C(3) + 2;
           }
 
           for (uint8_t i = 0; i < config.devices[ch].count; i++) {
-            JsonObject jsonNote = jsonNotes.createNestedObject();
+            JsonObject jsonNote = jsonNotes.add<JsonObject>();
             char name[16];
             sprintf(name, "DMX #%d", i + 1);
             jsonNote["name"]   = name;
