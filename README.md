@@ -1,11 +1,9 @@
 # dmx
-
-MIDI to DMX Controller
+🚥 MIDI to DMX Controller
 
 ![Screenshot](images/info.png?raw=true)
 
 ## Configuration
-
 Up to 16 DMX devices are mapped to 16 MIDI channels. The DMX
 devices are configured by their base DMX address and the number
 of DMX channels to control.
@@ -15,26 +13,24 @@ _System-Reset_ message will reset all devices and channels to their
 configured power-on values.
 
 For RGB devices, it is possible to use a separate set of more
-intuitive CC values to control _Brightness_, _Color_, _Saturation_;
+intuitive CC values to control _Brightness_, _Colour_, _Saturation_;
 the controller will calculate the RGB channel values accordingly.
 
 ![Screenshot](images/configuration.png?raw=true)
 
 ## Controllers
-
 MIDI Control Change (CC) values control the DMX channel values.
 
 ![Screenshot](images/controllers.png?raw=true)
 
 ## Notes
-
 The velocity value of a note overwrites the corresponding CC value
 for the duration of the note; a MIDI _Note-Off_ will reset the DMX channel
 value to the current CC value. A MIDI _All-Notes-Off_ message will restore
 all devices and channels to the currently configured controller values.
 
 During an active note, channel aftertouch will change the _Brightness_,
-pitch bend will change the _Color_.
+pitch bend will change the _Colour_.
 
 There are two programs (MIDI _Program Change_) for notes. _Channels_
 maps a range of consecutive notes to DMX channels.
@@ -49,7 +45,6 @@ the value of the earlier, still active note.
 ![Screenshot](images/notes-brightness.png?raw=true)
 
 ## Max For Live Device
-
 An optional Ableton Max4Live [device](https://github.com/versioduo/max4live)
 allows the the direct mapping from Live Automation to DMX values.
 
@@ -60,7 +55,6 @@ _Stop_ are triggered.
 ![Screenshot](images/ableton.png?raw=true)
 
 ## Hardware
-
 ![Schematics / PCB](hardware)
 
 # Copying

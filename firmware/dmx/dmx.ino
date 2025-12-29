@@ -5,7 +5,7 @@
 #include <V2MIDI.h>
 #include <V2Music.h>
 
-V2DEVICE_METADATA("com.versioduo.dmx", 57, "versioduo:samd:dmx");
+V2DEVICE_METADATA("com.versioduo.dmx", 58, "versioduo:samd:dmx");
 
 static V2LED::WS2812 LED(2, PIN_LED_WS2812, &sercom2, SPI_PAD_0_SCK_1, PIO_SERCOM);
 static V2DMX         DMX(PIN_DMX_TX, &sercom3, SPI_PAD_0_SCK_1, PIO_SERCOM);
@@ -628,11 +628,11 @@ private:
 
       if (config.devices[ch].count >= 3) {
         JsonObject setting = json.add<JsonObject>();
-        setting["type"]    = "color";
+        setting["type"]    = "colour";
         setting["ruler"]   = true;
 
         char path[64];
-        sprintf(path, "devices[%d]/color", ch);
+        sprintf(path, "devices[%d]/colour", ch);
         setting["path"] = path;
       }
 
@@ -682,7 +682,9 @@ private:
           config.devices[ch].count = count;
         }
 
-        JsonArray jsonColour = jsonDevices[ch]["color"];
+        JsonArray jsonColour = jsonDevices[ch]["colour"];
+        if (!jsonColour)
+          jsonColour = jsonDevices[ch]["color"];
         if (jsonColour) {
           uint8_t colour = jsonColour[0];
           if (colour > 127)
@@ -729,7 +731,7 @@ private:
         continue;
 
       if (config.devices[ch].count >= 3) {
-        JsonArray jsonColour = jsonDevice["color"].to<JsonArray>();
+        JsonArray jsonColour = jsonDevice["colour"].to<JsonArray>();
         jsonColour.add(config.devices[ch].h);
         jsonColour.add(config.devices[ch].s);
         jsonColour.add(config.devices[ch].v);
