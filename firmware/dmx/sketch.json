@@ -1,0 +1,6 @@
+{
+  "cpu": {
+    "fqbn": "versioduo:samd:dmx",
+    "name": "V2 dmx"
+  }
+}
