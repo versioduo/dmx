@@ -6,761 +6,12 @@
 	(paper "A4")
 	(title_block
 		(title "V2 dmx")
-		(date "2025-12-17")
-		(rev "4")
+		(date "2026-01-06")
+		(rev "5")
 		(company "Versio Duo")
 		(comment 1 "MIDI to DMX Bridge")
 	)
 	(lib_symbols
-		(symbol "Device:C_Small"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.254 1.778 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C_Small"
-				(at 0.254 -2.032 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Unpolarized capacitor, small symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "capacitor cap"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C_Small_0_1"
-				(polyline
-					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
-					)
-					(stroke
-						(width 0.3302)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_Small_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 2.032)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 2.032)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:Crystal_Small"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Y"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Crystal_Small"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Two pin crystal, small symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "quartz ceramic resonator oscillator"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Crystal*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Crystal_Small_0_1"
-				(polyline
-					(pts
-						(xy -1.27 -0.762) (xy -1.27 0.762)
-					)
-					(stroke
-						(width 0.381)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -0.762 -1.524)
-					(end 0.762 1.524)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -0.762) (xy 1.27 0.762)
-					)
-					(stroke
-						(width 0.381)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Crystal_Small_1_1"
-				(pin passive line
-					(at -2.54 0 0)
-					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 1.27)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:LED_Small"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at -1.27 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "LED_Small"
-				(at -4.445 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Light emitting diode, small symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=K 2=A"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "LED diode light-emitting-diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "LED_Small_0_1"
-				(polyline
-					(pts
-						(xy -0.762 -1.016) (xy -0.762 1.016)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0.762) (xy -0.508 1.27) (xy -0.254 1.27) (xy -0.508 1.27) (xy -0.508 1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 1.27) (xy 0 1.778) (xy 0.254 1.778) (xy 0 1.778) (xy 0 1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0) (xy -0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "LED_Small_1_1"
-				(pin passive line
-					(at -2.54 0 0)
-					(length 1.778)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 1.778)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:R_Small"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Value" "R_Small"
-				(at 1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor, small symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_Small_0_1"
-				(rectangle
-					(start -0.762 1.778)
-					(end 0.762 -1.778)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_Small_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 0.762)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 0.762)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Switch:SW_Push"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SW"
-				(at 1.27 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "SW_Push"
-				(at 0 -1.524 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Push button switch, generic, two pins"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "switch normally-open pushbutton push-button"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_Push_0_1"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy -2.54 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "V2_Artwork:Arrow_In"
 			(exclude_from_sim no)
 			(in_bom no)
@@ -1147,7 +398,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "USB-C_2.0"
+			(property "Value" "DX07S016JA3"
 				(at -10.16 20.5 0)
 				(effects
 					(font
@@ -1175,6 +426,15 @@
 				)
 			)
 			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser" " 656-DX07S016JA3R1500"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1818,6 +1078,1356 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "V2_Device:C_0603_0u1"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "0u1"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "V2_Capacitor_SMD:C_0603"
+				(at 0 -17.018 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 -13.462 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser" " 810-CGA3E2X7R1H104MA"
+				(at 0 -20.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0603_0u1_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_0603_0u1_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "V2_Device:C_0603_10u"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "10u"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "V2_Capacitor_SMD:C_0603"
+				(at 0 -17.018 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 -13.462 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser" " 810-C1608X6S1A106M"
+				(at 0 -20.574 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0603_10u_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_0603_10u_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "V2_Device:C_0603_18p"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "18p"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "V2_Capacitor_SMD:C_0603"
+				(at 0 -17.018 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 -13.462 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser" " 603-CC603JRNPO9BN180"
+				(at 0 -20.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0603_18p_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_0603_18p_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "V2_Device:C_0805_10u"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "10u"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "V2_Capacitor_SMD:C_0805"
+				(at 0 -17.018 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 -13.462 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser" " 810-C2012X5R1E106K"
+				(at -0.254 -20.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0805_10u_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_0805_10u_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "V2_Device:Crystal_3.2x1.5_32k768"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Y"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "32k768"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "V2_Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm"
+				(at -0.254 -12.192 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Two pin crystal, small symbol"
+				(at 0 -7.874 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser" " 815-ABS0716632.768KT"
+				(at -0.254 -15.748 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "quartz ceramic resonator oscillator"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Crystal*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Crystal_3.2x1.5_32k768_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -0.762) (xy -1.27 0.762)
+					)
+					(stroke
+						(width 0.381)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -0.762 -1.524)
+					(end 0.762 1.524)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -0.762) (xy 1.27 0.762)
+					)
+					(stroke
+						(width 0.381)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Crystal_3.2x1.5_32k768_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "V2_Device:LED_0603_Orange"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at -1.27 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Orange"
+				(at -4.445 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "V2_LED:LED_0603"
+				(at 0 -9.906 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode, small symbol"
+				(at 0 -7.112 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser" " 755-SML-D12M8WT86C"
+				(at -1.016 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode light-emitting-diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0603_Orange_0_1"
+				(polyline
+					(pts
+						(xy -0.762 -1.016) (xy -0.762 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy -0.508 1.27) (xy -0.254 1.27) (xy -0.508 1.27) (xy -0.508 1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 1.27) (xy 0 1.778) (xy 0.254 1.778) (xy 0 1.778) (xy 0 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy -0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_0603_Orange_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.778)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.778)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "V2_Device:R_0603_100k"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+				)
+			)
+			(property "Value" "10k"
+				(at 1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "V2_Resistor_SMD:R_0603"
+				(at 0 -15.748 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small symbol"
+				(at 0 -12.192 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser" " 71-CRCW0603100KFKEAC"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0603_100k_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_0603_100k_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "V2_Device:R_0603_330R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+				)
+			)
+			(property "Value" "330R"
+				(at 1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "V2_Resistor_SMD:R_0603"
+				(at 0 -15.748 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small symbol"
+				(at 0 -12.192 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser" " 71-CRCW0603330RFKEAC"
+				(at 0 -19.05 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0603_330R_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_0603_330R_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "V2_Device:R_0603_5k1"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+				)
+			)
+			(property "Value" "5k1"
+				(at 1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "V2_Resistor_SMD:R_0603"
+				(at 0 -15.748 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small symbol"
+				(at 0 -12.192 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser" " 71-CRCW06035K10FKEAC"
+				(at 0 -19.05 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0603_5k1_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_0603_5k1_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "V2_ESD_Suppressor:RCLAMP0582N"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1860,6 +2470,15 @@
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser" " 947-RCLAMP0582N.TCT"
+				(at 0 -19.05 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2270,6 +2889,15 @@
 				)
 			)
 			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser" " 556-ATSAMD51G19AMU"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3664,6 +4292,15 @@
 					(hide yes)
 				)
 			)
+			(property "Mouser" " 595-TPS78433QWDRBRQ1"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
 			(symbol "TPS78433QWDRBRQ1_0_1"
 				(rectangle
 					(start -5.08 -5.08)
@@ -3838,6 +4475,165 @@
 						)
 					)
 					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "V2_Switch:SKSG"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SKSG"
+				(at 0 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "V2_Button_Switch_SMD:SKSG"
+				(at 0 -8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 -5.842 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser" " 688-SKSGACE010"
+				(at 0 -11.938 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SKSG_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4553,7 +5349,7 @@
 	)
 	(text "DMX Out"
 		(exclude_from_sim no)
-		(at 16.002 148.59 0)
+		(at 15.494 148.59 0)
 		(effects
 			(font
 				(size 2 2)
@@ -4927,16 +5723,6 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 127) (xy 181.61 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b65edd9-6f93-47a1-9191-16b09c3cd058")
-	)
-	(wire
-		(pts
 			(xy 142.24 92.71) (xy 149.86 92.71)
 		)
 		(stroke
@@ -5104,16 +5890,6 @@
 			(type default)
 		)
 		(uuid "881f6d37-01cf-483a-ba2f-4b2db3685a21")
-	)
-	(wire
-		(pts
-			(xy 189.23 127) (xy 189.23 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88253f0e-73ee-41a7-8e8f-5c1963677c5e")
 	)
 	(polyline
 		(pts
@@ -5625,7 +6401,7 @@
 		)
 		(uuid "77c9ca51-4927-4fac-8cdf-4febcf748c88")
 	)
-	(label "LED-onboard"
+	(label "LED-Board"
 		(at 44.45 106.68 0)
 		(effects
 			(font
@@ -5675,7 +6451,7 @@
 		)
 		(uuid "8a88734c-b28d-44ac-9be6-dffec726b13a")
 	)
-	(label "LED-onboard"
+	(label "LED-Board"
 		(at 113.03 58.42 0)
 		(effects
 			(font
@@ -5776,7 +6552,7 @@
 		(uuid "fabed102-c581-4bbe-8aee-37a126c03770")
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "V2_Device:R_0603_5k1")
 		(at 215.9 96.52 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5802,7 +6578,16 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "V2_Resistor_SMD:R_0603"
+			(at 231.648 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
 			(at 215.9 96.52 0)
 			(effects
 				(font
@@ -5811,8 +6596,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 215.9 96.52 0)
+		(property "Description" "Resistor, small symbol"
+			(at 228.092 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5820,8 +6605,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 215.9 96.52 0)
+		(property "Mouser" " 71-CRCW06035K10FKEAC"
+			(at 234.95 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5845,7 +6630,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "V2_Device:C_0603_0u1")
 		(at 115.57 24.13 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5872,7 +6657,16 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "V2_Capacitor_SMD:C_0603"
+			(at 115.57 41.148 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
 			(at 115.57 24.13 0)
 			(effects
 				(font
@@ -5881,8 +6675,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 115.57 24.13 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 115.57 37.592 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5890,8 +6684,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 115.57 24.13 0)
+		(property "Mouser" " 810-CGA3E2X7R1H104MA"
+			(at 115.57 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5960,7 +6754,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 270.51 60.96 0)
 			(effects
 				(font
@@ -5985,13 +6779,13 @@
 		(lib_id "V2_Artwork:Arrow_Out")
 		(at 257.81 153.67 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0483c709-919b-46b7-945c-b3cbbee5652a")
-		(property "Reference" "ICON102"
+		(property "Reference" "ICON101"
 			(at 261.62 153.6699 0)
 			(effects
 				(font
@@ -6037,19 +6831,10 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 257.81 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "dmx"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "ICON102")
+					(reference "ICON101")
 					(unit 1)
 				)
 			)
@@ -6100,6 +6885,15 @@
 		)
 		(property "Description" ""
 			(at 252.73 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" " 947-RCLAMP0582N.TCT"
+			(at 252.73 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6179,7 +6973,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 205.74 39.37 0)
 			(effects
 				(font
@@ -6244,7 +7038,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
 			(at 255.27 78.74 0)
 			(effects
 				(font
@@ -6266,7 +7060,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
+		(lib_id "V2_Switch:SKSG")
 		(at 254 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6299,7 +7093,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 254 24.13 0)
 			(effects
 				(font
@@ -6308,8 +7102,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 254 29.21 0)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 254 35.052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" " 688-SKSGACE010"
+			(at 254 41.148 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6378,7 +7181,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 92.71 43.18 0)
 			(effects
 				(font
@@ -6446,7 +7249,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 218.44 99.06 0)
 			(effects
 				(font
@@ -6513,7 +7316,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 73.66 127 0)
 			(effects
 				(font
@@ -6578,6 +7381,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 193.04 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" " 595-TPS78433QWDRBRQ1"
 			(at 193.04 41.91 0)
 			(effects
 				(font
@@ -6668,7 +7480,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 36.83 49.53 0)
 			(effects
 				(font
@@ -6735,7 +7547,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 261.62 105.41 0)
 			(effects
 				(font
@@ -6757,7 +7569,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED_Small")
+		(lib_id "V2_Device:LED_0603_Orange")
 		(at 129.54 58.42 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6782,7 +7594,16 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "V2_LED:LED_0603"
+			(at 129.54 48.514 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
 			(at 129.54 58.42 90)
 			(effects
 				(font
@@ -6791,17 +7612,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 129.54 58.42 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 129.54 58.42 0)
+		(property "Description" "Light emitting diode, small symbol"
+			(at 129.54 51.308 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6810,7 +7622,16 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 129.54 58.42 0)
+			(at 129.54 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" " 755-SML-D12M8WT86C"
+			(at 130.556 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6879,7 +7700,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 63.5 26.67 0)
 			(effects
 				(font
@@ -6945,7 +7766,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 245.11 55.88 0)
 			(effects
 				(font
@@ -6977,15 +7798,15 @@
 	)
 	(symbol
 		(lib_id "V2_Mechanical:MountingHole_2mm")
-		(at 236.22 166.37 0)
+		(at 227.33 153.67 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "222c737c-cb0c-4293-9fc2-0cc6cc7a6e02")
 		(property "Reference" "H101"
-			(at 236.22 159.512 0)
+			(at 233.172 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6993,7 +7814,7 @@
 			)
 		)
 		(property "Value" "MountingHole_2mm"
-			(at 236.22 162.306 0)
+			(at 239.776 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7001,7 +7822,7 @@
 			)
 		)
 		(property "Footprint" "V2_Mechanical:MountingHole_2mm"
-			(at 236.22 171.45 0)
+			(at 227.33 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7010,7 +7831,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 236.22 166.37 0)
+			(at 227.33 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7019,16 +7840,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 236.22 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
-			(at 236.22 166.37 0)
+			(at 227.33 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7047,7 +7859,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 181.61 129.54 0)
+		(at 181.61 127 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7055,7 +7867,7 @@
 		(dnp no)
 		(uuid "24204d26-2cb7-4967-ab16-7f45e7929a87")
 		(property "Reference" "#PWR0130"
-			(at 181.61 135.89 0)
+			(at 181.61 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7064,7 +7876,7 @@
 			)
 		)
 		(property "Value" "USB-Shield"
-			(at 181.61 134.366 0)
+			(at 181.61 131.826 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7072,7 +7884,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 181.61 129.54 0)
+			(at 181.61 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7081,7 +7893,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 181.61 129.54 0)
+			(at 181.61 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7089,8 +7901,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 181.61 129.54 0)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 181.61 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7112,15 +7924,15 @@
 	)
 	(symbol
 		(lib_id "V2_Mechanical:MountingHole_2mm")
-		(at 236.22 179.07 0)
+		(at 227.33 160.02 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "2875c914-6606-432e-8aee-c3eeef169a26")
-		(property "Reference" "H103"
-			(at 236.22 172.212 0)
+		(property "Reference" "H102"
+			(at 233.172 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7128,7 +7940,7 @@
 			)
 		)
 		(property "Value" "MountingHole_2mm"
-			(at 236.22 175.006 0)
+			(at 239.776 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7136,7 +7948,7 @@
 			)
 		)
 		(property "Footprint" "V2_Mechanical:MountingHole_2mm"
-			(at 236.22 184.15 0)
+			(at 227.33 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7145,7 +7957,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 236.22 179.07 0)
+			(at 227.33 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7154,16 +7966,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 236.22 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
-			(at 236.22 179.07 0)
+			(at 227.33 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7174,7 +7977,7 @@
 		(instances
 			(project "dmx"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "H103")
+					(reference "H102")
 					(unit 1)
 				)
 			)
@@ -7182,15 +7985,15 @@
 	)
 	(symbol
 		(lib_id "V2_PCB_Devices:Button-bottom")
-		(at 210.82 163.195 0)
+		(at 208.28 161.29 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "2ea90a9c-c79e-495b-b221-c6ea8643fdb4")
 		(property "Reference" "SWB101"
-			(at 206.375 155.575 0)
+			(at 203.835 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7199,7 +8002,7 @@
 			)
 		)
 		(property "Value" "Button-bottom"
-			(at 206.375 158.75 0)
+			(at 203.835 156.845 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7208,7 +8011,7 @@
 			)
 		)
 		(property "Footprint" "V2_PCB_Devices:PCB_Button-bottom"
-			(at 215.9 170.815 0)
+			(at 213.36 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7217,7 +8020,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 210.82 163.195 0)
+			(at 208.28 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7226,16 +8029,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 210.82 163.195 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
-			(at 210.82 163.195 0)
+			(at 208.28 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7296,7 +8090,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 255.27 78.74 0)
 			(effects
 				(font
@@ -7318,7 +8112,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "V2_Device:C_0805_10u")
 		(at 205.74 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7345,7 +8139,16 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "V2_Capacitor_SMD:C_0805"
+			(at 205.74 58.928 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
 			(at 205.74 41.91 0)
 			(effects
 				(font
@@ -7354,8 +8157,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 205.74 41.91 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 205.74 55.372 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7363,8 +8166,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 205.74 41.91 0)
+		(property "Mouser" " 810-C2012X5R1E106K"
+			(at 205.486 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7432,7 +8235,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 78.74 21.59 0)
 			(effects
 				(font
@@ -7498,7 +8301,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 270.51 48.26 0)
 			(effects
 				(font
@@ -7563,7 +8366,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 255.27 86.36 0)
 			(effects
 				(font
@@ -7630,7 +8433,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 54.61 121.92 0)
 			(effects
 				(font
@@ -7655,7 +8458,7 @@
 		(lib_id "V2_Cortex_Debug:Cortex_Debug")
 		(at 128.27 97.79 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -7696,15 +8499,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 128.27 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 128.27 97.79 0)
 			(effects
 				(font
@@ -7786,7 +8580,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 31.75 49.53 0)
 			(effects
 				(font
@@ -7854,7 +8648,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 116.84 102.87 0)
 			(effects
 				(font
@@ -7920,7 +8714,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 262.89 55.88 0)
 			(effects
 				(font
@@ -7952,7 +8746,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 189.23 129.54 0)
+		(at 189.23 127 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7961,7 +8755,7 @@
 		(fields_autoplaced yes)
 		(uuid "616a3869-dcdc-4411-a46f-15ffd72fb8d5")
 		(property "Reference" "#PWR0131"
-			(at 189.23 135.89 0)
+			(at 189.23 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7970,7 +8764,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 189.23 134.62 0)
+			(at 189.23 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7979,7 +8773,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 189.23 129.54 0)
+			(at 189.23 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7988,7 +8782,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 189.23 129.54 0)
+			(at 189.23 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7996,8 +8790,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 189.23 129.54 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 189.23 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8061,7 +8855,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 180.34 39.37 0)
 			(effects
 				(font
@@ -8129,7 +8923,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 218.44 96.52 0)
 			(effects
 				(font
@@ -8196,7 +8990,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 59.69 48.26 0)
 			(effects
 				(font
@@ -8219,15 +9013,15 @@
 	)
 	(symbol
 		(lib_id "V2_Mechanical:MountingHole_2mm")
-		(at 257.81 166.37 0)
+		(at 227.33 166.37 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "6cd046e4-3a13-4326-82b8-f9205dfbba3d")
-		(property "Reference" "H102"
-			(at 257.81 159.512 0)
+		(property "Reference" "H103"
+			(at 233.172 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8235,7 +9029,7 @@
 			)
 		)
 		(property "Value" "MountingHole_2mm"
-			(at 257.81 162.306 0)
+			(at 239.776 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8243,7 +9037,7 @@
 			)
 		)
 		(property "Footprint" "V2_Mechanical:MountingHole_2mm"
-			(at 257.81 171.45 0)
+			(at 227.33 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8252,7 +9046,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 257.81 166.37 0)
+			(at 227.33 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8261,16 +9055,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 257.81 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
-			(at 257.81 166.37 0)
+			(at 227.33 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8281,7 +9066,7 @@
 		(instances
 			(project "dmx"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "H102")
+					(reference "H103")
 					(unit 1)
 				)
 			)
@@ -8333,7 +9118,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 85.09 26.67 0)
 			(effects
 				(font
@@ -8401,7 +9186,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 248.92 29.21 0)
 			(effects
 				(font
@@ -8426,7 +9211,7 @@
 		(lib_id "V2_Production:Order_Number")
 		(at 181.61 191.77 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -8467,15 +9252,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 181.61 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 181.61 191.77 0)
 			(effects
 				(font
@@ -8539,7 +9315,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 116.84 92.71 0)
 			(effects
 				(font
@@ -8562,15 +9338,15 @@
 	)
 	(symbol
 		(lib_id "V2_Mechanical:MountingHole_2mm")
-		(at 257.81 179.07 0)
+		(at 227.33 172.72 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "8449623a-7a38-486c-8453-2ff54b300ce2")
 		(property "Reference" "H104"
-			(at 257.81 172.212 0)
+			(at 233.172 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8578,7 +9354,7 @@
 			)
 		)
 		(property "Value" "MountingHole_2mm"
-			(at 257.81 175.006 0)
+			(at 239.776 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8586,7 +9362,7 @@
 			)
 		)
 		(property "Footprint" "V2_Mechanical:MountingHole_2mm"
-			(at 257.81 184.15 0)
+			(at 227.33 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8595,7 +9371,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 257.81 179.07 0)
+			(at 227.33 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8604,16 +9380,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 257.81 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
-			(at 257.81 179.07 0)
+			(at 227.33 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8631,7 +9398,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "V2_Device:C_0805_10u")
 		(at 180.34 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8649,15 +9416,24 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 176.53 43.18 0)
+			(at 173.228 43.434 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "V2_Capacitor_SMD:C_0805"
+			(at 180.34 58.928 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
 			(at 180.34 41.91 0)
 			(effects
 				(font
@@ -8666,8 +9442,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 180.34 41.91 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 180.34 55.372 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8675,8 +9451,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 180.34 41.91 0)
+		(property "Mouser" " 810-C2012X5R1E106K"
+			(at 180.086 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8701,15 +9477,15 @@
 	)
 	(symbol
 		(lib_id "V2_Production:Layer_Numbers")
-		(at 212.09 177.165 0)
+		(at 209.55 175.26 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "876d56f7-a978-4186-816c-574fe505860f")
 		(property "Reference" "INFO101"
-			(at 206.7819 170.8506 0)
+			(at 204.2419 168.9456 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8718,7 +9494,7 @@
 			)
 		)
 		(property "Value" "Layer_Numbers"
-			(at 214.0284 173.6935 0)
+			(at 211.4884 171.7885 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8726,7 +9502,7 @@
 			)
 		)
 		(property "Footprint" "V2_Production:Layer_Numbers"
-			(at 212.09 183.515 0)
+			(at 209.55 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8735,7 +9511,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 212.09 179.705 0)
+			(at 209.55 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8744,16 +9520,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 212.09 177.165 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
-			(at 212.09 177.165 0)
+			(at 209.55 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8771,17 +9538,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Crystal_Small")
+		(lib_id "V2_Device:Crystal_3.2x1.5_32k768")
 		(at 34.29 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8983cb51-a714-4dae-ba79-062889bdc4de")
 		(property "Reference" "Y101"
-			(at 34.29 36.83 0)
+			(at 34.29 36.322 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8789,7 +9555,7 @@
 			)
 		)
 		(property "Value" "32k768"
-			(at 34.29 39.37 0)
+			(at 34.29 38.862 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8797,6 +9563,15 @@
 			)
 		)
 		(property "Footprint" "V2_Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm"
+			(at 34.036 55.372 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
 			(at 34.29 43.18 0)
 			(effects
 				(font
@@ -8805,8 +9580,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 34.29 43.18 0)
+		(property "Description" "Two pin crystal, small symbol"
+			(at 34.29 51.054 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8814,8 +9589,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 34.29 43.18 0)
+		(property "Mouser" " 815-ABS0716632.768KT"
+			(at 34.036 58.928 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8839,7 +9614,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "V2_Device:C_0603_18p")
 		(at 36.83 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8866,7 +9641,16 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "V2_Capacitor_SMD:C_0603"
+			(at 36.83 64.008 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
 			(at 36.83 46.99 0)
 			(effects
 				(font
@@ -8875,8 +9659,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 36.83 46.99 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 36.83 60.452 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8884,8 +9668,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 36.83 46.99 0)
+		(property "Mouser" " 603-CC603JRNPO9BN180"
+			(at 36.83 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8909,7 +9693,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "V2_Device:C_0603_10u")
 		(at 63.5 24.13 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8927,7 +9711,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 66.04 25.4062 0)
+			(at 65.786 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8935,7 +9719,16 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "V2_Capacitor_SMD:C_0603"
+			(at 63.5 41.148 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
 			(at 63.5 24.13 0)
 			(effects
 				(font
@@ -8944,8 +9737,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 63.5 24.13 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 63.5 37.592 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8953,8 +9746,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 63.5 24.13 0)
+		(property "Mouser" " 810-C1608X6S1A106M"
+			(at 63.5 44.704 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9022,7 +9815,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 201.93 86.36 0)
 			(effects
 				(font
@@ -9089,7 +9882,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 180.34 44.45 0)
 			(effects
 				(font
@@ -9114,7 +9907,7 @@
 		(lib_id "V2_Mechanical:Fiducial_Paste")
 		(at 276.86 153.67 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -9155,16 +9948,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 276.86 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
+		(property "Description" "Fiducial Marker"
 			(at 276.86 153.67 0)
 			(effects
 				(font
@@ -9183,34 +9967,42 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "V2_Device:C_0603_18p")
 		(at 31.75 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "9b95cb83-a45c-4669-9b91-f341db699f30")
 		(property "Reference" "C108"
-			(at 29.21 45.7262 0)
+			(at 24.13 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "18p"
-			(at 29.21 48.2662 0)
+			(at 24.384 48.006 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "V2_Capacitor_SMD:C_0603"
+			(at 31.75 64.008 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
 			(at 31.75 46.99 0)
 			(effects
 				(font
@@ -9219,8 +10011,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 31.75 46.99 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 31.75 60.452 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9228,8 +10020,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 31.75 46.99 0)
+		(property "Mouser" " 603-CC603JRNPO9BN180"
+			(at 31.75 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9256,7 +10048,7 @@
 		(lib_id "V2_Artwork:Board_dmx")
 		(at 180.34 177.8 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -9298,15 +10090,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 180.34 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 180.34 177.8 0)
 			(effects
 				(font
@@ -9370,7 +10153,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 193.04 49.53 0)
 			(effects
 				(font
@@ -9437,7 +10220,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 255.27 82.55 0)
 			(effects
 				(font
@@ -9505,7 +10288,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 140.97 58.42 0)
 			(effects
 				(font
@@ -9527,7 +10310,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "V2_Device:R_0603_330R")
 		(at 138.43 58.42 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9537,7 +10320,7 @@
 		(fields_autoplaced yes)
 		(uuid "b3b0c6e8-2d4f-44f3-863f-e6c1387584b1")
 		(property "Reference" "R101"
-			(at 138.43 52.07 90)
+			(at 138.43 53.34 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9545,14 +10328,23 @@
 			)
 		)
 		(property "Value" "330R"
-			(at 138.43 54.61 90)
+			(at 138.43 55.88 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "V2_Resistor_SMD:R_0603"
+			(at 154.178 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
 			(at 138.43 58.42 0)
 			(effects
 				(font
@@ -9561,8 +10353,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 138.43 58.42 0)
+		(property "Description" "Resistor, small symbol"
+			(at 150.622 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9570,8 +10362,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 138.43 58.42 0)
+		(property "Mouser" " 71-CRCW0603330RFKEAC"
+			(at 157.48 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9641,7 +10433,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 261.62 107.95 0)
 			(effects
 				(font
@@ -9663,7 +10455,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "V2_Device:C_0603_0u1")
 		(at 105.41 24.13 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9690,7 +10482,16 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "V2_Capacitor_SMD:C_0603"
+			(at 105.41 41.148 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
 			(at 105.41 24.13 0)
 			(effects
 				(font
@@ -9699,8 +10500,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 105.41 24.13 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 105.41 37.592 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9708,8 +10509,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 105.41 24.13 0)
+		(property "Mouser" " 810-CGA3E2X7R1H104MA"
+			(at 105.41 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9778,7 +10579,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 205.74 44.45 0)
 			(effects
 				(font
@@ -9800,7 +10601,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "V2_Device:C_0603_0u1")
 		(at 85.09 24.13 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9818,15 +10619,24 @@
 			)
 		)
 		(property "Value" "0u1"
-			(at 92.71 25.4 0)
+			(at 87.63 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "V2_Capacitor_SMD:C_0603"
+			(at 85.09 41.148 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
 			(at 85.09 24.13 0)
 			(effects
 				(font
@@ -9835,8 +10645,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 85.09 24.13 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 85.09 37.592 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9844,8 +10654,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 85.09 24.13 0)
+		(property "Mouser" " 810-CGA3E2X7R1H104MA"
+			(at 85.09 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9870,16 +10680,16 @@
 	)
 	(symbol
 		(lib_id "V2_Artwork:Arrow_In")
-		(at 236.22 153.67 0)
+		(at 257.81 160.02 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d4a1ac1c-6c4a-46e8-bde6-5057d520f846")
-		(property "Reference" "ICON101"
-			(at 238.76 153.6699 0)
+		(property "Reference" "ICON103"
+			(at 260.35 160.0199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9888,7 +10698,7 @@
 			)
 		)
 		(property "Value" "Arrow_In"
-			(at 233.68 158.75 0)
+			(at 255.27 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9898,7 +10708,7 @@
 			)
 		)
 		(property "Footprint" "V2_Artwork:Arrow_In"
-			(at 236.22 161.29 0)
+			(at 257.81 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9907,7 +10717,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 236.22 153.67 0)
+			(at 257.81 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9916,16 +10726,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 236.22 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
-			(at 236.22 153.67 0)
+			(at 257.81 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9936,7 +10737,7 @@
 		(instances
 			(project "dmx"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "ICON101")
+					(reference "ICON103")
 					(unit 1)
 				)
 			)
@@ -9988,7 +10789,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 255.27 86.36 0)
 			(effects
 				(font
@@ -10013,7 +10814,7 @@
 		(lib_id "V2_Mechanical:Fiducial_Paste")
 		(at 276.86 166.37 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -10053,16 +10854,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 276.86 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
+		(property "Description" "Fiducial Marker"
 			(at 276.86 166.37 0)
 			(effects
 				(font
@@ -10081,7 +10873,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "V2_Device:R_0603_5k1")
 		(at 215.9 99.06 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10107,7 +10899,16 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "V2_Resistor_SMD:R_0603"
+			(at 231.648 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
 			(at 215.9 99.06 0)
 			(effects
 				(font
@@ -10116,8 +10917,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 215.9 99.06 0)
+		(property "Description" "Resistor, small symbol"
+			(at 228.092 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10125,8 +10926,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 215.9 99.06 0)
+		(property "Mouser" " 71-CRCW06035K10FKEAC"
+			(at 234.95 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10150,7 +10951,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
+		(lib_id "V2_Switch:SKSG")
 		(at 129.54 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10184,7 +10985,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 129.54 71.12 0)
 			(effects
 				(font
@@ -10193,8 +10994,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 129.54 76.2 0)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 129.54 82.042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" " 688-SKSGACE010"
+			(at 129.54 88.138 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10221,7 +11031,7 @@
 		(lib_id "V2_Connector_USB:JAE_DX07S016JA3")
 		(at 189.23 106.68 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -10252,7 +11062,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+		(property "Datasheet" ""
 			(at 193.04 106.68 0)
 			(effects
 				(font
@@ -10270,7 +11080,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
+		(property "Mouser" " 656-DX07S016JA3R1500"
 			(at 189.23 106.68 0)
 			(effects
 				(font
@@ -10368,7 +11178,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 124.46 76.2 0)
 			(effects
 				(font
@@ -10390,7 +11200,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "V2_Device:C_0603_0u1")
 		(at 95.25 24.13 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10417,7 +11227,16 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "V2_Capacitor_SMD:C_0603"
+			(at 95.25 41.148 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
 			(at 95.25 24.13 0)
 			(effects
 				(font
@@ -10426,8 +11245,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 95.25 24.13 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 95.25 37.592 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10435,8 +11254,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 95.25 24.13 0)
+		(property "Mouser" " 810-CGA3E2X7R1H104MA"
+			(at 95.25 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10503,7 +11322,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 255.27 82.55 0)
 			(effects
 				(font
@@ -10528,7 +11347,7 @@
 		(lib_id "V2_Mechanical:Fiducial_Paste")
 		(at 276.86 179.07 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -10569,16 +11388,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 276.86 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
+		(property "Description" "Fiducial Marker"
 			(at 276.86 179.07 0)
 			(effects
 				(font
@@ -10642,6 +11452,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 76.2 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" " 556-ATSAMD51G19AMU"
 			(at 76.2 80.01 0)
 			(effects
 				(font
@@ -10813,7 +11632,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
+		(lib_id "V2_Device:R_0603_100k")
 		(at 57.15 121.92 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10837,7 +11656,16 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "V2_Resistor_SMD:R_0603"
+			(at 72.898 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
 			(at 57.15 121.92 0)
 			(effects
 				(font
@@ -10846,8 +11674,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 57.15 121.92 0)
+		(property "Description" "Resistor, small symbol"
+			(at 69.342 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10855,7 +11683,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Mouser" " 71-CRCW0603100KFKEAC"
 			(at 57.15 121.92 0)
 			(effects
 				(font
@@ -10883,12 +11711,12 @@
 		(lib_id "V2_Artwork:V2-logo")
 		(at 181.61 160.02 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "ff5fa334-854e-4ca7-a359-9c419e0f5264")
-		(property "Reference" "ICON103"
+		(property "Reference" "ICON102"
 			(at 177.8 153.67 0)
 			(effects
 				(font
@@ -10933,19 +11761,10 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 181.61 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "dmx"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "ICON103")
+					(reference "ICON102")
 					(unit 1)
 				)
 			)

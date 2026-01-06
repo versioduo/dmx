@@ -1,4 +1,4 @@
-26599900369662644
+26698467152376591
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -56281,8 +56281,8 @@ DCDC-Converter TRACO THL40WI THT 1"x1" 40W
 6
 Converter_DCDC
 Converter_DCDC_TRACO_THN10-xxxxUIR_THT
-DCDC-Converter, TRACO, THN 10-xxxxUIR, 10W, Rev. July 3. 2025, https://www.tracopower.com/products/thn10uir.pdf, generated with kicad-footprint-generator StandardBox_generator.py
-DCDC-Converter TRACO THN10UIR THT 1"x1" 10W
+DCDC-Converter, TRACO, THN 10-xxxxUIR, 10W, Rev. August 28. 2025, https://www.tracopower.com/products/thn10uir.pdf, generated with kicad-footprint-generator StandardBox_generator.py
+DCDC-Converter TRACO THT 1"x1" 10W THN10UIR THN15UIR
 0
 7
 7
@@ -57777,6 +57777,55 @@ SMD SMT crystal
 0
 2
 2
+Crystal
+Crystal_SMD_WE_12SMX-4Pin_7.0x5.0mm
+Wurth Elektronik, Crystal SMD SMT, 7.0x5.0mm package, SMD, generated with kicad-footprint-generator make_crystal.py, https://www.we-online.com/en/components/products/WE-XTAL#/articles/WE-XTAL-12SMX
+
+0
+4
+4
+Crystal
+Crystal_SMD_WE_CFPX-104-4Pin_5.0x3.2mm
+Wurth Elektronik, Crystal SMD SMT, 5.0x3.2mm package, SMD, generated with kicad-footprint-generator make_crystal.py, https://www.we-online.com/en/components/products/WE-XTAL#/articles/CFPX-104
+
+0
+4
+4
+Crystal
+Crystal_SMD_WE_CFPX-180-4Pin_3.2x2.5mm
+Wurth Elektronik, Crystal SMD SMT, 3.2x2.5mm package, SMD, generated with kicad-footprint-generator make_crystal.py, https://www.we-online.com/en/components/products/WE-XTAL#/articles/CFPX-180
+
+0
+4
+4
+Crystal
+Crystal_SMD_WE_CFPX-218-4Pin_2.5x2.0mm
+Wurth Elektronik, Crystal SMD SMT, 2.5x2.0mm package, SMD, generated with kicad-footprint-generator make_crystal.py, https://www.we-online.com/en/components/products/WE-XTAL#/articles/CFPX-218
+
+0
+4
+4
+Crystal
+Crystal_SMD_WE_IQXC-26-4Pin_1.6x1.2mm
+Wurth Elektronik, Crystal SMD SMT, 1.6x1.2mm package, SMD, generated with kicad-footprint-generator make_crystal.py, https://www.we-online.com/en/components/products/WE-XTAL#/articles/IQXC-26
+
+0
+4
+4
+Crystal
+Crystal_SMD_WE_IQXC-42-4Pin_2.0x1.6mm
+Wurth Elektronik, Crystal SMD SMT, 2.0x1.6mm package, SMD, generated with kicad-footprint-generator make_crystal.py, https://www.we-online.com/en/components/products/WE-XTAL#/articles/IQXC-42
+
+0
+4
+4
+Crystal
+Crystal_SMD_WE_IQXC-240-4Pin_1.2x1.0mm
+Wurth Elektronik, Crystal SMD SMT, 1.2x1.0mm package, SMD, generated with kicad-footprint-generator make_crystal.py, https://www.we-online.com/en/components/products/WE-XTAL#/articles/IQXC-240
+
+0
+4
+4
 Crystal
 Resonator-2Pin_W6.0mm_H3.0mm
 Ceramic Resonator/Filter, length 3.0mm, width 6.0mm, 2 pins
@@ -63574,6 +63623,55 @@ L Coilcraft XxL4040
 2
 2
 Inductor_SMD
+L_CommonModeChoke_Coilank_ACM1210
+Coilank  common-mode choke, 4 Pin (https://www.lcsc.com/datasheet/C49073870.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+Coilank common-mode choke NoLead
+0
+4
+4
+Inductor_SMD
+L_CommonModeChoke_Coilank_ACM1608
+Coilank  common-mode choke, 4 Pin (https://www.lcsc.com/datasheet/C49073870.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+Coilank common-mode choke NoLead
+0
+4
+4
+Inductor_SMD
+L_CommonModeChoke_Coilank_ACM2012
+Coilank  common-mode choke, 4 Pin (https://www.lcsc.com/datasheet/C49073870.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+Coilank common-mode choke NoLead
+0
+4
+4
+Inductor_SMD
+L_CommonModeChoke_Coilank_ACM2520
+Coilank  common-mode choke, 4 Pin (https://www.lcsc.com/datasheet/C49073870.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+Coilank common-mode choke NoLead
+0
+4
+4
+Inductor_SMD
+L_CommonModeChoke_Coilank_ACM3216
+Coilank  common-mode choke, 4 Pin (https://www.lcsc.com/datasheet/C49073870.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+Coilank common-mode choke NoLead
+0
+4
+4
+Inductor_SMD
+L_CommonModeChoke_Coilank_ACM3225
+Coilank  common-mode choke, 4 Pin (https://www.lcsc.com/datasheet/C49073870.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+Coilank common-mode choke NoLead
+0
+4
+4
+Inductor_SMD
+L_CommonModeChoke_Coilank_ACM4532
+Coilank  common-mode choke, 4 Pin (https://www.lcsc.com/datasheet/C49073870.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+Coilank common-mode choke NoLead
+0
+4
+4
+Inductor_SMD
 L_CommonModeChoke_Coilcraft_0603USB
 Coilcraft 0603USB Series Common Mode Choke, https://www.coilcraft.com/pdfs/0603usb.pdf
 surface mount common mode bead
@@ -63603,22 +63701,22 @@ inductor common mode choke
 4
 Inductor_SMD
 L_CommonModeChoke_TDK_ACM2520-2P
-TDK ACM2520 common-mode filter, SMD, 2x2.5mm, height 1.2mm https://product.tdk.com/system/files/dam/doc/product/emc/emc/cmf_cmc/catalog/cmf_commercial_signal_acm2520_en.pdf
-ACM2520 common-mode filter 4 pin
+TDK  common-mode choke, 4 Pin (https://product.tdk.com/system/files/dam/doc/product/emc/emc/cmf_cmc/catalog/cmf_commercial_signal_acm2520_en.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+TDK common-mode choke NoLead
 0
 4
 4
 Inductor_SMD
 L_CommonModeChoke_TDK_ACM2520-3P
-TDK ACM2520 common-mode filter, SMD, 2x2.5mm, height 1.2mm https://product.tdk.com/system/files/dam/doc/product/emc/emc/cmf_cmc/catalog/cmf_commercial_signal_acm2520_en.pdf
-ACM2520 common-mode filter 6 pin
+TDK  common-mode choke, 6 Pin (https://product.tdk.com/system/files/dam/doc/product/emc/emc/cmf_cmc/catalog/cmf_commercial_signal_acm2520_en.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+TDK common-mode choke NoLead
 0
 6
 6
 Inductor_SMD
 L_CommonModeChoke_TDK_ACM7060
-ACM7060 SMT Common Mode Filter, https://product.tdk.com/system/files/dam/doc/product/emc/emc/cmf_cmc/catalog/cmf_commercial_power_acm7060_en.pdf
-SMT Common Mode Line Filter
+TDK  common-mode choke, 4 Pin (https://product.tdk.com/system/files/dam/doc/product/emc/emc/cmf_cmc/catalog/cmf_commercial_power_acm7060_en.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+TDK common-mode choke NoLead
 0
 4
 4
@@ -65527,6 +65625,27 @@ shielded Würth SMT
 2
 2
 Inductor_SMD
+L_Wuerth_LQFS-3818
+Inductor, Wuerth, LQFS-3818, 3.8x3.8x1.8mm, (https://www.we-online.com/components/products/datasheet/74406032010.pdf), generated with kicad-footprint-generator gen_inductor.py
+Würth -SMT
+0
+2
+2
+Inductor_SMD
+L_Wuerth_LQFS-4818
+Inductor, Wuerth, LQFS-4818, 4.8x4.8x1.8mm, (https://www.we-online.com/components/products/datasheet/74406042010.pdf), generated with kicad-footprint-generator gen_inductor.py
+Würth -SMT
+0
+2
+2
+Inductor_SMD
+L_Wuerth_LQFS-4828
+Inductor, Wuerth, LQFS-4828, 4.8x4.8x2.8mm, (https://www.we-online.com/components/products/datasheet/74406043012.pdf), generated with kicad-footprint-generator gen_inductor.py
+Würth -SMT
+0
+2
+2
+Inductor_SMD
 L_Wuerth_MAPI-1610
 Inductor, Wuerth, MAPI-1610, 1.6x1.6x1.0mm, (https://www.we-online.com/en/components/products/WE-MAPI?kicad), generated with kicad-footprint-generator gen_inductor.py
 Würth -SMT
@@ -65620,6 +65739,111 @@ Würth -SMT
 Inductor_SMD
 L_Wuerth_MAPI-5030
 Inductor, Wuerth, MAPI-5030, 5.4x5.4x3.1mm, (https://www.we-online.com/en/components/products/WE-MAPI?kicad), generated with kicad-footprint-generator gen_inductor.py
+Würth -SMT
+0
+2
+2
+Inductor_SMD
+L_Wuerth_PMCI-160808
+Inductor, Wuerth, PMCI-160808, 1.6x0.8x0.8mm, (https://www.we-online.com/en/components/products/WE-PMCI), generated with kicad-footprint-generator gen_inductor.py
+Würth -SMT
+0
+2
+2
+Inductor_SMD
+L_Wuerth_PMCI-201210
+Inductor, Wuerth, PMCI-201210, 2.0x1.2x1.0mm, (https://www.we-online.com/en/components/products/WE-PMCI), generated with kicad-footprint-generator gen_inductor.py
+Würth -SMT
+0
+2
+2
+Inductor_SMD
+L_Wuerth_PMCI-201610
+Inductor, Wuerth, PMCI-201610, 2.0x1.6x1.0mm, (https://www.we-online.com/en/components/products/WE-PMCI), generated with kicad-footprint-generator gen_inductor.py
+Würth -SMT
+0
+2
+2
+Inductor_SMD
+L_Wuerth_PMCI-252010
+Inductor, Wuerth, PMCI-252010, 2.5x2.0x1.0mm, (https://www.we-online.com/en/components/products/WE-PMCI), generated with kicad-footprint-generator gen_inductor.py
+Würth -SMT
+0
+2
+2
+Inductor_SMD
+L_Wuerth_PMCI-252012
+Inductor, Wuerth, PMCI-252012, 2.5x2.0x1.2mm, (https://www.we-online.com/en/components/products/WE-PMCI), generated with kicad-footprint-generator gen_inductor.py
+Würth -SMT
+0
+2
+2
+Inductor_SMD
+L_Wuerth_PMCI-322510
+Inductor, Wuerth, PMCI-322510, 3.2x2.5x1.0mm, (https://www.we-online.com/en/components/products/WE-PMCI), generated with kicad-footprint-generator gen_inductor.py
+Würth -SMT
+0
+2
+2
+Inductor_SMD
+L_Wuerth_PMCI-322512
+Inductor, Wuerth, PMCI-322512, 3.2x2.5x1.2mm, (https://www.we-online.com/en/components/products/WE-PMCI), generated with kicad-footprint-generator gen_inductor.py
+Würth -SMT
+0
+2
+2
+Inductor_SMD
+L_Wuerth_PMCI-322515
+Inductor, Wuerth, PMCI-322515, 3.2x2.5x1.5mm, (https://www.we-online.com/en/components/products/WE-PMCI), generated with kicad-footprint-generator gen_inductor.py
+Würth -SMT
+0
+2
+2
+Inductor_SMD
+L_Wuerth_PMFI-201610
+Inductor, Wuerth, PMFI-201610, 2.0x1.6x1.0mm, (https://www.we-online.com/components/products/datasheet/74479320165110.pdf), generated with kicad-footprint-generator gen_inductor.py
+Würth -SMT
+0
+2
+2
+Inductor_SMD
+L_Wuerth_PMFI-201610_PMCI-compatible
+Inductor, Wuerth, PMFI-201610_PMCI-compatible, 2.0x1.6x1.0mm, (https://www.we-online.com/components/products/datasheet/74479320165110.pdf), generated with kicad-footprint-generator gen_inductor.py
+Würth -SMT
+0
+2
+2
+Inductor_SMD
+L_Wuerth_PMFI-252012
+Inductor, Wuerth, PMFI-252012, 2.5x2.0x1.2mm, (https://www.we-online.com/components/products/datasheet/74479325207147.pdf), generated with kicad-footprint-generator gen_inductor.py
+Würth -SMT
+0
+2
+2
+Inductor_SMD
+L_Wuerth_PMFI-252012_PMCI-compatible
+Inductor, Wuerth, PMFI-252012_PMCI-compatible, 2.5x2.0x1.2mm, (https://www.we-online.com/components/products/datasheet/74479325207147.pdf), generated with kicad-footprint-generator gen_inductor.py
+Würth -SMT
+0
+2
+2
+Inductor_SMD
+L_Wuerth_PMFI-322512
+Inductor, Wuerth, PMFI-322512, 3.2x2.5x1.2mm, (https://www.we-online.com/components/products/datasheet/74479332257147.pdf), generated with kicad-footprint-generator gen_inductor.py
+Würth -SMT
+0
+2
+2
+Inductor_SMD
+L_Wuerth_PMFI-322512_PMCI-compatible
+Inductor, Wuerth, PMFI-322512_PMCI-compatible, 3.2x2.5x1.2mm, (https://www.we-online.com/components/products/datasheet/74479332257147.pdf), generated with kicad-footprint-generator gen_inductor.py
+Würth -SMT
+0
+2
+2
+Inductor_SMD
+L_Wuerth_PMFI-353220
+Inductor, Wuerth, PMFI-353220, 3.5x3.2x2.0mm, (https://www.we-online.com/components/products/datasheet/74479335329110.pdf), generated with kicad-footprint-generator gen_inductor.py
 Würth -SMT
 0
 2
@@ -66573,6 +66797,41 @@ Inductor_THT
 L_CommonMode_Toroid_Vertical_L21.0mm_W10.0mm_Px5.08mm_Py12.70mm_Murata_5100
 L_CommonMode_Toroid, Vertical series, Radial, pin pitch=5.08*12.70mm^2, length*width=21*10mm^2, Murata, 5100, http://www.murata-ps.com/data/magnetics/kmp_5100.pdf
 L_CommonMode_Toroid Vertical series Radial pin pitch 5.08*12.70mm^2  length 21mm width 10mm Murata 5100
+0
+4
+4
+Inductor_THT
+L_CommonMode_Toroid_Vertical_L22.0mm_W12.0mm_Px9.00mm_Py8.00mm_PRODTech_PDMCAT18107-102ML
+L_CommonMode_Toroid, Vertical series, Radial, pin pitch=9.00*8.00mm^2, length*width=22*12mm^2, PRODTech, PDMCAT18107-102ML, https://www.lcsc.com/datasheet/C2831472.pdf
+L_CommonMode_Toroid Vertical series Radial pin pitch 9.00*8.00mm^2  length 22mm width 12mm PRODTech PDMCAT18107-102ML
+0
+4
+4
+Inductor_THT
+L_CommonMode_Toroid_Vertical_L22.0mm_W12.0mm_Px9.00mm_Py8.00mm_PRODTech_PDMCAT18107-103ML
+L_CommonMode_Toroid, Vertical series, Radial, pin pitch=9.00*8.00mm^2, length*width=22*12mm^2, PRODTech, PDMCAT18107-103ML, https://www.lcsc.com/datasheet/C2831472.pdf
+L_CommonMode_Toroid Vertical series Radial pin pitch 9.00*8.00mm^2  length 22mm width 12mm PRODTech PDMCAT18107-103ML
+0
+4
+4
+Inductor_THT
+L_CommonMode_Toroid_Vertical_L22.0mm_W12.0mm_Px9.00mm_Py8.00mm_PRODTech_PDMCAT18107-202ML
+L_CommonMode_Toroid, Vertical series, Radial, pin pitch=9.00*8.00mm^2, length*width=22*12mm^2, PRODTech, PDMCAT18107-202ML, https://www.lcsc.com/datasheet/C2831472.pdf
+L_CommonMode_Toroid Vertical series Radial pin pitch 9.00*8.00mm^2  length 22mm width 12mm PRODTech PDMCAT18107-202ML
+0
+4
+4
+Inductor_THT
+L_CommonMode_Toroid_Vertical_L22.0mm_W12.0mm_Px9.00mm_Py8.00mm_PRODTech_PDMCAT18107-203ML
+L_CommonMode_Toroid, Vertical series, Radial, pin pitch=9.00*8.00mm^2, length*width=22*12mm^2, PRODTech, PDMCAT18107-203ML, https://www.lcsc.com/datasheet/C2831472.pdf
+L_CommonMode_Toroid Vertical series Radial pin pitch 9.00*8.00mm^2  length 22mm width 12mm PRODTech PDMCAT18107-203ML
+0
+4
+4
+Inductor_THT
+L_CommonMode_Toroid_Vertical_L22.0mm_W12.0mm_Px9.00mm_Py8.00mm_PRODTech_PDMCAT18107-502ML
+L_CommonMode_Toroid, Vertical series, Radial, pin pitch=9.00*8.00mm^2, length*width=22*12mm^2, PRODTech, PDMCAT18107-502ML, https://www.lcsc.com/datasheet/C2831472.pdf
+L_CommonMode_Toroid Vertical series Radial pin pitch 9.00*8.00mm^2  length 22mm width 12mm PRODTech PDMCAT18107-502ML
 0
 4
 4
@@ -73416,6 +73675,13 @@ BGA 24 1.0
 24
 24
 Package_BGA
+BGA-24_8x8mm_Layout5x5_P1.0mm
+BGA-24, 8x8mm, 24 Ball, 5x5 Layout, 1.0mm Pitch, generated with kicad-footprint-generator ipc_bga_generator.py, https://www.infineon.com/assets/row/public/packages/73/package_outline_download/infineon-pg-bga-24-804-spo-pdf-package-en.pdf
+BGA 24 1.0
+0
+24
+24
+Package_BGA
 BGA-25_6.35x6.35mm_Layout5x5_P1.27mm
 BGA-25, https://www.analog.com/media/en/technical-documentation/data-sheets/ltm4624.pdf
 BGA-25 uModule
@@ -79275,6 +79541,20 @@ Renesas UQFN NoLead
 20
 20
 Package_DFN_QFN
+ST_DFN-10-1EP_3x3mm_P0.5mm_EP0.62x0.98mm
+ST  DFN, 10 Pin (https://www.st.com/resource/en/datasheet/l7983.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+ST DFN NoLead
+0
+12
+11
+Package_DFN_QFN
+ST_DFN-10-1EP_3x3mm_P0.5mm_EP0.62x0.98mm_ThermalVias
+ST  DFN, 10 Pin (https://www.st.com/resource/en/datasheet/l7983.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+ST DFN NoLead
+0
+15
+11
+Package_DFN_QFN
 ST_UFDFPN-12-1EP_3x3mm_P0.5mm_EP1.4x2.55mm
 ST  UFDFPN, 12 Pin (https://www.st.com/resource/en/datasheet/st25dv04k.pdf#page=152), generated with kicad-footprint-generator ipc_noLead_generator.py
 ST UFDFPN NoLead
@@ -80170,6 +80450,13 @@ Texas WQFN NoLead
 0
 60
 41
+Package_DFN_QFN
+Texas_RNX0012C_VQFN-14-11-1EP_2x3mm_P0.5mm_EP0.25x1.825mm
+Texas RNX0012C VQFN, 11 Pin (https://www.ti.com/cn/lit/ml/qfnd580a/qfnd580a.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+Texas VQFN NoLead
+0
+13
+12
 Package_DFN_QFN
 Texas_RPU0010A_VQFN-HR-10_2x2mm_P0.5mm
 VQFN-HR, 10 Pin (https://www.ti.com/lit/ds/symlink/tps62912.pdf#page=39)
@@ -81530,14 +81817,14 @@ WQFN NoLead TQFN T3857-1C T3857M-1
 39
 Package_DFN_QFN
 WQFN-42-1EP_3.5x9mm_P0.5mm_EP2.05x7.55mm
-WQFN, 42 Pin (http://www.ti.com/lit/ds/symlink/ts3l501e.pdf#page=23), generated with kicad-footprint-generator ipc_noLead_generator.py
+WQFN, 42 Pin (http://www.ti.com/lit/ds/symlink/ts3l501e.pdf#page=23, https://www.diodes.com/assets/Package-Files/PD-2035J_ZH42.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
 WQFN NoLead
 0
 57
 43
 Package_DFN_QFN
 WQFN-42-1EP_3.5x9mm_P0.5mm_EP2.05x7.55mm_ThermalVias
-WQFN, 42 Pin (http://www.ti.com/lit/ds/symlink/ts3l501e.pdf#page=23), generated with kicad-footprint-generator ipc_noLead_generator.py
+WQFN, 42 Pin (http://www.ti.com/lit/ds/symlink/ts3l501e.pdf#page=23, https://www.diodes.com/assets/Package-Files/PD-2035J_ZH42.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
 WQFN NoLead
 0
 82
@@ -97615,6 +97902,13 @@ Logo RoHS
 0
 0
 Symbol
+Screw_Generic_2.0x3.0mm_SilkScreen
+Mounting screw symbol
+mounting screw symbol
+0
+0
+0
+Symbol
 Smolhaj_Scale_0.1
 BLÅHAJ , smol 50cm nominal, 1:10 scale (56mm Snoot-Flosse), MPN 205.406.63 (https://www.ikea.com/gb/en/p/blahaj-soft-toy-baby-shark-20540663/)
 Ikea Smol Haj
@@ -104117,6 +104411,13 @@ Tactile Switch ALPS
 0
 4
 2
+V2_Capacitor_SMD
+C_0603
+Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
+capacitor
+0
+2
+2
 V2_Connector_Audio
 CUI_SJ2-25404B-SMT-TR
 
@@ -104138,6 +104439,20 @@ CUI_SJ2-35464B-SMT-TR
 0
 17
 5
+V2_Connector_Audio
+Jack_6.35mm_Neutrik_NSJ12HC_Horizontal
+Stacking Jacks, Stereo dual jack, full nose, https://www.neutrik.com/en/product/nsj12hc
+neutrik jack stacking
+0
+13
+13
+V2_Connector_Audio
+Jack_speakON_Neutrik_NL4MDXX-V-3_Vertical
+speakON Chassis Connectors, 4 pole chassis connector, grey D-size flange, self tapping screw holes (A-screw), vertical PCB mount, replaces NL4MD-V-1, https://www.neutrik.com/en/product/nl4mdxx-v-3
+neutrik speakon
+0
+4
+4
 V2_Connector_EtherCon
 NE8FAH
 
@@ -104265,9 +104580,16 @@ SMD SMT Crystal
 2
 2
 V2_Diode_SMD
-Nexperia_CFP3_SOD-123W
-Nexperia CFP3 (SOD-123W), https://assets.nexperia.com/documents/outline-drawing/SOD123W.pdf
-CFP3 SOD-123W
+D_SOD-123W
+
+
+0
+2
+2
+V2_Diode_SMD
+D_SOD-523
+http://www.diodes.com/datasheets/ap02001.pdf p.144
+Diode SOD523
 0
 2
 2
@@ -104310,6 +104632,13 @@ V2_Inductor_SMD
 L_3.1x5.1
 
 inductor
+0
+2
+2
+V2_LED
+LED_0603
+LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+LED
 0
 2
 2
@@ -104537,6 +104866,13 @@ PG-TDS0-14
 0
 61
 15
+V2_Package_SO
+SO-5-6_4.55x3.7mm_P1.27mm
+SO, 5 Pin (https://toshiba.semicon-storage.com/us/semiconductor/design-development/package/detail.5pin%20SO6.html), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SO SO TLP2310 Toshiba
+0
+5
+5
 V2_Package_SON
 VSON-8-1_3x3mm_P0.65_EP1.65x2.4mm
 VSON, 3x3mm Body, 0.65mm Pitch
@@ -104635,6 +104971,13 @@ Zero
 0
 0
 0
+V2_Resistor_SMD
+R_0603
+Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
+resistor
+0
+2
+2
 V2_Sensor_Hall
 A31010SEHALT10
 A31010SEHALT-10

@@ -795,7 +795,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 124.46 109.22 0)
 			(effects
 				(font
@@ -861,7 +861,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 163.83 132.08 0)
 			(effects
 				(font
@@ -936,7 +936,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 124.46 90.17 0)
 			(effects
 				(font
@@ -1002,7 +1002,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 147.32 128.27 0)
 			(effects
 				(font
@@ -1068,7 +1068,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 139.7 132.08 0)
 			(effects
 				(font
@@ -1144,7 +1144,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 147.32 114.3 0)
 			(effects
 				(font
@@ -1211,7 +1211,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 124.46 133.35 0)
 			(effects
 				(font
@@ -1277,7 +1277,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 116.84 76.2 0)
 			(effects
 				(font
@@ -1352,7 +1352,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 139.7 76.2 0)
 			(effects
 				(font
@@ -1427,7 +1427,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 116.84 132.08 0)
 			(effects
 				(font
@@ -1502,7 +1502,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 186.69 93.98 0)
 			(effects
 				(font
@@ -1577,7 +1577,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 194.31 109.22 0)
 			(effects
 				(font
@@ -1644,7 +1644,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 194.31 95.25 0)
 			(effects
 				(font
@@ -1710,7 +1710,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 171.45 90.17 0)
 			(effects
 				(font
@@ -1777,7 +1777,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 124.46 114.3 0)
 			(effects
 				(font
@@ -1843,7 +1843,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 171.45 109.22 0)
 			(effects
 				(font
@@ -1909,7 +1909,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 124.46 128.27 0)
 			(effects
 				(font
@@ -1975,7 +1975,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 139.7 93.98 0)
 			(effects
 				(font
@@ -2050,7 +2050,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 147.32 90.17 0)
 			(effects
 				(font
@@ -2117,7 +2117,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 147.32 133.35 0)
 			(effects
 				(font
@@ -2184,7 +2184,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 124.46 77.47 0)
 			(effects
 				(font
@@ -2251,7 +2251,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 171.45 77.47 0)
 			(effects
 				(font
@@ -2317,7 +2317,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 186.69 113.03 0)
 			(effects
 				(font
@@ -2393,7 +2393,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 171.45 114.3 0)
 			(effects
 				(font
@@ -2460,7 +2460,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 124.46 95.25 0)
 			(effects
 				(font
@@ -2526,7 +2526,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 139.7 113.03 0)
 			(effects
 				(font
@@ -2601,7 +2601,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 171.45 72.39 0)
 			(effects
 				(font
@@ -2668,7 +2668,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 147.32 95.25 0)
 			(effects
 				(font
@@ -2734,7 +2734,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 194.31 90.17 0)
 			(effects
 				(font
@@ -2800,7 +2800,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 147.32 109.22 0)
 			(effects
 				(font
@@ -2866,7 +2866,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 163.83 113.03 0)
 			(effects
 				(font
@@ -2942,7 +2942,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 171.45 133.35 0)
 			(effects
 				(font
@@ -3008,7 +3008,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 171.45 128.27 0)
 			(effects
 				(font
@@ -3074,7 +3074,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 116.84 93.98 0)
 			(effects
 				(font
@@ -3150,7 +3150,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 171.45 95.25 0)
 			(effects
 				(font
@@ -3216,7 +3216,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 194.31 72.39 0)
 			(effects
 				(font
@@ -3282,7 +3282,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 147.32 72.39 0)
 			(effects
 				(font
@@ -3349,7 +3349,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 194.31 114.3 0)
 			(effects
 				(font
@@ -3415,7 +3415,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 163.83 93.98 0)
 			(effects
 				(font
@@ -3490,7 +3490,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 194.31 128.27 0)
 			(effects
 				(font
@@ -3556,7 +3556,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 186.69 132.08 0)
 			(effects
 				(font
@@ -3632,7 +3632,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 194.31 133.35 0)
 			(effects
 				(font
@@ -3698,7 +3698,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 163.83 76.2 0)
 			(effects
 				(font
@@ -3774,7 +3774,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 147.32 77.47 0)
 			(effects
 				(font
@@ -3840,7 +3840,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 186.69 76.2 0)
 			(effects
 				(font
@@ -3915,7 +3915,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 116.84 113.03 0)
 			(effects
 				(font
@@ -3991,7 +3991,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 194.31 77.47 0)
 			(effects
 				(font
@@ -4057,7 +4057,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 124.46 72.39 0)
 			(effects
 				(font

@@ -12,5 +12,4 @@
 
 ## Bill Of Materials
 
-[Interactive BOM](https://htmlpreview.github.io/?https://github.com/versioduo/dmx/main/hardware/dmx-bom.html)
-
+[Interactive BOM](https://versioduo.com/view?url=https://raw.githubusercontent.com/versioduo/dmx/refs/heads/main/hardware/dmx-bom.html)
