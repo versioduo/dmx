@@ -1,4 +1,4 @@
-26698467152376591
+26762584551341896
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -62874,6 +62874,83 @@ bmrx mchi
 2
 2
 Inductor_SMD
+L_Chilisin_BWVS00322515
+Inductor, Chilisin, BWVS00322515, 2.5x3.2x1.5mm, (https://www.chilisin.com/upload/media/product/power/file/BWVS_Series.pdf), generated with kicad-footprint-generator gen_inductor.py
+bwvs
+0
+2
+2
+Inductor_SMD
+L_Chilisin_BWVS00404012
+Inductor, Chilisin, BWVS00404012, 4.0x4.0x1.2mm, (https://www.chilisin.com/upload/media/product/power/file/BWVS_Series.pdf), generated with kicad-footprint-generator gen_inductor.py
+bwvs
+0
+2
+2
+Inductor_SMD
+L_Chilisin_BWVS00404018
+Inductor, Chilisin, BWVS00404018, 4.0x4.0x1.8mm, (https://www.chilisin.com/upload/media/product/power/file/BWVS_Series.pdf), generated with kicad-footprint-generator gen_inductor.py
+bwvs
+0
+2
+2
+Inductor_SMD
+L_Chilisin_BWVS00404026
+Inductor, Chilisin, BWVS00404026, 4.0x4.0x2.6mm, (https://www.chilisin.com/upload/media/product/power/file/BWVS_Series.pdf), generated with kicad-footprint-generator gen_inductor.py
+bwvs
+0
+2
+2
+Inductor_SMD
+L_Chilisin_BWVS00505020
+Inductor, Chilisin, BWVS00505020, 5.0x5.0x2.0mm, (https://www.chilisin.com/upload/media/product/power/file/BWVS_Series.pdf), generated with kicad-footprint-generator gen_inductor.py
+bwvs
+0
+2
+2
+Inductor_SMD
+L_Chilisin_BWVS00505030
+Inductor, Chilisin, BWVS00505030, 5.0x5.0x3.0mm, (https://www.chilisin.com/upload/media/product/power/file/BWVS_Series.pdf), generated with kicad-footprint-generator gen_inductor.py
+bwvs
+0
+2
+2
+Inductor_SMD
+L_Chilisin_BWVS00505040
+Inductor, Chilisin, BWVS00505040, 5.0x5.0x4.0mm, (https://www.chilisin.com/upload/media/product/power/file/BWVS_Series.pdf), generated with kicad-footprint-generator gen_inductor.py
+bwvs
+0
+2
+2
+Inductor_SMD
+L_Chilisin_BWVS00606020
+Inductor, Chilisin, BWVS00606020, 6.0x6.0x2.0mm, (https://www.chilisin.com/upload/media/product/power/file/BWVS_Series.pdf), generated with kicad-footprint-generator gen_inductor.py
+bwvs
+0
+2
+2
+Inductor_SMD
+L_Chilisin_BWVS00606028
+Inductor, Chilisin, BWVS00606028, 6.0x6.0x2.8mm, (https://www.chilisin.com/upload/media/product/power/file/BWVS_Series.pdf), generated with kicad-footprint-generator gen_inductor.py
+bwvs
+0
+2
+2
+Inductor_SMD
+L_Chilisin_BWVS00606045
+Inductor, Chilisin, BWVS00606045, 6.0x6.0x4.5mm, (https://www.chilisin.com/upload/media/product/power/file/BWVS_Series.pdf), generated with kicad-footprint-generator gen_inductor.py
+bwvs
+0
+2
+2
+Inductor_SMD
+L_Chilisin_BWVS00808040
+Inductor, Chilisin, BWVS00808040, 8.0x8.0x4.0mm, (https://www.chilisin.com/upload/media/product/power/file/BWVS_Series.pdf), generated with kicad-footprint-generator gen_inductor.py
+bwvs
+0
+2
+2
+Inductor_SMD
 L_Coilcraft_0403HQ_1008Metric
 Inductor, Coilcraft, 0403HQ_1008Metric, 1.19x0.86x0.71mm, (https://www.coilcraft.com/getmedia/69c5aa91-3ca0-4922-874d-581cd4e27e62/0403hq.pdf), generated with kicad-footprint-generator gen_inductor.py
 hq
@@ -63623,6 +63700,13 @@ L Coilcraft XxL4040
 2
 2
 Inductor_SMD
+L_CommonModeChoke_Bourns_SRF1260
+Bourns  common-mode choke, 4 Pin (https://www.bourns.com/docs/Product-Datasheets/SRF1260.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+Bourns common-mode choke NoLead
+0
+4
+4
+Inductor_SMD
 L_CommonModeChoke_Coilank_ACM1210
 Coilank  common-mode choke, 4 Pin (https://www.lcsc.com/datasheet/C49073870.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
 Coilank common-mode choke NoLead
@@ -64144,6 +64228,97 @@ Inductor_SMD
 L_Neosid_SMs95_SMs95p
 Neosid, Inductor, SMs95, Fixed inductor, SMD, magnetically shielded, https://neosid.de/import-data/product-pdf/neoFestind_SMs95SMs95p.pdf
 Neosid Inductor SMs95 Fixed inductor SMD magnetically shielded
+0
+2
+2
+Inductor_SMD
+L_Panasonic_PCC-M0530M
+Inductor, Panasonic, PCC-M0530M, 5.5x5.0x3.0mm, (https://industrial.panasonic.com/cdbs/www-data/pdf/AGL0000/AGL0000C59.pdf), generated with kicad-footprint-generator gen_inductor.py
+ferrite power automotive ETQPxM
+0
+2
+2
+Inductor_SMD
+L_Panasonic_PCC-M0540M
+Inductor, Panasonic, PCC-M0540M, 5.5x5.0x4.0mm, (https://industrial.panasonic.com/cdbs/www-data/pdf/AGL0000/AGL0000C59.pdf), generated with kicad-footprint-generator gen_inductor.py
+ferrite power automotive ETQPxM
+0
+2
+2
+Inductor_SMD
+L_Panasonic_PCC-M0630M
+Inductor, Panasonic, PCC-M0630M, 6.5x6.0x3.0mm, (https://industrial.panasonic.com/cdbs/www-data/pdf/AGL0000/AGL0000C59.pdf), generated with kicad-footprint-generator gen_inductor.py
+ferrite power automotive ETQPxM
+0
+2
+2
+Inductor_SMD
+L_Panasonic_PCC-M0645M
+Inductor, Panasonic, PCC-M0645M, 6.5x6.0x4.5mm, (https://industrial.panasonic.com/cdbs/www-data/pdf/AGL0000/AGL0000C59.pdf), generated with kicad-footprint-generator gen_inductor.py
+ferrite power automotive ETQPxM
+0
+2
+2
+Inductor_SMD
+L_Panasonic_PCC-M0750M
+Inductor, Panasonic, PCC-M0750M, 7.5x7.0x5.0mm, (https://industrial.panasonic.com/cdbs/www-data/pdf/AGL0000/AGL0000C59.pdf), generated with kicad-footprint-generator gen_inductor.py
+ferrite power automotive ETQPxM
+0
+2
+2
+Inductor_SMD
+L_Panasonic_PCC-M0754M
+Inductor, Panasonic, PCC-M0754M, 7.5x7.0x5.4mm, (https://industrial.panasonic.com/cdbs/www-data/pdf/AGL0000/AGL0000C59.pdf), generated with kicad-footprint-generator gen_inductor.py
+ferrite power automotive ETQPxM
+0
+2
+2
+Inductor_SMD
+L_Panasonic_PCC-M0850M
+Inductor, Panasonic, PCC-M0850M, 8.5x8.0x5.0mm, (https://industrial.panasonic.com/cdbs/www-data/pdf/AGL0000/AGL0000C59.pdf), generated with kicad-footprint-generator gen_inductor.py
+ferrite power automotive ETQPxM
+0
+2
+2
+Inductor_SMD
+L_Panasonic_PCC-M0854M
+Inductor, Panasonic, PCC-M0854M, 8.5x8.0x5.4mm, (https://industrial.panasonic.com/cdbs/www-data/pdf/AGL0000/AGL0000C59.pdf), generated with kicad-footprint-generator gen_inductor.py
+ferrite power automotive ETQPxM
+0
+2
+2
+Inductor_SMD
+L_Panasonic_PCC-M1040ML
+Inductor, Panasonic, PCC-M1040ML, 10.9x10.0x4.0mm, (https://industrial.panasonic.com/cdbs/www-data/pdf/AGL0000/AGL0000C59.pdf), generated with kicad-footprint-generator gen_inductor.py
+ferrite power automotive ETQPxM
+0
+2
+2
+Inductor_SMD
+L_Panasonic_PCC-M1050M
+Inductor, Panasonic, PCC-M1050M, 10.7x10.0x5.0mm, (https://industrial.panasonic.com/cdbs/www-data/pdf/AGL0000/AGL0000C59.pdf), generated with kicad-footprint-generator gen_inductor.py
+ferrite power automotive ETQPxM
+0
+2
+2
+Inductor_SMD
+L_Panasonic_PCC-M1050ML
+Inductor, Panasonic, PCC-M1050ML, 10.9x10.0x5.0mm, (https://industrial.panasonic.com/cdbs/www-data/pdf/AGL0000/AGL0000C59.pdf), generated with kicad-footprint-generator gen_inductor.py
+ferrite power automotive ETQPxM
+0
+2
+2
+Inductor_SMD
+L_Panasonic_PCC-M1054M
+Inductor, Panasonic, PCC-M1054M, 10.7x10.0x5.4mm, (https://industrial.panasonic.com/cdbs/www-data/pdf/AGL0000/AGL0000C59.pdf), generated with kicad-footprint-generator gen_inductor.py
+ferrite power automotive ETQPxM
+0
+2
+2
+Inductor_SMD
+L_Panasonic_PCC-M1060ML
+Inductor, Panasonic, PCC-M1060ML, 10.9x10.0x6.0mm, (https://industrial.panasonic.com/cdbs/www-data/pdf/AGL0000/AGL0000C59.pdf), generated with kicad-footprint-generator gen_inductor.py
+ferrite power automotive ETQPxM
 0
 2
 2
@@ -65627,224 +65802,224 @@ shielded Würth SMT
 Inductor_SMD
 L_Wuerth_LQFS-3818
 Inductor, Wuerth, LQFS-3818, 3.8x3.8x1.8mm, (https://www.we-online.com/components/products/datasheet/74406032010.pdf), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_LQFS-4818
 Inductor, Wuerth, LQFS-4818, 4.8x4.8x1.8mm, (https://www.we-online.com/components/products/datasheet/74406042010.pdf), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_LQFS-4828
 Inductor, Wuerth, LQFS-4828, 4.8x4.8x2.8mm, (https://www.we-online.com/components/products/datasheet/74406043012.pdf), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_MAPI-1610
 Inductor, Wuerth, MAPI-1610, 1.6x1.6x1.0mm, (https://www.we-online.com/en/components/products/WE-MAPI?kicad), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_MAPI-2010
 Inductor, Wuerth, MAPI-2010, 2.0x1.6x1.0mm, (https://www.we-online.com/en/components/products/WE-MAPI?kicad), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_MAPI-2506
 Inductor, Wuerth, MAPI-2506, 2.5x2.0x0.6mm, (https://www.we-online.com/en/components/products/WE-MAPI?kicad), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_MAPI-2508
 Inductor, Wuerth, MAPI-2508, 2.5x2.0x0.8mm, (https://www.we-online.com/en/components/products/WE-MAPI?kicad), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_MAPI-2510
 Inductor, Wuerth, MAPI-2510, 2.5x2.0x1.0mm, (https://www.we-online.com/en/components/products/WE-MAPI?kicad), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_MAPI-2512
 Inductor, Wuerth, MAPI-2512, 2.5x2.0x1.2mm, (https://www.we-online.com/en/components/products/WE-MAPI?kicad), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_MAPI-3010
 Inductor, Wuerth, MAPI-3010, 3.0x3.0x1.0mm, (https://www.we-online.com/en/components/products/WE-MAPI?kicad), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_MAPI-3012
 Inductor, Wuerth, MAPI-3012, 3.0x3.0x1.2mm, (https://www.we-online.com/en/components/products/WE-MAPI?kicad), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_MAPI-3015
 Inductor, Wuerth, MAPI-3015, 3.0x3.0x1.5mm, (https://www.we-online.com/en/components/products/WE-MAPI?kicad), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_MAPI-3020
 Inductor, Wuerth, MAPI-3020, 3.0x3.0x2.0mm, (https://www.we-online.com/en/components/products/WE-MAPI?kicad), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_MAPI-4020
 Inductor, Wuerth, MAPI-4020, 4.1x4.1x2.1mm, (https://www.we-online.com/en/components/products/WE-MAPI?kicad), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_MAPI-4030
 Inductor, Wuerth, MAPI-4030, 4.1x4.1x3.1mm, (https://www.we-online.com/en/components/products/WE-MAPI?kicad), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_MAPI-5020
 Inductor, Wuerth, MAPI-5020, 5.4x5.4x2.1mm, (https://www.we-online.com/en/components/products/WE-MAPI?kicad), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_MAPI-5030
 Inductor, Wuerth, MAPI-5030, 5.4x5.4x3.1mm, (https://www.we-online.com/en/components/products/WE-MAPI?kicad), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_PMCI-160808
 Inductor, Wuerth, PMCI-160808, 1.6x0.8x0.8mm, (https://www.we-online.com/en/components/products/WE-PMCI), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_PMCI-201210
 Inductor, Wuerth, PMCI-201210, 2.0x1.2x1.0mm, (https://www.we-online.com/en/components/products/WE-PMCI), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_PMCI-201610
 Inductor, Wuerth, PMCI-201610, 2.0x1.6x1.0mm, (https://www.we-online.com/en/components/products/WE-PMCI), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_PMCI-252010
 Inductor, Wuerth, PMCI-252010, 2.5x2.0x1.0mm, (https://www.we-online.com/en/components/products/WE-PMCI), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_PMCI-252012
 Inductor, Wuerth, PMCI-252012, 2.5x2.0x1.2mm, (https://www.we-online.com/en/components/products/WE-PMCI), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_PMCI-322510
 Inductor, Wuerth, PMCI-322510, 3.2x2.5x1.0mm, (https://www.we-online.com/en/components/products/WE-PMCI), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_PMCI-322512
 Inductor, Wuerth, PMCI-322512, 3.2x2.5x1.2mm, (https://www.we-online.com/en/components/products/WE-PMCI), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_PMCI-322515
 Inductor, Wuerth, PMCI-322515, 3.2x2.5x1.5mm, (https://www.we-online.com/en/components/products/WE-PMCI), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_PMFI-201610
 Inductor, Wuerth, PMFI-201610, 2.0x1.6x1.0mm, (https://www.we-online.com/components/products/datasheet/74479320165110.pdf), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_PMFI-201610_PMCI-compatible
 Inductor, Wuerth, PMFI-201610_PMCI-compatible, 2.0x1.6x1.0mm, (https://www.we-online.com/components/products/datasheet/74479320165110.pdf), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_PMFI-252012
 Inductor, Wuerth, PMFI-252012, 2.5x2.0x1.2mm, (https://www.we-online.com/components/products/datasheet/74479325207147.pdf), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_PMFI-252012_PMCI-compatible
 Inductor, Wuerth, PMFI-252012_PMCI-compatible, 2.5x2.0x1.2mm, (https://www.we-online.com/components/products/datasheet/74479325207147.pdf), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_PMFI-322512
 Inductor, Wuerth, PMFI-322512, 3.2x2.5x1.2mm, (https://www.we-online.com/components/products/datasheet/74479332257147.pdf), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_PMFI-322512_PMCI-compatible
 Inductor, Wuerth, PMFI-322512_PMCI-compatible, 3.2x2.5x1.2mm, (https://www.we-online.com/components/products/datasheet/74479332257147.pdf), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_PMFI-353220
 Inductor, Wuerth, PMFI-353220, 3.5x3.2x2.0mm, (https://www.we-online.com/components/products/datasheet/74479335329110.pdf), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
@@ -65956,14 +66131,14 @@ wurth wuerth smd inductor
 Inductor_SMD
 L_Wuerth_XHMI-6060
 Inductor, Wuerth, XHMI-6060, 6.65x6.45x5.8mm, (https://www.we-online.com/components/products/datasheet/74439346068.pdf), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
 Inductor_SMD
 L_Wuerth_XHMI-8080
 Inductor, Wuerth, XHMI-8080, 8.8x8.3x7.8mm, (https://www.we-online.com/components/products/datasheet/74439358068.pdf), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
+Würth SMT
 0
 2
 2
@@ -80465,6 +80640,27 @@ VQFN-HR NO LEAD
 10
 10
 Package_DFN_QFN
+Texas_RQM0029A_VQFN-29_4x4mm_P0.4mm
+Texas RQM0029A VQFN, 29 Pin, https://www.ti.com/lit/ml/mpqf573/mpqf573.pdf
+Texas-Instruments NoLead
+0
+29
+29
+Package_DFN_QFN
+Texas_RRW0024A_WQFN-24-1EP_3x3mm_P0.4mm_EP1.9x1.9mm
+Texas RRW0024A WQFN, 24 Pin (Texas RRW0024A, https://www.ti.com/lit/ml/mpqf657a/mpqf657a.pdf, https://www.ti.com/lit/ds/symlink/drv8311.pdf#page=91), generated with kicad-footprint-generator ipc_noLead_generator.py
+Texas WQFN NoLead
+0
+29
+25
+Package_DFN_QFN
+Texas_RRW0024A_WQFN-24-1EP_3x3mm_P0.4mm_EP1.9x1.9mm_ThermalVias
+Texas RRW0024A WQFN, 24 Pin (Texas RRW0024A, https://www.ti.com/lit/ml/mpqf657a/mpqf657a.pdf, https://www.ti.com/lit/ds/symlink/drv8311.pdf#page=91), generated with kicad-footprint-generator ipc_noLead_generator.py
+Texas WQFN NoLead
+0
+35
+25
+Package_DFN_QFN
 Texas_RSA_VQFN-16-1EP_4x4mm_P0.65mm_EP2.7x2.7mm
 Texas RSA VQFN, 16 Pin (http://www.ti.com/lit/ds/symlink/msp430g2001.pdf#page=44), generated with kicad-footprint-generator ipc_noLead_generator.py
 Texas VQFN NoLead
@@ -89062,15 +89258,8 @@ SC-59 hand-soldering
 3
 Package_TO_SOT_SMD
 SC-70-8
-SC70-8
-SC70-8
-0
-8
-8
-Package_TO_SOT_SMD
-SC-70-8_Handsoldering
-SC70-8, Handsoldering
-SC70-8 Handsoldering
+SOT, 8 Pin (JEDEC MO-203, variant BA, https://www.jedec.org/document_search?search_api_views_fulltext=MO-203, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-sc-70/sot_8_05-08-1639.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOT TO_SOT_SMD SC8
 0
 8
 8
@@ -89293,57 +89482,29 @@ CMS SOT
 8
 Package_TO_SOT_SMD
 SOT-323_SC-70
-SOT-323, SC-70
-SOT-323 SC-70
-0
-3
-3
-Package_TO_SOT_SMD
-SOT-323_SC-70_Handsoldering
-SOT-323, SC-70 Handsoldering
-SOT-323 SC-70 Handsoldering
+SOT, 3 Pin (https://home.jeita.or.jp/tsc/std-pdf/ED-7500A.pdf#page=148), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOT TO_SOT_SMD SC-70 SOT-323
 0
 3
 3
 Package_TO_SOT_SMD
 SOT-343_SC-70-4
-SOT-343, SC-70-4
-SOT-343 SC-70-4
-0
-4
-4
-Package_TO_SOT_SMD
-SOT-343_SC-70-4_Handsoldering
-SOT-343, SC-70-4, Handsoldering
-SOT-343 SC-70-4 Handsoldering
+SOT, 4 Pin (https://www.tme.eu/Document/ced3461ed31ea70a3c416fb648e0cde7/APE8865-3.pdf#page=9), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOT TO_SOT_SMD SOT-343 SC-70-4
 0
 4
 4
 Package_TO_SOT_SMD
 SOT-353_SC-70-5
-SOT-353, SC-70-5
-SOT-353 SC-70-5
-0
-5
-5
-Package_TO_SOT_SMD
-SOT-353_SC-70-5_Handsoldering
-SOT-353, SC-70-5, Handsoldering
-SOT-353 SC-70-5 Handsoldering
+SOT, 5 Pin (https://home.jeita.or.jp/tsc/std-pdf/ED-7500A.pdf#page=171, JEDEC MO-203, variant AA, https://www.jedec.org/document_search?search_api_views_fulltext=MO-203), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOT TO_SOT_SMD SC-88A SOT-353 SC-70-5
 0
 5
 5
 Package_TO_SOT_SMD
 SOT-363_SC-70-6
-SOT-363, SC-70-6, SC-88
-SOT-363 SC-70-6 SC-88
-0
-6
-6
-Package_TO_SOT_SMD
-SOT-363_SC-70-6_Handsoldering
-SOT-363, SC-70-6, SC-88, Handsoldering
-SOT-363 SC-70-6 SC-88 Handsoldering
+SOT, 6 Pin (https://home.jeita.or.jp/tsc/std-pdf/ED-7500A.pdf#page=170, JEDEC MO-203, variant AB, https://www.jedec.org/document_search?search_api_views_fulltext=MO-203), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOT TO_SOT_SMD SC-88 SOT-363 SC-70-6 US6 UMT6 S-Mini6 TSSOP6
 0
 6
 6
@@ -104418,6 +104579,13 @@ capacitor
 0
 2
 2
+V2_Capacitor_SMD
+C_0805
+Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator
+capacitor
+0
+2
+2
 V2_Connector_Audio
 CUI_SJ2-25404B-SMT-TR
 
@@ -104578,6 +104746,13 @@ SMD Crystal FC-135 https://support.epson.biz/td/api/doc_check.php?dl=brief_FC-13
 SMD SMT Crystal
 0
 2
+2
+V2_Diode_SMD
+D_SOD-123HP
+
+
+0
+6
 2
 V2_Diode_SMD
 D_SOD-123W
@@ -104974,6 +105149,13 @@ Zero
 V2_Resistor_SMD
 R_0603
 Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
+resistor
+0
+2
+2
+V2_Resistor_SMD
+R_0805
+Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
 resistor
 0
 2

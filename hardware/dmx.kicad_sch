@@ -408,7 +408,7 @@
 				)
 			)
 			(property "Footprint" "V2_Connector_USB:JAE_DX07S016JA3"
-				(at 2.54 -30.48 0)
+				(at 0 -32.004 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -434,17 +434,8 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser" " 656-DX07S016JA3R1500"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Enable" "0"
-				(at 0 0 0)
+			(property "Mouser" "656-DX07S016JA3R1500"
+				(at 0 -35.306 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1134,8 +1125,8 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser" " 810-CGA3E2X7R1H104MA"
-				(at 0 -20.32 0)
+			(property "Mouser" "810-CGA3E2X7R1H104MA"
+				(at 0 -17.272 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1283,8 +1274,8 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser" " 810-C1608X6S1A106M"
-				(at 0 -20.574 0)
+			(property "Mouser" "810-C1608X6S1A106M"
+				(at 0 -17.018 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1432,8 +1423,8 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser" " 603-CC603JRNPO9BN180"
-				(at 0 -20.32 0)
+			(property "Mouser" "603-CC603JRNPO9BN180"
+				(at 0 -17.526 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1554,7 +1545,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "V2_Capacitor_SMD:C_0805"
+			(property "Footprint" "V2_Capacitor_SMD:C_0603"
 				(at 0 -17.018 0)
 				(effects
 					(font
@@ -1581,8 +1572,8 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser" " 810-C2012X5R1E106K"
-				(at -0.254 -20.32 0)
+			(property "Mouser" "810-C2012X5R1E106K"
+				(at 0 -18.034 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1728,8 +1719,8 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser" " 815-ABS0716632.768KT"
-				(at -0.254 -15.748 0)
+			(property "Mouser" "815-ABS0716632.768KT"
+				(at 0 -11.176 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1880,7 +1871,7 @@
 				)
 			)
 			(property "Description" "Light emitting diode, small symbol"
-				(at 0 -7.112 0)
+				(at 0 -8.128 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1897,8 +1888,8 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser" " 755-SML-D12M8WT86C"
-				(at -1.016 -12.7 0)
+			(property "Mouser" "755-SML-D12M8WT86C"
+				(at 0 -11.684 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2045,7 +2036,7 @@
 					)
 				)
 			)
-			(property "Value" "10k"
+			(property "Value" "100k"
 				(at 1.778 0 90)
 				(effects
 					(font
@@ -2080,8 +2071,8 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser" " 71-CRCW0603100KFKEAC"
-				(at 0 0 0)
+			(property "Mouser" "71-CRCW0603100KFKEAC"
+				(at 0 -15.494 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2214,8 +2205,8 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser" " 71-CRCW0603330RFKEAC"
-				(at 0 -19.05 0)
+			(property "Mouser" "71-CRCW0603330RFKEAC"
+				(at 0 -16.51 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2348,8 +2339,8 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser" " 71-CRCW06035K10FKEAC"
-				(at 0 -19.05 0)
+			(property "Mouser" "71-CRCW06035K10FKEAC"
+				(at 0 -16.256 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4496,17 +4487,16 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "SW"
-				(at 1.27 2.54 0)
+			(property "Reference" "SW102"
+				(at 0 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Value" "SKSG"
-				(at 0 -1.524 0)
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4514,7 +4504,7 @@
 				)
 			)
 			(property "Footprint" "V2_Button_Switch_SMD:SKSG"
-				(at 0 -8.89 0)
+				(at 0 -4.826 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4540,8 +4530,8 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser" " 688-SKSGACE010"
-				(at 0 -11.938 0)
+			(property "Mouser" "688-SKSGACE010"
+				(at 0 -9.398 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -6605,7 +6595,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" " 71-CRCW06035K10FKEAC"
+		(property "Mouser" "71-CRCW06035K10FKEAC"
 			(at 234.95 96.52 0)
 			(effects
 				(font
@@ -6684,7 +6674,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" " 810-CGA3E2X7R1H104MA"
+		(property "Mouser" "810-CGA3E2X7R1H104MA"
 			(at 115.57 44.45 0)
 			(effects
 				(font
@@ -6777,16 +6767,16 @@
 	)
 	(symbol
 		(lib_id "V2_Artwork:Arrow_Out")
-		(at 257.81 153.67 0)
+		(at 250.19 154.94 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0483c709-919b-46b7-945c-b3cbbee5652a")
 		(property "Reference" "ICON101"
-			(at 261.62 153.6699 0)
+			(at 254 154.9399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6795,7 +6785,7 @@
 			)
 		)
 		(property "Value" "Arrow_Out"
-			(at 255.27 158.75 0)
+			(at 247.65 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6805,7 +6795,7 @@
 			)
 		)
 		(property "Footprint" "V2_Artwork:Arrow_Out"
-			(at 257.81 161.29 0)
+			(at 250.19 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6814,7 +6804,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 257.81 153.67 0)
+			(at 250.19 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6823,7 +6813,16 @@
 			)
 		)
 		(property "Description" ""
-			(at 257.81 153.67 0)
+			(at 250.19 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
+			(at 250.19 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7012,7 +7011,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "USB-Shield"
+		(property "Value" "Earth"
 			(at 266.192 78.74 90)
 			(effects
 				(font
@@ -7076,7 +7075,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "SKSG"
 			(at 254 22.86 0)
 			(effects
 				(font
@@ -7111,7 +7110,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" " 688-SKSGACE010"
+		(property "Mouser" "688-SKSGACE010"
 			(at 254 41.148 0)
 			(effects
 				(font
@@ -7630,7 +7629,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" " 755-SML-D12M8WT86C"
+		(property "Mouser" "755-SML-D12M8WT86C"
 			(at 130.556 45.72 0)
 			(effects
 				(font
@@ -7798,15 +7797,15 @@
 	)
 	(symbol
 		(lib_id "V2_Mechanical:MountingHole_2mm")
-		(at 227.33 153.67 0)
+		(at 219.71 154.94 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "222c737c-cb0c-4293-9fc2-0cc6cc7a6e02")
 		(property "Reference" "H101"
-			(at 233.172 152.4 0)
+			(at 225.552 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7814,7 +7813,7 @@
 			)
 		)
 		(property "Value" "MountingHole_2mm"
-			(at 239.776 154.94 0)
+			(at 232.156 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7822,7 +7821,7 @@
 			)
 		)
 		(property "Footprint" "V2_Mechanical:MountingHole_2mm"
-			(at 227.33 158.75 0)
+			(at 219.71 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7831,7 +7830,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 227.33 153.67 0)
+			(at 219.71 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7840,7 +7839,16 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 227.33 153.67 0)
+			(at 219.71 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
+			(at 219.71 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7875,7 +7883,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "USB-Shield"
+		(property "Value" "Earth"
 			(at 181.61 131.826 0)
 			(effects
 				(font
@@ -7924,15 +7932,15 @@
 	)
 	(symbol
 		(lib_id "V2_Mechanical:MountingHole_2mm")
-		(at 227.33 160.02 0)
+		(at 219.71 161.29 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "2875c914-6606-432e-8aee-c3eeef169a26")
 		(property "Reference" "H102"
-			(at 233.172 158.75 0)
+			(at 225.552 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7940,7 +7948,7 @@
 			)
 		)
 		(property "Value" "MountingHole_2mm"
-			(at 239.776 161.29 0)
+			(at 232.156 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7948,7 +7956,7 @@
 			)
 		)
 		(property "Footprint" "V2_Mechanical:MountingHole_2mm"
-			(at 227.33 165.1 0)
+			(at 219.71 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7957,7 +7965,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 227.33 160.02 0)
+			(at 219.71 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7966,7 +7974,16 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 227.33 160.02 0)
+			(at 219.71 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
+			(at 219.71 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7985,15 +8002,15 @@
 	)
 	(symbol
 		(lib_id "V2_PCB_Devices:Button-bottom")
-		(at 208.28 161.29 0)
+		(at 200.66 162.56 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "2ea90a9c-c79e-495b-b221-c6ea8643fdb4")
 		(property "Reference" "SWB101"
-			(at 203.835 153.67 0)
+			(at 196.215 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8002,7 +8019,7 @@
 			)
 		)
 		(property "Value" "Button-bottom"
-			(at 203.835 156.845 0)
+			(at 196.215 158.115 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8011,7 +8028,7 @@
 			)
 		)
 		(property "Footprint" "V2_PCB_Devices:PCB_Button-bottom"
-			(at 213.36 168.91 0)
+			(at 205.74 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8020,7 +8037,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 208.28 161.29 0)
+			(at 200.66 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8029,7 +8046,16 @@
 			)
 		)
 		(property "Description" ""
-			(at 208.28 161.29 0)
+			(at 200.66 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
+			(at 200.66 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8139,7 +8165,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "V2_Capacitor_SMD:C_0805"
+		(property "Footprint" "V2_Capacitor_SMD:C_0603"
 			(at 205.74 58.928 0)
 			(effects
 				(font
@@ -8166,7 +8192,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" " 810-C2012X5R1E106K"
+		(property "Mouser" "810-C2012X5R1E106K"
 			(at 205.486 62.23 0)
 			(effects
 				(font
@@ -8458,7 +8484,7 @@
 		(lib_id "V2_Cortex_Debug:Cortex_Debug")
 		(at 128.27 97.79 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -8472,7 +8498,7 @@
 				)
 			)
 		)
-		(property "Value" "CORTEX-DEBUG"
+		(property "Value" "Cortex_Debug"
 			(at 129.54 87.63 0)
 			(effects
 				(font
@@ -8499,6 +8525,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 128.27 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 128.27 97.79 0)
 			(effects
 				(font
@@ -9013,15 +9048,15 @@
 	)
 	(symbol
 		(lib_id "V2_Mechanical:MountingHole_2mm")
-		(at 227.33 166.37 0)
+		(at 219.71 167.64 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "6cd046e4-3a13-4326-82b8-f9205dfbba3d")
 		(property "Reference" "H103"
-			(at 233.172 165.1 0)
+			(at 225.552 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9029,7 +9064,7 @@
 			)
 		)
 		(property "Value" "MountingHole_2mm"
-			(at 239.776 167.64 0)
+			(at 232.156 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9037,7 +9072,7 @@
 			)
 		)
 		(property "Footprint" "V2_Mechanical:MountingHole_2mm"
-			(at 227.33 171.45 0)
+			(at 219.71 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9046,7 +9081,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 227.33 166.37 0)
+			(at 219.71 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9055,7 +9090,16 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 227.33 166.37 0)
+			(at 219.71 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
+			(at 219.71 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9211,7 +9255,7 @@
 		(lib_id "V2_Production:Order_Number")
 		(at 181.61 191.77 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -9224,7 +9268,7 @@
 				)
 			)
 		)
-		(property "Value" "ORDER-NUMBER"
+		(property "Value" "Order_Number"
 			(at 181.61 194.31 0)
 			(effects
 				(font
@@ -9252,6 +9296,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 181.61 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 181.61 191.77 0)
 			(effects
 				(font
@@ -9338,15 +9391,15 @@
 	)
 	(symbol
 		(lib_id "V2_Mechanical:MountingHole_2mm")
-		(at 227.33 172.72 0)
+		(at 219.71 173.99 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "8449623a-7a38-486c-8453-2ff54b300ce2")
 		(property "Reference" "H104"
-			(at 233.172 171.45 0)
+			(at 225.552 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9354,7 +9407,7 @@
 			)
 		)
 		(property "Value" "MountingHole_2mm"
-			(at 239.776 173.99 0)
+			(at 232.156 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9362,7 +9415,7 @@
 			)
 		)
 		(property "Footprint" "V2_Mechanical:MountingHole_2mm"
-			(at 227.33 177.8 0)
+			(at 219.71 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9371,7 +9424,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 227.33 172.72 0)
+			(at 219.71 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9380,7 +9433,16 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 227.33 172.72 0)
+			(at 219.71 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
+			(at 219.71 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9424,7 +9486,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "V2_Capacitor_SMD:C_0805"
+		(property "Footprint" "V2_Capacitor_SMD:C_0603"
 			(at 180.34 58.928 0)
 			(effects
 				(font
@@ -9451,7 +9513,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" " 810-C2012X5R1E106K"
+		(property "Mouser" "810-C2012X5R1E106K"
 			(at 180.086 62.23 0)
 			(effects
 				(font
@@ -9477,15 +9539,15 @@
 	)
 	(symbol
 		(lib_id "V2_Production:Layer_Numbers")
-		(at 209.55 175.26 0)
+		(at 201.93 176.53 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "876d56f7-a978-4186-816c-574fe505860f")
 		(property "Reference" "INFO101"
-			(at 204.2419 168.9456 0)
+			(at 196.6219 170.2156 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9494,7 +9556,7 @@
 			)
 		)
 		(property "Value" "Layer_Numbers"
-			(at 211.4884 171.7885 0)
+			(at 203.8684 173.0585 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9502,7 +9564,7 @@
 			)
 		)
 		(property "Footprint" "V2_Production:Layer_Numbers"
-			(at 209.55 181.61 0)
+			(at 201.93 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9511,7 +9573,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 209.55 177.8 0)
+			(at 201.93 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9520,7 +9582,16 @@
 			)
 		)
 		(property "Description" ""
-			(at 209.55 175.26 0)
+			(at 201.93 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
+			(at 201.93 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9589,7 +9660,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" " 815-ABS0716632.768KT"
+		(property "Mouser" "815-ABS0716632.768KT"
 			(at 34.036 58.928 0)
 			(effects
 				(font
@@ -9668,7 +9739,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" " 603-CC603JRNPO9BN180"
+		(property "Mouser" "603-CC603JRNPO9BN180"
 			(at 36.83 67.31 0)
 			(effects
 				(font
@@ -9746,7 +9817,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" " 810-C1608X6S1A106M"
+		(property "Mouser" "810-C1608X6S1A106M"
 			(at 63.5 44.704 0)
 			(effects
 				(font
@@ -9905,15 +9976,15 @@
 	)
 	(symbol
 		(lib_id "V2_Mechanical:Fiducial_Paste")
-		(at 276.86 153.67 0)
+		(at 269.24 154.94 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "977377c2-2f87-473b-87b3-55cb2215e7cb")
 		(property "Reference" "FID101"
-			(at 274.32 147.32 0)
+			(at 266.7 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9921,8 +9992,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Fiducial"
-			(at 274.32 149.86 0)
+		(property "Value" "Fiducial_Paste"
+			(at 266.7 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9931,7 +10002,7 @@
 			)
 		)
 		(property "Footprint" "V2_Fiducial:Fiducial_0.5mm_Mask1mm_Paste"
-			(at 276.86 158.75 0)
+			(at 269.24 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9940,7 +10011,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 276.86 153.67 0)
+			(at 269.24 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9949,7 +10020,16 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 276.86 153.67 0)
+			(at 269.24 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
+			(at 269.24 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10020,7 +10100,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" " 603-CC603JRNPO9BN180"
+		(property "Mouser" "603-CC603JRNPO9BN180"
 			(at 31.75 67.31 0)
 			(effects
 				(font
@@ -10048,7 +10128,7 @@
 		(lib_id "V2_Artwork:Board_dmx")
 		(at 180.34 177.8 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -10090,6 +10170,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 180.34 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 180.34 177.8 0)
 			(effects
 				(font
@@ -10362,7 +10451,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" " 71-CRCW0603330RFKEAC"
+		(property "Mouser" "71-CRCW0603330RFKEAC"
 			(at 157.48 58.42 0)
 			(effects
 				(font
@@ -10509,7 +10598,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" " 810-CGA3E2X7R1H104MA"
+		(property "Mouser" "810-CGA3E2X7R1H104MA"
 			(at 105.41 44.45 0)
 			(effects
 				(font
@@ -10654,7 +10743,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" " 810-CGA3E2X7R1H104MA"
+		(property "Mouser" "810-CGA3E2X7R1H104MA"
 			(at 85.09 44.45 0)
 			(effects
 				(font
@@ -10680,16 +10769,16 @@
 	)
 	(symbol
 		(lib_id "V2_Artwork:Arrow_In")
-		(at 257.81 160.02 0)
+		(at 250.19 161.29 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d4a1ac1c-6c4a-46e8-bde6-5057d520f846")
 		(property "Reference" "ICON103"
-			(at 260.35 160.0199 0)
+			(at 252.73 161.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10698,7 +10787,7 @@
 			)
 		)
 		(property "Value" "Arrow_In"
-			(at 255.27 165.1 0)
+			(at 247.65 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10708,7 +10797,7 @@
 			)
 		)
 		(property "Footprint" "V2_Artwork:Arrow_In"
-			(at 257.81 167.64 0)
+			(at 250.19 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10717,7 +10806,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 257.81 160.02 0)
+			(at 250.19 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10726,7 +10815,16 @@
 			)
 		)
 		(property "Description" ""
-			(at 257.81 160.02 0)
+			(at 250.19 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
+			(at 250.19 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10812,15 +10910,15 @@
 	)
 	(symbol
 		(lib_id "V2_Mechanical:Fiducial_Paste")
-		(at 276.86 166.37 0)
+		(at 269.24 167.64 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "d70eefe3-c463-42c7-ad37-0fcb53cb0f3d")
 		(property "Reference" "FID102"
-			(at 274.32 160.02 0)
+			(at 266.7 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10828,8 +10926,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Fiducial"
-			(at 278.13 162.56 0)
+		(property "Value" "Fiducial_Paste"
+			(at 273.558 164.084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10837,7 +10935,7 @@
 			)
 		)
 		(property "Footprint" "V2_Fiducial:Fiducial_0.5mm_Mask1mm_Paste"
-			(at 276.86 171.45 0)
+			(at 269.24 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10846,7 +10944,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 276.86 166.37 0)
+			(at 269.24 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10855,7 +10953,16 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 276.86 166.37 0)
+			(at 269.24 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
+			(at 269.24 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10926,7 +11033,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" " 71-CRCW06035K10FKEAC"
+		(property "Mouser" "71-CRCW06035K10FKEAC"
 			(at 234.95 99.06 0)
 			(effects
 				(font
@@ -10968,7 +11075,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "SKSG"
 			(at 129.54 71.12 0)
 			(effects
 				(font
@@ -11003,7 +11110,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" " 688-SKSGACE010"
+		(property "Mouser" "688-SKSGACE010"
 			(at 129.54 88.138 0)
 			(effects
 				(font
@@ -11031,7 +11138,7 @@
 		(lib_id "V2_Connector_USB:JAE_DX07S016JA3")
 		(at 189.23 106.68 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -11044,7 +11151,7 @@
 				)
 			)
 		)
-		(property "Value" "JAE_DX07S016JA3"
+		(property "Value" "DX07S016JA3"
 			(at 179.07 86.36 0)
 			(effects
 				(font
@@ -11080,7 +11187,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" " 656-DX07S016JA3R1500"
+		(property "Mouser" "656-DX07S016JA3R1500"
 			(at 189.23 106.68 0)
 			(effects
 				(font
@@ -11254,7 +11361,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" " 810-CGA3E2X7R1H104MA"
+		(property "Mouser" "810-CGA3E2X7R1H104MA"
 			(at 95.25 44.45 0)
 			(effects
 				(font
@@ -11345,15 +11452,15 @@
 	)
 	(symbol
 		(lib_id "V2_Mechanical:Fiducial_Paste")
-		(at 276.86 179.07 0)
+		(at 269.24 180.34 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "f3ebfb05-17be-488d-b5c3-e4a62e3009d2")
 		(property "Reference" "FID103"
-			(at 274.32 172.72 0)
+			(at 266.7 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11361,8 +11468,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Fiducial"
-			(at 274.32 175.26 0)
+		(property "Value" "Fiducial_Paste"
+			(at 266.7 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11371,7 +11478,7 @@
 			)
 		)
 		(property "Footprint" "V2_Fiducial:Fiducial_0.5mm_Mask1mm_Paste"
-			(at 276.86 184.15 0)
+			(at 269.24 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11380,7 +11487,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 276.86 179.07 0)
+			(at 269.24 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11389,7 +11496,16 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 276.86 179.07 0)
+			(at 269.24 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
+			(at 269.24 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11683,7 +11799,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" " 71-CRCW0603100KFKEAC"
+		(property "Mouser" "71-CRCW0603100KFKEAC"
 			(at 57.15 121.92 0)
 			(effects
 				(font
@@ -11711,7 +11827,7 @@
 		(lib_id "V2_Artwork:V2-logo")
 		(at 181.61 160.02 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -11753,6 +11869,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 181.61 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 181.61 160.02 0)
 			(effects
 				(font

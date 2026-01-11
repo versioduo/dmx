@@ -697,7 +697,7 @@
           "show": false
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Mouser",
           "name": "Mouser",
           "show": true

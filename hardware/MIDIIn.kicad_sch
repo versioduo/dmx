@@ -477,8 +477,8 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser" " 810-CGA3E2X7R1H104MA"
-				(at 0 -20.32 0)
+			(property "Mouser" "810-CGA3E2X7R1H104MA"
+				(at 0 -17.272 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -624,8 +624,8 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser" " 71-CRCW0603220RFKEAH"
-				(at 0 -19.05 0)
+			(property "Mouser" "71-CRCW0603220RFKEAH"
+				(at 0 -15.748 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1966,7 +1966,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" " 810-CGA3E2X7R1H104MA"
+		(property "Mouser" "810-CGA3E2X7R1H104MA"
 			(at 161.29 97.79 0)
 			(effects
 				(font
@@ -2132,7 +2132,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" " 810-CGA3E2X7R1H104MA"
+		(property "Mouser" "810-CGA3E2X7R1H104MA"
 			(at 193.04 115.57 0)
 			(effects
 				(font
@@ -2351,7 +2351,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" " 71-CRCW0603220RFKEAH"
+		(property "Mouser" "71-CRCW0603220RFKEAH"
 			(at 175.26 107.95 0)
 			(effects
 				(font

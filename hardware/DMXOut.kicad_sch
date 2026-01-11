@@ -478,8 +478,8 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser" " 810-CGA3E2X7R1H104MA"
-				(at 0 -20.32 0)
+			(property "Mouser" "810-CGA3E2X7R1H104MA"
+				(at 0 -17.272 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1916,7 +1916,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" " 810-CGA3E2X7R1H104MA"
+		(property "Mouser" "810-CGA3E2X7R1H104MA"
 			(at 148.59 110.49 0)
 			(effects
 				(font
