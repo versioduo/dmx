@@ -1081,7 +1081,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "C"
-				(at 0.254 1.778 0)
+				(at 1.778 1.524 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1090,7 +1090,7 @@
 				)
 			)
 			(property "Value" "0u1"
-				(at 0.254 -2.032 0)
+				(at 1.778 -2.032 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1230,7 +1230,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "C"
-				(at 0.254 1.778 0)
+				(at 1.524 1.778 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1239,7 +1239,7 @@
 				)
 			)
 			(property "Value" "10u"
-				(at 0.254 -2.032 0)
+				(at 1.524 -2.032 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1379,7 +1379,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "C"
-				(at 0.254 1.778 0)
+				(at 1.524 1.778 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1388,7 +1388,7 @@
 				)
 			)
 			(property "Value" "18p"
-				(at 0.254 -2.032 0)
+				(at 1.524 -2.032 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1528,7 +1528,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "C"
-				(at 0.254 1.778 0)
+				(at 1.524 1.778 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1537,7 +1537,7 @@
 				)
 			)
 			(property "Value" "10u"
-				(at 0.254 -2.032 0)
+				(at 1.524 -2.032 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1574,6 +1574,17 @@
 			)
 			(property "Mouser" "810-C2012X5R1E106K"
 				(at 0 -18.034 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Rating" "25V"
+				(at 0 -21.844 0)
+				(show_name)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1844,12 +1855,11 @@
 				)
 			)
 			(property "Value" "Orange"
-				(at -4.445 -2.54 0)
+				(at 0 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" "V2_LED:LED_0603"
@@ -2029,7 +2039,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "R"
-				(at 0 0 90)
+				(at 2.032 1.27 0)
 				(effects
 					(font
 						(size 1.016 1.016)
@@ -2037,7 +2047,7 @@
 				)
 			)
 			(property "Value" "100k"
-				(at 1.778 0 90)
+				(at 3.81 -1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2163,7 +2173,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "R"
-				(at 0 0 90)
+				(at 2.032 1.27 0)
 				(effects
 					(font
 						(size 1.016 1.016)
@@ -2171,7 +2181,7 @@
 				)
 			)
 			(property "Value" "330R"
-				(at 1.778 0 90)
+				(at 4.064 -1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2297,7 +2307,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "R"
-				(at 0 0 90)
+				(at 2.032 1.27 0)
 				(effects
 					(font
 						(size 1.016 1.016)
@@ -2305,7 +2315,7 @@
 				)
 			)
 			(property "Value" "5k1"
-				(at 1.778 0 90)
+				(at 3.302 -1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3811,7 +3821,7 @@
 			(in_bom no)
 			(on_board yes)
 			(property "Reference" "FID"
-				(at 0 5.08 0)
+				(at 5.08 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3819,15 +3829,16 @@
 				)
 			)
 			(property "Value" "Fiducial_Paste"
-				(at 0 3.175 0)
+				(at 0.254 -4.318 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(hide yes)
 				)
 			)
 			(property "Footprint" "V2_Fiducial:Fiducial_0.5mm_Mask1mm_Paste"
-				(at 0 -5.08 0)
+				(at 0 -11.43 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3845,16 +3856,7 @@
 				)
 			)
 			(property "Description" "Fiducial Marker"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Enable" "0"
-				(at 0 0 0)
+				(at 0 -7.874 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4089,6 +4091,7 @@
 					(font
 						(size 1.27 1.27)
 					)
+					(hide yes)
 				)
 			)
 			(property "Footprint" "V2_Production:Layer_Numbers"
@@ -4110,15 +4113,6 @@
 				)
 			)
 			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Enable" "0"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4192,15 +4186,6 @@
 				)
 			)
 			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Enable" "0"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4634,7 +4619,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+3V3"
+		(symbol "V2_power:+3V3"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -4647,7 +4632,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
+				(at 0 -12.192 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4656,7 +4641,7 @@
 				)
 			)
 			(property "Value" "+3V3"
-				(at 0 3.556 0)
+				(at 0 4.064 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4682,7 +4667,7 @@
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"+3V3\""
-				(at 0 0 0)
+				(at 0 -14.986 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4759,7 +4744,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+5V"
+		(symbol "V2_power:+5V"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -4772,7 +4757,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
+				(at 0 -11.43 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4781,7 +4766,7 @@
 				)
 			)
 			(property "Value" "+5V"
-				(at 0 3.556 0)
+				(at 0 4.064 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4807,7 +4792,7 @@
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"+5V\""
-				(at 0 0 0)
+				(at 0 -14.478 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4884,7 +4869,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:Earth"
+		(symbol "V2_power:GND"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -4897,144 +4882,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "Earth"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"Earth\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global ground gnd"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Earth_0_1"
-				(polyline
-					(pts
-						(xy -0.635 -1.905) (xy 0.635 -1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.127 -2.54) (xy 0.127 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Earth_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:GND"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
+				(at 0 -7.112 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5043,11 +4891,12 @@
 				)
 			)
 			(property "Value" "GND"
-				(at 0 -3.81 0)
+				(at 0 -4.064 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(hide yes)
 				)
 			)
 			(property "Footprint" ""
@@ -5069,7 +4918,7 @@
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
+				(at -0.254 -10.414 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5122,7 +4971,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:PWR_FLAG"
+		(symbol "V2_power:PWR_FLAG"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -5135,7 +4984,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "#FLG"
-				(at 0 1.905 0)
+				(at 0 -13.97 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5144,7 +4993,7 @@
 				)
 			)
 			(property "Value" "PWR_FLAG"
-				(at 0 3.81 0)
+				(at 0 4.572 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5160,7 +5009,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -5170,7 +5019,7 @@
 				)
 			)
 			(property "Description" "Special symbol for telling ERC where power comes from"
-				(at 0 0 0)
+				(at 0 -17.272 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5218,6 +5067,143 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "V2_power:Shield"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "Shield"
+				(at 0 -4.572 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"Earth\""
+				(at 0 -10.922 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global ground gnd"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Shield_0_1"
+				(polyline
+					(pts
+						(xy -0.635 -1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.127 -2.54) (xy 0.127 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Shield_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 			)
@@ -5275,7 +5261,7 @@
 	)
 	(text "Revision 2"
 		(exclude_from_sim no)
-		(at 102.0585 43.5001 0)
+		(at 98.552 44.196 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5933,7 +5919,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 53.34) (xy 59.69 53.34)
+			(xy 44.45 53.34) (xy 59.69 53.34)
 		)
 		(stroke
 			(width 0)
@@ -6492,7 +6478,7 @@
 		(uuid "dc849fc9-8148-422b-a80d-70977ff45bb2")
 	)
 	(label "MIDI-In"
-		(at 39.37 53.34 0)
+		(at 44.45 53.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6699,7 +6685,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "V2_power:GND")
 		(at 270.51 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6717,12 +6703,11 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 273.05 66.0399 0)
+			(at 270.51 65.024 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -6745,7 +6730,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 270.51 60.96 0)
+			(at 270.256 71.374 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6769,7 +6754,7 @@
 		(lib_id "V2_Artwork:Arrow_Out")
 		(at 250.19 154.94 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -6813,15 +6798,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 250.19 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 250.19 154.94 0)
 			(effects
 				(font
@@ -6928,7 +6904,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
+		(lib_id "V2_power:+3V3")
 		(at 205.74 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6946,12 +6922,11 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 203.2 34.29 0)
+			(at 205.74 35.306 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -6973,7 +6948,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 205.74 39.37 0)
+			(at 205.74 54.356 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6994,7 +6969,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
+		(lib_id "V2_power:Shield")
 		(at 255.27 78.74 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7011,8 +6986,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "Earth"
-			(at 266.192 78.74 90)
+		(property "Value" "Shield"
+			(at 262.382 78.486 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7028,7 +7003,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 255.27 78.74 0)
 			(effects
 				(font
@@ -7038,7 +7013,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 255.27 78.74 0)
+			(at 266.192 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7135,7 +7110,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "V2_power:GND")
 		(at 92.71 43.18 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7153,12 +7128,11 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 96.52 42.5449 90)
+			(at 96.774 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -7181,7 +7155,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 92.71 43.18 0)
+			(at 103.124 43.434 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7202,7 +7176,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "V2_power:GND")
 		(at 218.44 99.06 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7221,12 +7195,11 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 222.25 99.0599 90)
+			(at 222.504 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -7249,7 +7222,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 218.44 99.06 0)
+			(at 228.854 99.314 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7270,7 +7243,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "V2_power:GND")
 		(at 73.66 127 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7289,7 +7262,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 73.66 132.08 0)
+			(at 73.66 131.064 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7316,7 +7289,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 73.66 127 0)
+			(at 73.406 137.414 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7434,7 +7407,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "V2_power:GND")
 		(at 36.83 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7453,7 +7426,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 36.83 54.61 0)
+			(at 36.83 53.594 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7480,7 +7453,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 36.83 49.53 0)
+			(at 36.576 59.944 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7501,7 +7474,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "V2_power:+5V")
 		(at 261.62 105.41 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7520,7 +7493,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 264.795 105.4099 90)
+			(at 265.43 105.4099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7547,7 +7520,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 261.62 105.41 0)
+			(at 247.142 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7654,7 +7627,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "V2_power:GND")
 		(at 63.5 26.67 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7673,7 +7646,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 63.5 31.75 0)
+			(at 63.5 30.734 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7700,7 +7673,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 63.5 26.67 0)
+			(at 63.246 37.084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7799,7 +7772,7 @@
 		(lib_id "V2_Mechanical:MountingHole_2mm")
 		(at 219.71 154.94 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -7847,15 +7820,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 219.71 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "dmx"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
@@ -7866,7 +7830,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
+		(lib_id "V2_power:Shield")
 		(at 181.61 127 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7883,8 +7847,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "Earth"
-			(at 181.61 131.826 0)
+		(property "Value" "Shield"
+			(at 181.61 132.334 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7900,7 +7864,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 181.61 127 0)
 			(effects
 				(font
@@ -7910,7 +7874,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 181.61 127 0)
+			(at 181.61 137.922 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7934,7 +7898,7 @@
 		(lib_id "V2_Mechanical:MountingHole_2mm")
 		(at 219.71 161.29 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -7982,15 +7946,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 219.71 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "dmx"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
@@ -8004,7 +7959,7 @@
 		(lib_id "V2_PCB_Devices:Button-bottom")
 		(at 200.66 162.56 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -8054,15 +8009,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 200.66 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "dmx"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
@@ -8073,7 +8019,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
+		(lib_id "V2_power:PWR_FLAG")
 		(at 255.27 78.74 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8091,7 +8037,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 246.38 78.74 90)
+			(at 245.11 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8107,7 +8053,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 255.27 78.74 0)
 			(effects
 				(font
@@ -8117,7 +8063,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 255.27 78.74 0)
+			(at 272.542 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8201,6 +8147,15 @@
 				(hide yes)
 			)
 		)
+		(property "Rating" "25V"
+			(at 205.74 63.754 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ba4cc82d-3cca-4352-a8fc-32d199ee67cd")
 		)
@@ -8217,14 +8172,13 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
+		(lib_id "V2_power:+3V3")
 		(at 78.74 21.59 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "375306fb-e86f-46d7-9105-e1b818c84990")
 		(property "Reference" "#PWR0101"
 			(at 78.74 25.4 0)
@@ -8236,11 +8190,12 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 78.74 16.51 0)
+			(at 75.946 16.764 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -8262,7 +8217,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 78.74 21.59 0)
+			(at 78.74 36.576 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8283,7 +8238,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "V2_power:+5V")
 		(at 270.51 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8301,12 +8256,11 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 271.78 43.1799 0)
+			(at 270.51 44.196 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -8328,7 +8282,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 270.51 48.26 0)
+			(at 270.51 62.738 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8349,7 +8303,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
+		(lib_id "V2_power:PWR_FLAG")
 		(at 255.27 86.36 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8367,7 +8321,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 246.38 86.36 90)
+			(at 245.11 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8383,7 +8337,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 255.27 86.36 0)
 			(effects
 				(font
@@ -8393,7 +8347,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 255.27 86.36 0)
+			(at 272.542 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8414,14 +8368,13 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
+		(lib_id "V2_power:+3V3")
 		(at 54.61 121.92 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3d931ac1-f6a4-41af-9bb4-201685b566d8")
 		(property "Reference" "#PWR0128"
 			(at 58.42 121.92 0)
@@ -8433,12 +8386,11 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 50.8 121.9199 90)
+			(at 48.006 121.92 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -8460,7 +8412,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 54.61 121.92 0)
+			(at 69.596 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8484,7 +8436,7 @@
 		(lib_id "V2_Cortex_Debug:Cortex_Debug")
 		(at 128.27 97.79 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -8533,15 +8485,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 128.27 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "97f71070-b988-449e-91ef-0703ed194839")
 		)
@@ -8570,7 +8513,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "V2_power:GND")
 		(at 31.75 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8589,7 +8532,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 31.75 54.61 0)
+			(at 31.75 53.594 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8616,7 +8559,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 31.75 49.53 0)
+			(at 31.496 59.944 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8637,7 +8580,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "V2_power:GND")
 		(at 116.84 102.87 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8656,12 +8599,11 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 113.03 102.8699 90)
+			(at 112.776 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -8684,7 +8626,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 116.84 102.87 0)
+			(at 106.426 102.616 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8780,7 +8722,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "V2_power:GND")
 		(at 189.23 127 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8799,7 +8741,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 189.23 132.08 0)
+			(at 189.23 131.064 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8826,7 +8768,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 189.23 127 0)
+			(at 188.976 137.414 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8847,7 +8789,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "V2_power:+5V")
 		(at 180.34 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8865,7 +8807,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 180.34 34.29 0)
+			(at 180.34 35.306 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8891,7 +8833,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 180.34 39.37 0)
+			(at 180.34 53.848 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8912,7 +8854,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "V2_power:GND")
 		(at 218.44 96.52 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8931,12 +8873,11 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 222.25 96.5199 90)
+			(at 222.504 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -8959,7 +8900,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 218.44 96.52 0)
+			(at 228.854 96.774 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8980,14 +8921,13 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
+		(lib_id "V2_power:+3V3")
 		(at 59.69 48.26 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "69b3843b-e8b9-4f3c-a182-6bd9b57b7de7")
 		(property "Reference" "#PWR0110"
 			(at 63.5 48.26 0)
@@ -8999,12 +8939,11 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 55.88 48.2599 90)
+			(at 52.578 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -9026,7 +8965,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 59.69 48.26 0)
+			(at 74.676 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9050,7 +8989,7 @@
 		(lib_id "V2_Mechanical:MountingHole_2mm")
 		(at 219.71 167.64 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -9098,15 +9037,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 219.71 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "dmx"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
@@ -9117,7 +9047,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "V2_power:GND")
 		(at 85.09 26.67 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9136,7 +9066,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 85.09 31.75 0)
+			(at 85.09 30.734 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9163,7 +9093,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 85.09 26.67 0)
+			(at 84.836 37.084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9184,7 +9114,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "V2_power:GND")
 		(at 248.92 29.21 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9203,12 +9133,11 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 245.11 29.2099 90)
+			(at 244.856 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -9231,7 +9160,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 248.92 29.21 0)
+			(at 238.506 28.956 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9304,15 +9233,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 181.61 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "dmx"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
@@ -9323,7 +9243,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
+		(lib_id "V2_power:+3V3")
 		(at 116.84 92.71 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9342,12 +9262,11 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 113.03 92.7099 90)
+			(at 115.57 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -9369,7 +9288,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 116.84 92.71 0)
+			(at 131.826 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9393,7 +9312,7 @@
 		(lib_id "V2_Mechanical:MountingHole_2mm")
 		(at 219.71 173.99 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -9433,15 +9352,6 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 219.71 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 219.71 173.99 0)
 			(effects
 				(font
@@ -9522,6 +9432,15 @@
 				(hide yes)
 			)
 		)
+		(property "Rating" "25V"
+			(at 180.34 63.754 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c3ec50a0-04df-40be-aae7-9d7b417025de")
 		)
@@ -9547,7 +9466,7 @@
 		(dnp no)
 		(uuid "876d56f7-a978-4186-816c-574fe505860f")
 		(property "Reference" "INFO101"
-			(at 196.6219 170.2156 0)
+			(at 197.358 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9561,6 +9480,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "V2_Production:Layer_Numbers"
@@ -9582,15 +9502,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 201.93 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 201.93 176.53 0)
 			(effects
 				(font
@@ -9842,7 +9753,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "V2_power:+5V")
 		(at 201.93 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9861,11 +9772,12 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 201.93 81.28 0)
+			(at 204.47 85.0899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -9887,7 +9799,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 201.93 86.36 0)
+			(at 201.93 100.838 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9908,7 +9820,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "V2_power:GND")
 		(at 180.34 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9927,7 +9839,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 180.34 49.53 0)
+			(at 180.34 48.514 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9954,7 +9866,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 180.34 44.45 0)
+			(at 180.086 54.864 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9976,7 +9888,7 @@
 	)
 	(symbol
 		(lib_id "V2_Mechanical:Fiducial_Paste")
-		(at 269.24 154.94 0)
+		(at 270.51 152.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -9984,7 +9896,7 @@
 		(dnp no)
 		(uuid "977377c2-2f87-473b-87b3-55cb2215e7cb")
 		(property "Reference" "FID101"
-			(at 266.7 148.59 0)
+			(at 274.574 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9993,16 +9905,17 @@
 			)
 		)
 		(property "Value" "Fiducial_Paste"
-			(at 266.7 151.13 0)
+			(at 267.97 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "V2_Fiducial:Fiducial_0.5mm_Mask1mm_Paste"
-			(at 269.24 160.02 0)
+			(at 270.51 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10011,7 +9924,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 269.24 154.94 0)
+			(at 270.51 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10020,16 +9933,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 269.24 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
-			(at 269.24 154.94 0)
+			(at 270.51 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10128,13 +10032,13 @@
 		(lib_id "V2_Artwork:Board_dmx")
 		(at 180.34 177.8 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "a71861bf-0700-4a76-858e-75883db1d878")
 		(property "Reference" "ICON104"
-			(at 177.3864 171.283 0)
+			(at 176.276 173.482 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10149,6 +10053,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "V2_Artwork:Board_dmx_Small"
@@ -10178,15 +10083,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 180.34 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "dmx"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
@@ -10197,7 +10093,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "V2_power:GND")
 		(at 193.04 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10216,7 +10112,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 193.04 54.61 0)
+			(at 193.04 53.594 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10243,7 +10139,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 193.04 49.53 0)
+			(at 192.786 59.944 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10264,7 +10160,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "V2_power:+5V")
 		(at 255.27 82.55 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10310,7 +10206,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 255.27 82.55 0)
+			(at 240.792 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10331,7 +10227,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "V2_power:GND")
 		(at 140.97 58.42 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10350,12 +10246,11 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 144.78 58.4199 90)
+			(at 145.034 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -10378,7 +10273,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 140.97 58.42 0)
+			(at 151.384 58.674 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10476,7 +10371,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "V2_power:GND")
 		(at 261.62 107.95 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10495,12 +10390,11 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 264.795 107.9499 90)
+			(at 265.684 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -10523,7 +10417,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 261.62 107.95 0)
+			(at 272.034 108.204 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10623,7 +10517,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "V2_power:GND")
 		(at 205.74 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10642,7 +10536,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 205.74 49.53 0)
+			(at 205.74 48.514 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10669,7 +10563,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 205.74 44.45 0)
+			(at 205.486 54.864 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10771,7 +10665,7 @@
 		(lib_id "V2_Artwork:Arrow_In")
 		(at 250.19 161.29 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -10823,15 +10717,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 250.19 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "dmx"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
@@ -10842,7 +10727,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "V2_power:GND")
 		(at 255.27 86.36 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10861,7 +10746,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 260.35 86.36 0)
+			(at 259.334 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10888,7 +10773,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 255.27 86.36 0)
+			(at 265.684 86.614 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10910,7 +10795,7 @@
 	)
 	(symbol
 		(lib_id "V2_Mechanical:Fiducial_Paste")
-		(at 269.24 167.64 0)
+		(at 270.51 158.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -10918,7 +10803,7 @@
 		(dnp no)
 		(uuid "d70eefe3-c463-42c7-ad37-0fcb53cb0f3d")
 		(property "Reference" "FID102"
-			(at 266.7 161.29 0)
+			(at 274.574 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10927,15 +10812,16 @@
 			)
 		)
 		(property "Value" "Fiducial_Paste"
-			(at 273.558 164.084 0)
+			(at 274.828 155.194 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "V2_Fiducial:Fiducial_0.5mm_Mask1mm_Paste"
-			(at 269.24 172.72 0)
+			(at 270.51 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10944,7 +10830,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 269.24 167.64 0)
+			(at 270.51 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10953,16 +10839,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 269.24 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
-			(at 269.24 167.64 0)
+			(at 270.51 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11239,7 +11116,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "V2_power:GND")
 		(at 124.46 76.2 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11258,12 +11135,11 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 120.65 76.1999 90)
+			(at 120.396 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -11286,7 +11162,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 124.46 76.2 0)
+			(at 114.046 75.946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11386,7 +11262,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
+		(lib_id "V2_power:PWR_FLAG")
 		(at 255.27 82.55 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11404,7 +11280,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 246.38 82.55 90)
+			(at 245.11 82.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11420,7 +11296,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 255.27 82.55 0)
 			(effects
 				(font
@@ -11430,7 +11306,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 255.27 82.55 0)
+			(at 272.542 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11452,7 +11328,7 @@
 	)
 	(symbol
 		(lib_id "V2_Mechanical:Fiducial_Paste")
-		(at 269.24 180.34 0)
+		(at 270.51 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -11460,7 +11336,7 @@
 		(dnp no)
 		(uuid "f3ebfb05-17be-488d-b5c3-e4a62e3009d2")
 		(property "Reference" "FID103"
-			(at 266.7 173.99 0)
+			(at 274.574 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11469,16 +11345,17 @@
 			)
 		)
 		(property "Value" "Fiducial_Paste"
-			(at 266.7 176.53 0)
+			(at 267.97 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "V2_Fiducial:Fiducial_0.5mm_Mask1mm_Paste"
-			(at 269.24 185.42 0)
+			(at 270.51 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11487,7 +11364,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 269.24 180.34 0)
+			(at 270.51 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11496,16 +11373,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 269.24 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
-			(at 269.24 180.34 0)
+			(at 270.51 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11827,7 +11695,7 @@
 		(lib_id "V2_Artwork:V2-logo")
 		(at 181.61 160.02 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -11848,6 +11716,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "V2_Artwork:Logo_Small"
@@ -11869,15 +11738,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 181.61 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 181.61 160.02 0)
 			(effects
 				(font
