@@ -408,7 +408,7 @@
 				)
 			)
 			(property "Footprint" "V2_Connector_USB:JAE_DX07S016JA3"
-				(at 0 -32.004 0)
+				(at 0 -35.56 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -435,7 +435,28 @@
 				)
 			)
 			(property "Mouser" "656-DX07S016JA3R1500"
-				(at 0 -35.306 0)
+				(at 0 -43.18 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Product" "DX07S016JA3R1500"
+				(at -0.254 -40.64 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "JAE Electronics"
+				(at -0.254 -38.1 0)
+				(show_name)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1117,7 +1138,7 @@
 				)
 			)
 			(property "Description" "Unpolarized capacitor, small symbol"
-				(at 0 -13.462 0)
+				(at 0 -12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1126,7 +1147,28 @@
 				)
 			)
 			(property "Mouser" "810-CGA3E2X7R1H104MA"
-				(at 0 -17.272 0)
+				(at 0 -20.32 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "TDK"
+				(at 0 -15.24 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Product" "CGA3E2X7R1H104M080AA"
+				(at 0 -17.78 0)
+				(show_name)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1266,7 +1308,7 @@
 				)
 			)
 			(property "Description" "Unpolarized capacitor, small symbol"
-				(at 0 -13.462 0)
+				(at 0 -15.24 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1275,7 +1317,28 @@
 				)
 			)
 			(property "Mouser" "810-C1608X6S1A106M"
-				(at 0 -17.018 0)
+				(at 0 -22.86 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Product" "C1608X6S1A106M080AC"
+				(at 0 -20.32 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "TDK"
+				(at 0 -17.78 0)
+				(show_name)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1415,7 +1478,7 @@
 				)
 			)
 			(property "Description" "Unpolarized capacitor, small symbol"
-				(at 0 -13.462 0)
+				(at 0 -14.478 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1424,7 +1487,28 @@
 				)
 			)
 			(property "Mouser" "603-CC603JRNPO9BN180"
-				(at 0 -17.526 0)
+				(at 0 -23.368 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Product" "CC0603JRNPO9BN180"
+				(at 0 -20.574 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "YAGEO"
+				(at 0 -17.78 0)
+				(show_name)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1545,7 +1629,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "V2_Capacitor_SMD:C_0603"
+			(property "Footprint" "V2_Capacitor_SMD:C_0805"
 				(at 0 -17.018 0)
 				(effects
 					(font
@@ -1564,7 +1648,7 @@
 				)
 			)
 			(property "Description" "Unpolarized capacitor, small symbol"
-				(at 0 -13.462 0)
+				(at 0 -12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1573,7 +1657,7 @@
 				)
 			)
 			(property "Mouser" "810-C2012X5R1E106K"
-				(at 0 -18.034 0)
+				(at 0 -22.86 0)
 				(show_name)
 				(effects
 					(font
@@ -1583,7 +1667,27 @@
 				)
 			)
 			(property "Rating" "25V"
-				(at 0 -21.844 0)
+				(at 0 -20.32 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Product" "C2012X5R1E106K125AB"
+				(at 0 -17.78 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "TDK"
+				(at 0 -15.24 0)
 				(show_name)
 				(effects
 					(font
@@ -1722,7 +1826,7 @@
 				)
 			)
 			(property "Description" "Two pin crystal, small symbol"
-				(at 0 -7.874 0)
+				(at 0 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1731,7 +1835,28 @@
 				)
 			)
 			(property "Mouser" "815-ABS0716632.768KT"
-				(at 0 -11.176 0)
+				(at 0 -15.24 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Product" "ABS07-166-32.768KHZ-T"
+				(at 0 -12.7 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "ABRACON"
+				(at 0 -10.16 0)
+				(show_name)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1846,16 +1971,15 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "D"
-				(at -1.27 3.175 0)
+				(at 0 5.588 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Value" "Orange"
-				(at 0 -2.54 0)
+				(at 0 3.556 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1881,15 +2005,6 @@
 				)
 			)
 			(property "Description" "Light emitting diode, small symbol"
-				(at 0 -8.128 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=K 2=A"
 				(at 0 -5.08 0)
 				(effects
 					(font
@@ -1898,8 +2013,38 @@
 					(hide yes)
 				)
 			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
 			(property "Mouser" "755-SML-D12M8WT86C"
-				(at 0 -11.684 0)
+				(at 0 -7.62 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Product" "SML-D12M8WT86C "
+				(at 0 -12.7 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "ROHM Semiconductor "
+				(at 0 -10.16 0)
+				(show_name)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2073,7 +2218,7 @@
 				)
 			)
 			(property "Description" "Resistor, small symbol"
-				(at 0 -12.192 0)
+				(at 0 -12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2082,7 +2227,38 @@
 				)
 			)
 			(property "Mouser" "71-CRCW0603100KFKEAC"
-				(at 0 -15.494 0)
+				(at 0 -22.86 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Rating" "100mW"
+				(at 0 -20.32 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Vishay"
+				(at 0 -15.24 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Product" "CRCW0603100KFKEAC"
+				(at 0 -17.78 0)
+				(show_name)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2207,7 +2383,7 @@
 				)
 			)
 			(property "Description" "Resistor, small symbol"
-				(at 0 -12.192 0)
+				(at 0 -12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2216,7 +2392,38 @@
 				)
 			)
 			(property "Mouser" "71-CRCW0603330RFKEAC"
-				(at 0 -16.51 0)
+				(at 0 -22.86 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Product" "CRCW0603330RFKEAC"
+				(at 0 -17.78 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Vishay"
+				(at 0 -15.24 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Rating" "100mW"
+				(at 0 -20.32 0)
+				(show_name)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2341,7 +2548,7 @@
 				)
 			)
 			(property "Description" "Resistor, small symbol"
-				(at 0 -12.192 0)
+				(at 0 -12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2350,7 +2557,38 @@
 				)
 			)
 			(property "Mouser" "71-CRCW06035K10FKEAC"
-				(at 0 -16.256 0)
+				(at 0 -22.86 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Product" "CRCW06035K10FKEAC"
+				(at 0 -15.24 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Vishay"
+				(at 0 -17.78 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Rating" "100mW"
+				(at 0 -20.32 0)
+				(show_name)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2452,7 +2690,7 @@
 				)
 			)
 			(property "Footprint" "V2_ESD_Suppressor:SLP1210N6"
-				(at 0 -15.24 0)
+				(at 0 -17.78 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2478,8 +2716,29 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser" " 947-RCLAMP0582N.TCT"
-				(at 0 -19.05 0)
+			(property "Mouser" "947-RCLAMP0582N.TCT"
+				(at 0 -25.4 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Product" "RCLAMP0582N.TCT"
+				(at 0 -22.86 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Semtech"
+				(at 0 -20.32 0)
+				(show_name)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2624,7 +2883,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "D3"
-				(at 0 11.43 0)
+				(at 0 10.414 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2632,7 +2891,7 @@
 				)
 			)
 			(property "Value" "WS2812"
-				(at 0 8.89 0)
+				(at 0 7.874 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2640,12 +2899,11 @@
 				)
 			)
 			(property "Footprint" "V2_LED:WS2812-2020"
-				(at 0 -3.81 0)
+				(at 0 -9.906 0)
 				(effects
 					(font
 						(size 1 1)
 					)
-					(justify top)
 					(hide yes)
 				)
 			)
@@ -2660,7 +2918,37 @@
 				)
 			)
 			(property "Description" "RGB LED with integrated controller"
-				(at 0 0 0)
+				(at 0 -6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Worldsemi"
+				(at 0 -15.494 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Product" "WS2812B-2020"
+				(at 0 -12.954 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C965555"
+				(at 0 -18.288 0)
+				(show_name)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2872,7 +3160,7 @@
 				)
 			)
 			(property "Footprint" "V2_Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.45x5.45mm_ThermalVias"
-				(at 0 -62.23 0)
+				(at 0 -63.5 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2898,8 +3186,29 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser" " 556-ATSAMD51G19AMU"
-				(at 0 0 0)
+			(property "Mouser" "556-ATSAMD51G19AMU"
+				(at 0 -71.12 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Microchip Technology"
+				(at 0 -66.04 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Product" "ATSAMD51G19A-MU"
+				(at 0 -68.58 0)
+				(show_name)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4242,7 +4551,7 @@
 				)
 			)
 			(property "Footprint" "V2_Package_SON:VSON-8-1_3x3mm_P0.65_EP1.65x2.4mm"
-				(at 0 -24.13 0)
+				(at 0 -38.1 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4251,7 +4560,7 @@
 				)
 			)
 			(property "Datasheet" "https://www.ti.com/product/TPS784-Q1"
-				(at 1.27 -20.32 0)
+				(at 0 -34.544 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4268,8 +4577,29 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser" " 595-TPS78433QWDRBRQ1"
-				(at 0 0 0)
+			(property "Mouser" "595-TPS78433QWDRBRQ1"
+				(at 0 -46.736 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Texas Instruments"
+				(at 0 -41.148 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Product" "TPS78433QWDRBRQ1"
+				(at 0 -43.942 0)
+				(show_name)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4472,7 +4802,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "SW102"
+			(property "Reference" "SW"
 				(at 0 7.62 0)
 				(effects
 					(font
@@ -4489,7 +4819,7 @@
 				)
 			)
 			(property "Footprint" "V2_Button_Switch_SMD:SKSG"
-				(at 0 -4.826 0)
+				(at 0 -10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4507,7 +4837,7 @@
 				)
 			)
 			(property "Description" "Push button switch, generic, two pins"
-				(at 0 -5.842 0)
+				(at 0 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4516,7 +4846,28 @@
 				)
 			)
 			(property "Mouser" "688-SKSGACE010"
-				(at 0 -9.398 0)
+				(at 0 -17.78 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Alps Alpine"
+				(at 0 -12.7 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Product" "SKSGACE010"
+				(at 0 -15.24 0)
+				(show_name)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -6590,6 +6941,33 @@
 				(hide yes)
 			)
 		)
+		(property "Product" "CRCW06035K10FKEAC"
+			(at 231.14 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 233.68 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "100mW"
+			(at 236.22 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0ede325f-26f9-4836-97b9-8d952172d71e")
 		)
@@ -6662,6 +7040,24 @@
 		)
 		(property "Mouser" "810-CGA3E2X7R1H104MA"
 			(at 115.57 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 115.57 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "CGA3E2X7R1H104M080AA"
+			(at 115.57 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6754,7 +7150,7 @@
 		(lib_id "V2_Artwork:Arrow_Out")
 		(at 250.19 154.94 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -6798,6 +7194,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 250.19 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 250.19 154.94 0)
 			(effects
 				(font
@@ -6867,8 +7272,26 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" " 947-RCLAMP0582N.TCT"
+		(property "Mouser" "947-RCLAMP0582N.TCT"
 			(at 252.73 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "RCLAMP0582N.TCT"
+			(at 252.73 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Semtech"
+			(at 252.73 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7087,6 +7510,24 @@
 		)
 		(property "Mouser" "688-SKSGACE010"
 			(at 254 41.148 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Alps Alpine"
+			(at 254 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "SKSGACE010"
+			(at 254 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7361,8 +7802,26 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" " 595-TPS78433QWDRBRQ1"
+		(property "Mouser" "595-TPS78433QWDRBRQ1"
 			(at 193.04 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 193.04 83.058 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "TPS78433QWDRBRQ1"
+			(at 193.04 85.852 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7593,6 +8052,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser" "755-SML-D12M8WT86C"
+			(at 130.556 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 129.54 53.34 0)
 			(effects
@@ -7602,8 +8070,17 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "755-SML-D12M8WT86C"
-			(at 130.556 45.72 0)
+		(property "Product" "SML-D12M8WT86C "
+			(at 129.54 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "ROHM Semiconductor "
+			(at 129.54 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7747,6 +8224,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Worldsemi"
+			(at 245.11 71.374 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 245.11 68.834 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 245.11 74.168 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d103674b-7ace-4f36-8d35-8d6b17321d70")
 		)
@@ -7772,7 +8276,7 @@
 		(lib_id "V2_Mechanical:MountingHole_2mm")
 		(at 219.71 154.94 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -7812,6 +8316,15 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 219.71 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 219.71 154.94 0)
 			(effects
 				(font
@@ -7898,7 +8411,7 @@
 		(lib_id "V2_Mechanical:MountingHole_2mm")
 		(at 219.71 161.29 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -7946,6 +8459,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 219.71 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "dmx"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
@@ -7959,7 +8481,7 @@
 		(lib_id "V2_PCB_Devices:Button-bottom")
 		(at 200.66 162.56 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -8001,6 +8523,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 200.66 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 200.66 162.56 0)
 			(effects
 				(font
@@ -8111,7 +8642,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "V2_Capacitor_SMD:C_0603"
+		(property "Footprint" "V2_Capacitor_SMD:C_0805"
 			(at 205.74 58.928 0)
 			(effects
 				(font
@@ -8149,6 +8680,24 @@
 		)
 		(property "Rating" "25V"
 			(at 205.74 63.754 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "C2012X5R1E106K125AB"
+			(at 205.74 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 205.74 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8436,7 +8985,7 @@
 		(lib_id "V2_Cortex_Debug:Cortex_Debug")
 		(at 128.27 97.79 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -8477,6 +9026,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 128.27 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 128.27 97.79 0)
 			(effects
 				(font
@@ -8693,6 +9251,33 @@
 		)
 		(property "Description" "RGB LED with integrated controller"
 			(at 262.89 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 262.89 71.374 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 262.89 68.834 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 262.89 74.168 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8989,7 +9574,7 @@
 		(lib_id "V2_Mechanical:MountingHole_2mm")
 		(at 219.71 167.64 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -9029,6 +9614,15 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 219.71 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 219.71 167.64 0)
 			(effects
 				(font
@@ -9312,7 +9906,7 @@
 		(lib_id "V2_Mechanical:MountingHole_2mm")
 		(at 219.71 173.99 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -9360,6 +9954,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 219.71 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "dmx"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
@@ -9396,7 +9999,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "V2_Capacitor_SMD:C_0603"
+		(property "Footprint" "V2_Capacitor_SMD:C_0805"
 			(at 180.34 58.928 0)
 			(effects
 				(font
@@ -9434,6 +10037,24 @@
 		)
 		(property "Rating" "25V"
 			(at 180.34 63.754 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "C2012X5R1E106K125AB"
+			(at 180.34 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 180.34 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9580,6 +10201,24 @@
 				(hide yes)
 			)
 		)
+		(property "Product" "ABS07-166-32.768KHZ-T"
+			(at 34.29 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "ABRACON"
+			(at 34.29 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f2c152de-214a-46e7-b4d0-e7b7121fb943")
 		)
@@ -9659,6 +10298,24 @@
 				(hide yes)
 			)
 		)
+		(property "Product" "CC0603JRNPO9BN180"
+			(at 36.83 67.564 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 36.83 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "dbad3011-3bb7-4b68-acdf-fdc265c6dd90")
 		)
@@ -9730,6 +10387,24 @@
 		)
 		(property "Mouser" "810-C1608X6S1A106M"
 			(at 63.5 44.704 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "C1608X6S1A106M080AC"
+			(at 63.5 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 63.5 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10013,6 +10688,24 @@
 				(hide yes)
 			)
 		)
+		(property "Product" "CC0603JRNPO9BN180"
+			(at 31.75 67.564 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 31.75 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "eaa9c83e-7bc4-4f72-8f4b-d5d56fec85fa")
 		)
@@ -10032,7 +10725,7 @@
 		(lib_id "V2_Artwork:Board_dmx")
 		(at 180.34 177.8 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -10075,6 +10768,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 180.34 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 180.34 177.8 0)
 			(effects
 				(font
@@ -10355,6 +11057,33 @@
 				(hide yes)
 			)
 		)
+		(property "Product" "CRCW0603330RFKEAC"
+			(at 156.21 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 153.67 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "100mW"
+			(at 158.75 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "033939a2-7fb5-4ef9-a4b8-e99e3748741d")
 		)
@@ -10494,6 +11223,24 @@
 		)
 		(property "Mouser" "810-CGA3E2X7R1H104MA"
 			(at 105.41 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 105.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "CGA3E2X7R1H104M080AA"
+			(at 105.41 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10646,6 +11393,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "TDK"
+			(at 85.09 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "CGA3E2X7R1H104M080AA"
+			(at 85.09 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "957882ff-7c79-433b-b595-cba74e7b0f1d")
 		)
@@ -10665,7 +11430,7 @@
 		(lib_id "V2_Artwork:Arrow_In")
 		(at 250.19 161.29 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -10709,6 +11474,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 250.19 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 250.19 161.29 0)
 			(effects
 				(font
@@ -10919,6 +11693,33 @@
 				(hide yes)
 			)
 		)
+		(property "Product" "CRCW06035K10FKEAC"
+			(at 231.14 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 233.68 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "100mW"
+			(at 236.22 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "96090df5-609e-4a0a-a59c-9611971582f2")
 		)
@@ -10996,6 +11797,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Alps Alpine"
+			(at 129.54 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "SKSGACE010"
+			(at 129.54 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "accfb89e-4554-412c-b526-afa48735151e")
 		)
@@ -11066,6 +11885,24 @@
 		)
 		(property "Mouser" "656-DX07S016JA3R1500"
 			(at 189.23 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "DX07S016JA3R1500"
+			(at 188.976 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "JAE Electronics"
+			(at 188.976 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11239,6 +12076,24 @@
 		)
 		(property "Mouser" "810-CGA3E2X7R1H104MA"
 			(at 95.25 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 95.25 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "CGA3E2X7R1H104M080AA"
+			(at 95.25 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11444,8 +12299,26 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" " 556-ATSAMD51G19AMU"
+		(property "Mouser" "556-ATSAMD51G19AMU"
 			(at 76.2 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Microchip Technology"
+			(at 76.2 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "ATSAMD51G19A-MU"
+			(at 76.2 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11455,7 +12328,6 @@
 		)
 		(pin "1"
 			(uuid "be67758d-4b2d-4ca5-8db6-52b7edac2291")
-			(alternate "XIN32")
 		)
 		(pin "10"
 			(uuid "b1b3feb5-3887-4a6f-b621-507b75acaa85")
@@ -11489,7 +12361,6 @@
 		)
 		(pin "2"
 			(uuid "7121ab0b-9346-4a9d-b2df-becb78671df1")
-			(alternate "XOUT32")
 		)
 		(pin "20"
 			(uuid "b0c34817-fa0c-42db-9d78-cace6030f8d7")
@@ -11676,6 +12547,33 @@
 				(hide yes)
 			)
 		)
+		(property "Rating" "100mW"
+			(at 77.47 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 72.39 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "CRCW0603100KFKEAC"
+			(at 74.93 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "882ecb35-114d-452b-8aca-e842a8eb4a00")
 		)
@@ -11695,7 +12593,7 @@
 		(lib_id "V2_Artwork:V2-logo")
 		(at 181.61 160.02 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -11738,6 +12636,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 181.61 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 181.61 160.02 0)
 			(effects
 				(font

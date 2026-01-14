@@ -19,7 +19,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "D3"
-				(at 0 11.43 0)
+				(at 0 10.414 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -27,7 +27,7 @@
 				)
 			)
 			(property "Value" "WS2812"
-				(at 0 8.89 0)
+				(at 0 7.874 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -35,12 +35,11 @@
 				)
 			)
 			(property "Footprint" "V2_LED:WS2812-2020"
-				(at 0 -3.81 0)
+				(at 0 -9.906 0)
 				(effects
 					(font
 						(size 1 1)
 					)
-					(justify top)
 					(hide yes)
 				)
 			)
@@ -55,7 +54,37 @@
 				)
 			)
 			(property "Description" "RGB LED with integrated controller"
-				(at 0 0 0)
+				(at 0 -6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Worldsemi"
+				(at 0 -15.494 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Product" "WS2812B-2020"
+				(at 0 -12.954 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C965555"
+				(at 0 -18.288 0)
+				(show_name)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -870,6 +899,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Worldsemi"
+			(at 163.83 147.574 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 163.83 145.034 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 163.83 150.368 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0607d037-1907-4ff2-85e7-9d3301b7966a")
 		)
@@ -1068,6 +1124,33 @@
 		)
 		(property "Description" "RGB LED with integrated controller"
 			(at 139.7 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 139.7 147.574 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 139.7 145.034 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 139.7 150.368 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1282,6 +1365,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Worldsemi"
+			(at 116.84 91.694 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 116.84 89.154 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 116.84 94.488 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1c3cb96d-8a1e-4a95-b1aa-c77a98e5e7f7")
 		)
@@ -1350,6 +1460,33 @@
 		)
 		(property "Description" "RGB LED with integrated controller"
 			(at 139.7 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 139.7 91.694 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 139.7 89.154 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 139.7 94.488 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1432,6 +1569,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Worldsemi"
+			(at 116.84 147.574 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 116.84 145.034 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 116.84 150.368 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6f27264a-2ddf-4855-94b1-690b793bfabb")
 		)
@@ -1500,6 +1664,33 @@
 		)
 		(property "Description" "RGB LED with integrated controller"
 			(at 186.69 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 186.69 109.474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 186.69 106.934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 186.69 112.268 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1974,6 +2165,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Worldsemi"
+			(at 139.7 109.474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 139.7 106.934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 139.7 112.268 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "03dd3f08-3608-4f3e-af46-faf78c942e12")
 		)
@@ -2312,6 +2530,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Worldsemi"
+			(at 186.69 128.524 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 186.69 125.984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 186.69 131.318 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7990e746-2ac7-4da2-8b53-10b7aa08bc5f")
 		)
@@ -2512,6 +2757,33 @@
 		)
 		(property "Description" "RGB LED with integrated controller"
 			(at 139.7 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 139.7 128.524 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 139.7 125.984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 139.7 131.318 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2855,6 +3127,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Worldsemi"
+			(at 163.83 128.524 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 163.83 125.984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 163.83 131.318 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b44ab461-ea7c-4b0e-8778-6c544e0ac5bc")
 		)
@@ -3054,6 +3353,33 @@
 		)
 		(property "Description" "RGB LED with integrated controller"
 			(at 116.84 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 116.84 109.474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 116.84 106.934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 116.84 112.268 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3398,6 +3724,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Worldsemi"
+			(at 163.83 109.474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 163.83 106.934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 163.83 112.268 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "eed0cc64-24f1-4669-aee9-28d44d92ff6f")
 		)
@@ -3531,6 +3884,33 @@
 		)
 		(property "Description" "RGB LED with integrated controller"
 			(at 186.69 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 186.69 147.574 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 186.69 145.034 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 186.69 150.368 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3679,6 +4059,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Worldsemi"
+			(at 163.83 91.694 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 163.83 89.154 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 163.83 94.488 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9af40044-d4b9-416a-8ba7-1068c0c166a0")
 		)
@@ -3820,6 +4227,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Worldsemi"
+			(at 186.69 91.694 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 186.69 89.154 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 186.69 94.488 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "54cb9d21-7ea2-489c-9802-132ffa15b455")
 		)
@@ -3888,6 +4322,33 @@
 		)
 		(property "Description" "RGB LED with integrated controller"
 			(at 116.84 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 116.84 128.524 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 116.84 125.984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 116.84 131.318 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -37,12 +37,11 @@
 				)
 			)
 			(property "Footprint" "V2_Connector_Audio:CUI_SJ2-25404B-SMT-TR"
-				(at -12.192 -20.574 0)
+				(at 0 -30.48 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 					(hide yes)
 				)
 			)
@@ -66,8 +65,29 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser" " 490-SJ2-25404BSMT-TR"
-				(at 0 0 0)
+			(property "Mouser" "490-SJ2-25404BSMT-TR"
+				(at 0.254 -38.1 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Product" "SJ2-25404B-SMT-TR"
+				(at 0 -35.56 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Same Sky"
+				(at 0 -33.02 0)
+				(show_name)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -470,7 +490,7 @@
 				)
 			)
 			(property "Description" "Unpolarized capacitor, small symbol"
-				(at 0 -13.462 0)
+				(at 0 -12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -479,7 +499,28 @@
 				)
 			)
 			(property "Mouser" "810-CGA3E2X7R1H104MA"
-				(at 0 -17.272 0)
+				(at 0 -20.32 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "TDK"
+				(at 0 -15.24 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Product" "CGA3E2X7R1H104M080AA"
+				(at 0 -17.78 0)
+				(show_name)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -620,8 +661,29 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser" " 595-THVD2442DRCR "
-				(at 0 0 0)
+			(property "Mouser" "595-THVD2442DRCR"
+				(at 0 -35.56 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Product" "THVD2442DRCR "
+				(at 0 -33.02 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Texas Instruments"
+				(at 0 -30.48 0)
+				(show_name)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -655,7 +717,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.286 5.08) (xy -4.699 5.08)
+						(xy -2.286 5.08) (xy -4.4335 5.08)
 					)
 					(stroke
 						(width 0)
@@ -703,7 +765,7 @@
 				)
 				(polyline
 					(pts
-						(xy -0.762 2.667) (xy -4.699 2.667)
+						(xy -0.762 2.667) (xy -4.4468 2.6741)
 					)
 					(stroke
 						(width 0)
@@ -1523,8 +1585,26 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" " 595-THVD2442DRCR "
+		(property "Mouser" "595-THVD2442DRCR"
 			(at 128.27 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "THVD2442DRCR "
+			(at 128.27 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 128.27 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1593,7 +1673,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 125.476 81.534 0)
+			(at 125.476 82.804 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1715,7 +1795,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "9170c58b-9ec6-4fcf-947c-a1c7e4869d59")
 		(property "Reference" "#PWR0203"
 			(at 121.92 107.95 0)
@@ -1727,7 +1806,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 116.84 105.41 90)
+			(at 111.76 107.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1828,8 +1907,26 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" " 490-SJ2-25404BSMT-TR"
+		(property "Mouser" "490-SJ2-25404BSMT-TR"
 			(at 172.72 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "SJ2-25404B-SMT-TR"
+			(at 172.72 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Same Sky"
+			(at 172.72 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1917,6 +2014,24 @@
 		)
 		(property "Mouser" "810-CGA3E2X7R1H104MA"
 			(at 148.59 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 148.59 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "CGA3E2X7R1H104M080AA"
+			(at 148.59 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2014,7 +2129,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ff06070e-62c9-493b-9461-4493bb6f6b41")
 		(property "Reference" "#PWR0204"
 			(at 121.92 113.03 0)
@@ -2026,7 +2140,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 116.84 110.49 90)
+			(at 111.506 113.03 90)
 			(effects
 				(font
 					(size 1.27 1.27)
