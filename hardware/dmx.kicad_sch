@@ -809,15 +809,6 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Enable" "0"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
 			(symbol "Cortex_Debug_1_0"
 				(polyline
 					(pts
@@ -1176,6 +1167,16 @@
 					(hide yes)
 				)
 			)
+			(property "Rating" "50V"
+				(at 0 -22.86 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
 			(property "ki_keywords" "capacitor cap"
 				(at 0 0 0)
 				(effects
@@ -1338,6 +1339,16 @@
 			)
 			(property "Manufacturer" "TDK"
 				(at 0 -17.78 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Rating" "10V"
+				(at 0 -25.4 0)
 				(show_name)
 				(effects
 					(font
@@ -2022,7 +2033,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser" "755-SML-D12M8WT86C"
+			(property "Mouser" "755-SML-D12D1WT86"
 				(at 0 -7.62 0)
 				(show_name)
 				(effects
@@ -2032,7 +2043,7 @@
 					(hide yes)
 				)
 			)
-			(property "Product" "SML-D12M8WT86C "
+			(property "Product" "SML-D12D1WT86"
 				(at 0 -12.7 0)
 				(show_name)
 				(effects
@@ -4992,7 +5003,7 @@
 				)
 			)
 			(property "Value" "+3V3"
-				(at 0 4.064 0)
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5017,7 +5028,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(property "Description" ""
 				(at 0 -14.986 0)
 				(effects
 					(font
@@ -5117,7 +5128,7 @@
 				)
 			)
 			(property "Value" "+5V"
-				(at 0 4.064 0)
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5142,7 +5153,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(property "Description" ""
 				(at 0 -14.478 0)
 				(effects
 					(font
@@ -5233,7 +5244,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "#PWR"
-				(at 0 -7.112 0)
+				(at 0 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5242,7 +5253,7 @@
 				)
 			)
 			(property "Value" "GND"
-				(at 0 -4.064 0)
+				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5268,8 +5279,8 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at -0.254 -10.414 0)
+			(property "Description" ""
+				(at 0 -12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5335,7 +5346,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "#FLG"
-				(at 0 -13.97 0)
+				(at 0 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5344,7 +5355,7 @@
 				)
 			)
 			(property "Value" "PWR_FLAG"
-				(at 0 4.572 0)
+				(at -8.89 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5370,7 +5381,7 @@
 				)
 			)
 			(property "Description" "Special symbol for telling ERC where power comes from"
-				(at 0 -17.272 0)
+				(at 0 -10.922 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5389,7 +5400,7 @@
 			)
 			(symbol "PWR_FLAG_0_0"
 				(pin power_out line
-					(at 0 0 90)
+					(at 0 0 180)
 					(length 0)
 					(name "~"
 						(effects
@@ -5410,7 +5421,7 @@
 			(symbol "PWR_FLAG_0_1"
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+						(xy 0 0) (xy -1.27 0) (xy -1.905 -1.016) (xy -2.54 0) (xy -1.905 1.016) (xy -1.27 0)
 					)
 					(stroke
 						(width 0)
@@ -5445,7 +5456,7 @@
 				)
 			)
 			(property "Value" "Shield"
-				(at 0 -4.572 0)
+				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5453,7 +5464,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 0 0)
+				(at 0 -1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5462,7 +5473,7 @@
 				)
 			)
 			(property "Datasheet" ""
-				(at 0 0 0)
+				(at 0 -12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5470,8 +5481,8 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"Earth\""
-				(at 0 -10.922 0)
+			(property "Description" ""
+				(at 0 -10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5479,7 +5490,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "global ground gnd"
+			(property "ki_keywords" "global ground"
 				(at 0 0 0)
 				(effects
 					(font
@@ -5491,10 +5502,10 @@
 			(symbol "Shield_0_1"
 				(polyline
 					(pts
-						(xy -0.635 -1.905) (xy 0.635 -1.905)
+						(xy -1.016 -1.27) (xy -1.27 -2.032) (xy -1.27 -2.032)
 					)
 					(stroke
-						(width 0)
+						(width 0.2032)
 						(type default)
 					)
 					(fill
@@ -5503,10 +5514,10 @@
 				)
 				(polyline
 					(pts
-						(xy -0.127 -2.54) (xy 0.127 -2.54)
+						(xy -0.508 -1.27) (xy -0.762 -2.032) (xy -0.762 -2.032)
 					)
 					(stroke
-						(width 0)
+						(width 0.2032)
 						(type default)
 					)
 					(fill
@@ -5527,10 +5538,46 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.27) (xy -1.27 -1.27)
+						(xy 0 -1.27) (xy -0.254 -2.032) (xy -0.254 -2.032)
 					)
 					(stroke
-						(width 0)
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 -1.27) (xy 0.254 -2.032) (xy 0.254 -2.032)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -1.27) (xy -1.016 -1.27) (xy -1.016 -1.27)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -1.27) (xy 0.762 -2.032) (xy 0.762 -2.032) (xy 0.762 -2.032)
+					)
+					(stroke
+						(width 0.2032)
 						(type default)
 					)
 					(fill
@@ -7065,6 +7112,15 @@
 				(hide yes)
 			)
 		)
+		(property "Rating" "50V"
+			(at 115.57 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "40994f9c-19ed-482d-9248-93dc90690555")
 		)
@@ -7125,7 +7181,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 270.256 71.374 0)
 			(effects
 				(font
@@ -7370,7 +7426,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+		(property "Description" ""
 			(at 205.74 54.356 0)
 			(effects
 				(font
@@ -7435,7 +7491,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
+		(property "Description" ""
 			(at 266.192 78.74 0)
 			(effects
 				(font
@@ -7595,7 +7651,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 103.124 43.434 0)
 			(effects
 				(font
@@ -7662,7 +7718,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 228.854 99.314 0)
 			(effects
 				(font
@@ -7729,7 +7785,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 73.406 137.414 0)
 			(effects
 				(font
@@ -7911,7 +7967,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 36.576 59.944 0)
 			(effects
 				(font
@@ -7978,7 +8034,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
+		(property "Description" ""
 			(at 247.142 105.41 0)
 			(effects
 				(font
@@ -8052,7 +8108,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "755-SML-D12M8WT86C"
+		(property "Mouser" "755-SML-D12D1WT86"
 			(at 130.556 45.72 0)
 			(effects
 				(font
@@ -8070,7 +8126,7 @@
 				(hide yes)
 			)
 		)
-		(property "Product" "SML-D12M8WT86C "
+		(property "Product" "SML-D12D1WT86"
 			(at 129.54 45.72 0)
 			(effects
 				(font
@@ -8149,7 +8205,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 63.246 37.084 0)
 			(effects
 				(font
@@ -8386,7 +8442,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
+		(property "Description" ""
 			(at 181.61 137.922 0)
 			(effects
 				(font
@@ -8765,7 +8821,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+		(property "Description" ""
 			(at 78.74 36.576 0)
 			(effects
 				(font
@@ -8830,7 +8886,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
+		(property "Description" ""
 			(at 270.51 62.738 0)
 			(effects
 				(font
@@ -8960,7 +9016,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+		(property "Description" ""
 			(at 69.596 121.92 0)
 			(effects
 				(font
@@ -9026,15 +9082,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 128.27 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 128.27 97.79 0)
 			(effects
 				(font
@@ -9116,7 +9163,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 31.496 59.944 0)
 			(effects
 				(font
@@ -9183,7 +9230,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 106.426 102.616 0)
 			(effects
 				(font
@@ -9352,7 +9399,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 188.976 137.414 0)
 			(effects
 				(font
@@ -9417,7 +9464,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
+		(property "Description" ""
 			(at 180.34 53.848 0)
 			(effects
 				(font
@@ -9484,7 +9531,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 228.854 96.774 0)
 			(effects
 				(font
@@ -9549,7 +9596,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+		(property "Description" ""
 			(at 74.676 48.26 0)
 			(effects
 				(font
@@ -9686,7 +9733,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 84.836 37.084 0)
 			(effects
 				(font
@@ -9753,7 +9800,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 238.506 28.956 0)
 			(effects
 				(font
@@ -9881,7 +9928,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+		(property "Description" ""
 			(at 131.826 92.71 0)
 			(effects
 				(font
@@ -10412,6 +10459,15 @@
 				(hide yes)
 			)
 		)
+		(property "Rating" "10V"
+			(at 63.5 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9a0d2225-c269-4a51-84e4-3e513e7d8f7c")
 		)
@@ -10473,7 +10529,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
+		(property "Description" ""
 			(at 201.93 100.838 0)
 			(effects
 				(font
@@ -10540,7 +10596,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 180.086 54.864 0)
 			(effects
 				(font
@@ -10840,7 +10896,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 192.786 59.944 0)
 			(effects
 				(font
@@ -10907,7 +10963,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
+		(property "Description" ""
 			(at 240.792 82.55 0)
 			(effects
 				(font
@@ -10974,7 +11030,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 151.384 58.674 0)
 			(effects
 				(font
@@ -11145,7 +11201,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 272.034 108.204 0)
 			(effects
 				(font
@@ -11248,6 +11304,15 @@
 				(hide yes)
 			)
 		)
+		(property "Rating" "50V"
+			(at 105.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4cf1b210-2b1a-44fa-ac9c-0947a1a1fb8f")
 		)
@@ -11309,7 +11374,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 205.486 54.864 0)
 			(effects
 				(font
@@ -11404,6 +11469,15 @@
 		)
 		(property "Product" "CGA3E2X7R1H104M080AA"
 			(at 85.09 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "50V"
+			(at 85.09 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11546,7 +11620,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 265.684 86.614 0)
 			(effects
 				(font
@@ -11998,7 +12072,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 114.046 75.946 0)
 			(effects
 				(font
@@ -12094,6 +12168,15 @@
 		)
 		(property "Product" "CGA3E2X7R1H104M080AA"
 			(at 95.25 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "50V"
+			(at 95.25 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
