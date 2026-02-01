@@ -956,7 +956,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at -7.112 8.89 0)
+				(at 2.54 12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -965,7 +965,7 @@
 				)
 			)
 			(property "Value" "TLP2361"
-				(at 1.016 9.144 0)
+				(at 2.54 10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
