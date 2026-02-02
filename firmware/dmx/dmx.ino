@@ -5,10 +5,11 @@
 #include <V2MIDI.h>
 #include <V2Music.h>
 
-V2DEVICE_METADATA("com.versioduo.dmx", 58, "versioduo:samd:dmx");
+V2DEVICE_METADATA("com.versioduo.dmx", 59, "versioduo:samd:dmx");
 
-static V2LED::WS2812 LED(2, PIN_LED_WS2812, &sercom2, SPI_PAD_0_SCK_1, PIO_SERCOM);
-static V2DMX         DMX(PIN_DMX_TX, &sercom3, SPI_PAD_0_SCK_1, PIO_SERCOM);
+static V2LED::WS2812        LED(18, PIN_LED_WS2812, &sercom2, SPI_PAD_0_SCK_1, PIO_SERCOM);
+static V2DMX                DMX(PIN_DMX_TX, &sercom3, SPI_PAD_0_SCK_1, PIO_SERCOM);
+static V2MIDI::SerialDevice MIDISerial(&SerialMIDI);
 
 static class Device : public V2Device {
 public:
@@ -129,15 +130,18 @@ public:
 
     switch (_state) {
       case State::Off:
-        LED.setHSV(V2Colour::Yellow, 1, 0.1);
+        LED.setHSV(0, V2Colour::Yellow, 1, 0.1);
+        LED.setHSV(1, V2Colour::Yellow, 1, 0.1);
         break;
 
       case State::Config:
-        LED.setHSV(V2Colour::Green, 1, 0.4);
+        LED.setHSV(0, V2Colour::Green, 1, 0.4);
+        LED.setHSV(1, V2Colour::Green, 1, 0.4);
         break;
 
       case State::MIDI:
-        LED.setHSV(V2Colour::Cyan, 1, 0.4);
+        LED.setHSV(0, V2Colour::Cyan, 1, 0.4);
+        LED.setHSV(1, V2Colour::Cyan, 1, 0.4);
         break;
     }
   }
@@ -272,6 +276,8 @@ private:
   }
 
   void updateDMXHSV(uint8_t channel) {
+    LED.setHSV(2 + channel, _devices[channel].now.h, _devices[channel].now.s, _devices[channel].now.v);
+
     uint8_t r, g, b;
     V2Colour::HSVtoRGB(_devices[channel].now.h, _devices[channel].now.s, _devices[channel].now.v, r, g, b);
     DMX.setChannel(config.devices[channel].address + 0, r);
@@ -862,10 +868,10 @@ private:
 static class MIDI {
 public:
   void loop() {
-    if (!Device.usb.midi.receive(&_midi))
-      return;
+    if (Device.usb.midi.receive(&_midi))
+      Device.dispatch(&Device.usb.midi, &_midi);
 
-    if (_midi.getPort() == 0)
+    if (MIDISerial.receive(&_midi))
       Device.dispatch(&Device.usb.midi, &_midi);
   }
 
@@ -888,6 +894,10 @@ void setup() {
 
   LED.begin();
   LED.setMaxBrightness(0.5);
+
+  MIDISerial.begin();
+  Device.serial = &MIDISerial;
+
   DMX.begin();
   Button.begin();
   Device.begin();
