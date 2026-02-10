@@ -617,7 +617,7 @@
       "svg": "",
       "vrml": ""
     },
-    "page_layout_descr_file": "${KICAD_USER_TEMPLATE_DIR}/V2_A4_Empty.kicad_wks"
+    "page_layout_descr_file": "kicad-embed://V2_A4_Empty.kicad_wks"
   },
   "schematic": {
     "annotate_start_num": 0,
@@ -765,7 +765,7 @@
       "model_mode": 0,
       "workbook_filename": ""
     },
-    "page_layout_descr_file": "${KICAD_USER_TEMPLATE_DIR}/V2_A4.kicad_wks",
+    "page_layout_descr_file": "kicad-embed://V2_A4.kicad_wks",
     "plot_directory": "",
     "space_save_all_events": true,
     "spice_adjust_passive_values": false,

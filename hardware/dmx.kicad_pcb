@@ -8,8 +8,8 @@
 	)
 	(paper "A4")
 	(title_block
-		(date "2026-01-06")
-		(rev "5")
+		(date "2026-02-10")
+		(rev "2026-01-06")
 	)
 	(layers
 		(0 "F.Cu" signal "Front")
@@ -215,6 +215,12 @@
 	(net 82 "unconnected-(J301-R2-Pad4)_1")
 	(net 83 "unconnected-(J201-R2-Pad4)_2")
 	(net 84 "unconnected-(J201-SW-Pad10)_1")
+	(net 85 "unconnected-(J201-SW-Pad10)")
+	(net 86 "unconnected-(J201-R2-Pad4)")
+	(net 87 "unconnected-(J201-R2-Pad4)_1")
+	(net 88 "unconnected-(J301-R2-Pad4)")
+	(net 89 "unconnected-(J301-SW-Pad10)_1")
+	(net 90 "unconnected-(J301-R2-Pad4)_2")
 	(footprint "V2_Resistor_SMD:R_0603"
 		(layer "F.Cu")
 		(uuid "048038e9-aaf5-436b-a9ee-ef72d5dee760")
@@ -257,7 +263,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -265,6 +271,58 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "71-CRCW06035K10FKEAC"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "362205c2-96e6-4d56-9dc5-887c85dd9351")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "CRCW06035K10FKEAC"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "87755a6a-3dd3-4eb9-923f-5e6c62d49525")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6e801d5e-d1b1-41b6-8045-8c7a750e5919")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Rating" "100mW"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d09643e7-8a2f-4a21-8923-f76c6247a922")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -402,7 +460,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -411,6 +469,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "688-SKSGACE010"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dda7af64-6fd2-4adc-ab2b-e82f71294e8e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Alps Alpine"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "215f59e1-174c-4991-90e3-84156a6827a2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "SKSGACE010"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2dd7a095-5670-4a48-8e4c-9748f25993c1")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -520,7 +617,7 @@
 			(net 1 "GND")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "281bcd03-5d5f-40f4-8233-a9c60064e5ff")
+			(uuid "dda8d5a2-e25c-46b9-954c-2ed280f07282")
 		)
 		(pad "2" smd roundrect
 			(at -1.5625 0.8375 270)
@@ -540,7 +637,7 @@
 			(net 42 "/Button")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "faa83c01-c289-4d15-814d-36d020b0810f")
+			(uuid "bd5ad346-503a-4b38-87dd-15373b6bf49a")
 		)
 		(embedded_fonts no)
 		(model "../../3dmodels/V2_Button_Switch_SMD.3dshapes/SKSG.step"
@@ -598,7 +695,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole without connection"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -668,7 +765,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -677,6 +774,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b6714742-46fb-4066-a27e-1cd24b5a56bc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f52deb3d-c611-415c-a8bf-cd44f8524505")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8ba87c57-6d10-4275-8a54-9f456fa6dd30")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -1149,6 +1285,45 @@
 				)
 			)
 		)
+		(property "Mouser" "656-DX07S016JA3R1500"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "db372b19-0ce4-4a40-8827-0adaf33bb9a5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "DX07S016JA3R1500"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "63131262-5511-4ba6-8788-bc511b84d76b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "JAE Electronics"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "440a2957-afb6-4664-ad4c-ab3e1c7bfb90")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/e26cd7e8-e2c0-4ed6-a5a4-72dbf23c703c")
 		(sheetname "/")
 		(sheetfile "dmx.kicad_sch")
@@ -1551,7 +1726,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "34f9b796-82e0-4eb9-bf0c-5471a24ee083")
+			(uuid "7eaea24a-4416-45da-be62-510458a3a4d6")
 		)
 		(pad "S" thru_hole oval
 			(at -4.32 -2.675 180)
@@ -1581,7 +1756,7 @@
 			(pintype "passive")
 			(solder_paste_margin_ratio 0.06)
 			(zone_connect 2)
-			(uuid "999ab59f-3298-47c7-b344-97197f56481b")
+			(uuid "c993a1fb-648e-436c-b779-30220dc58db8")
 		)
 		(pad "S" smd roundrect
 			(at -1.4 1.15 180)
@@ -1592,7 +1767,7 @@
 			(pinfunction "SHIELD")
 			(pintype "passive")
 			(zone_connect 2)
-			(uuid "999ab59f-3298-47c7-b344-97197f56481b")
+			(uuid "c52287cb-d0ba-48da-9885-0a800d08113b")
 		)
 		(pad "S" smd roundrect
 			(at 1.4 1.15 180)
@@ -1603,7 +1778,7 @@
 			(pinfunction "SHIELD")
 			(pintype "passive")
 			(zone_connect 2)
-			(uuid "999ab59f-3298-47c7-b344-97197f56481b")
+			(uuid "a378fd2c-681f-49e2-9416-3ca00bd6c16d")
 		)
 		(pad "S" thru_hole oval
 			(at 4.32 -2.675 180)
@@ -1618,7 +1793,7 @@
 			(pintype "passive")
 			(solder_paste_margin_ratio 0.06)
 			(zone_connect 2)
-			(uuid "999ab59f-3298-47c7-b344-97197f56481b")
+			(uuid "e4922781-ad02-4665-be7d-78e34fcd09e0")
 		)
 		(pad "S" thru_hole oval
 			(at 4.32 1.15 180)
@@ -1633,7 +1808,7 @@
 			(pintype "passive")
 			(solder_paste_margin_ratio 0.06)
 			(zone_connect 2)
-			(uuid "999ab59f-3298-47c7-b344-97197f56481b")
+			(uuid "fb1029da-67e1-4c04-8065-1a948946bba6")
 		)
 		(pad "V" smd roundrect
 			(at -2.35 -3.05 180)
@@ -1653,7 +1828,7 @@
 			(net 25 "+5V")
 			(pinfunction "VBUS")
 			(pintype "passive")
-			(uuid "185b4734-137a-40cd-89b7-b46479444134")
+			(uuid "8073dd1e-8a81-446f-aae3-2ad78b134114")
 		)
 		(embedded_fonts no)
 		(model "../../3dmodels/V2_Connector_USB.3dshapes/DX07S016JA1R1500.step"
@@ -1711,7 +1886,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Fiducial Marker"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1805,7 +1980,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1814,6 +1989,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cc606ed0-a7db-4144-b0bb-e99e58b3d4ea")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1be24116-2f36-4303-ad8e-e3b51b4760a0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "26dc2c85-b4f8-4284-b5c3-a8776b3e0f45")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -1982,7 +2196,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -1990,6 +2204,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "603-CC603JRNPO9BN180"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "623f27cc-3048-448d-aa39-40d5cd7c8a29")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "CC0603JRNPO9BN180"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "147e97b8-3f78-4986-b945-47165acecc8f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c3cdeda0-c701-4091-969a-4825576886a1")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -2126,7 +2379,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2135,6 +2388,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "03b76bd3-aa5b-4b3a-a5dc-ef1709c3265e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "98a7e819-e69e-4e9c-bc64-b985aba96d78")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "69280f26-43f3-463c-84bc-d09bac3dd067")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -2422,6 +2714,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "556-ATSAMD51G19AMU"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b1286911-0de3-45ed-a0e4-86fb567346c7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Microchip Technology"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f670af88-9ba3-41e8-8e5d-ad8305f8b85c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "ATSAMD51G19A-MU"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3307e329-1fef-4024-894c-2b7c31009710")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -3243,7 +3574,7 @@
 			(pinfunction "PAD")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "5ca0b631-4966-43a4-ba56-951d685afe52")
+			(uuid "6c91323b-f074-41a5-ae33-58bb46a84268")
 		)
 		(pad "49" thru_hole circle
 			(at -2.4 0)
@@ -3258,7 +3589,7 @@
 			(pinfunction "PAD")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "5ca0b631-4966-43a4-ba56-951d685afe52")
+			(uuid "45eb79cf-19b3-4748-b6de-2b2551be3a8c")
 		)
 		(pad "49" thru_hole circle
 			(at -2.4 1.2)
@@ -3273,7 +3604,7 @@
 			(pinfunction "PAD")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "5ca0b631-4966-43a4-ba56-951d685afe52")
+			(uuid "9e6da58f-02fb-45b7-90ba-5b3f5122f106")
 		)
 		(pad "49" thru_hole circle
 			(at -2.4 2.4)
@@ -3288,7 +3619,7 @@
 			(pinfunction "PAD")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "5ca0b631-4966-43a4-ba56-951d685afe52")
+			(uuid "bd600bfb-08ca-4658-9d94-a96729517523")
 		)
 		(pad "49" thru_hole circle
 			(at -1.2 -2.4)
@@ -3303,7 +3634,7 @@
 			(pinfunction "PAD")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "5ca0b631-4966-43a4-ba56-951d685afe52")
+			(uuid "4822d084-8b61-4089-8cf3-232d79b61139")
 		)
 		(pad "49" thru_hole circle
 			(at -1.2 -1.2)
@@ -3318,7 +3649,7 @@
 			(pinfunction "PAD")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "5ca0b631-4966-43a4-ba56-951d685afe52")
+			(uuid "00aee4f9-a569-4b61-9e01-529c1f0a1401")
 		)
 		(pad "49" thru_hole circle
 			(at -1.2 0)
@@ -3333,7 +3664,7 @@
 			(pinfunction "PAD")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "5ca0b631-4966-43a4-ba56-951d685afe52")
+			(uuid "673823b1-be24-4ec1-b1f9-f4917ceeca75")
 		)
 		(pad "49" thru_hole circle
 			(at -1.2 1.2)
@@ -3348,7 +3679,7 @@
 			(pinfunction "PAD")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "5ca0b631-4966-43a4-ba56-951d685afe52")
+			(uuid "55b01229-1b04-4457-9f12-ab184ef7d111")
 		)
 		(pad "49" thru_hole circle
 			(at -1.2 2.4)
@@ -3363,7 +3694,7 @@
 			(pinfunction "PAD")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "5ca0b631-4966-43a4-ba56-951d685afe52")
+			(uuid "a6bffd14-f8cb-4a71-aa73-4e6fcf9dd1bc")
 		)
 		(pad "49" thru_hole circle
 			(at 0 -2.4)
@@ -3378,7 +3709,7 @@
 			(pinfunction "PAD")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "5ca0b631-4966-43a4-ba56-951d685afe52")
+			(uuid "6a5fda5b-9b72-4fd5-8fb0-32b0f5581c67")
 		)
 		(pad "49" thru_hole circle
 			(at 0 -1.2)
@@ -3393,7 +3724,7 @@
 			(pinfunction "PAD")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "5ca0b631-4966-43a4-ba56-951d685afe52")
+			(uuid "20a4fd3c-45bb-4f76-b27e-245bc123b67c")
 		)
 		(pad "49" thru_hole circle
 			(at 0 0)
@@ -3408,7 +3739,7 @@
 			(pinfunction "PAD")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "5ca0b631-4966-43a4-ba56-951d685afe52")
+			(uuid "cb22effc-e786-468a-bfd3-fcbedc2ef3ca")
 		)
 		(pad "49" smd custom
 			(at 0 0)
@@ -3430,7 +3761,7 @@
 					(fill no)
 				)
 			)
-			(uuid "5ca0b631-4966-43a4-ba56-951d685afe52")
+			(uuid "f1f208db-1f15-4e53-95f1-aaf3155caefb")
 		)
 		(pad "49" thru_hole circle
 			(at 0 1.2)
@@ -3445,7 +3776,7 @@
 			(pinfunction "PAD")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "5ca0b631-4966-43a4-ba56-951d685afe52")
+			(uuid "3303d19b-3ac1-4ed6-8339-85361aa8761e")
 		)
 		(pad "49" thru_hole circle
 			(at 0 2.4)
@@ -3460,7 +3791,7 @@
 			(pinfunction "PAD")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "5ca0b631-4966-43a4-ba56-951d685afe52")
+			(uuid "abbfec74-839c-49a3-9ecb-9146552820fd")
 		)
 		(pad "49" thru_hole circle
 			(at 1.2 -2.4)
@@ -3475,7 +3806,7 @@
 			(pinfunction "PAD")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "5ca0b631-4966-43a4-ba56-951d685afe52")
+			(uuid "7d2c2b8e-121a-4eb3-9e02-d822a629bf3c")
 		)
 		(pad "49" thru_hole circle
 			(at 1.2 -1.2)
@@ -3490,7 +3821,7 @@
 			(pinfunction "PAD")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "5ca0b631-4966-43a4-ba56-951d685afe52")
+			(uuid "d6777503-5089-4912-8167-688d83e0ce36")
 		)
 		(pad "49" thru_hole circle
 			(at 1.2 0)
@@ -3505,7 +3836,7 @@
 			(pinfunction "PAD")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "5ca0b631-4966-43a4-ba56-951d685afe52")
+			(uuid "5cdc854f-ff65-4d92-bd4d-4d6624893791")
 		)
 		(pad "49" thru_hole circle
 			(at 1.2 1.2)
@@ -3520,7 +3851,7 @@
 			(pinfunction "PAD")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "5ca0b631-4966-43a4-ba56-951d685afe52")
+			(uuid "672b50af-40ab-4665-8088-bffc9c15a639")
 		)
 		(pad "49" thru_hole circle
 			(at 1.2 2.4)
@@ -3535,7 +3866,7 @@
 			(pinfunction "PAD")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "5ca0b631-4966-43a4-ba56-951d685afe52")
+			(uuid "649f4063-2f25-4463-82e6-08caff2e144c")
 		)
 		(pad "49" thru_hole circle
 			(at 2.4 -2.4)
@@ -3550,7 +3881,7 @@
 			(pinfunction "PAD")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "5ca0b631-4966-43a4-ba56-951d685afe52")
+			(uuid "876ec2ab-b707-4fc5-b636-f02782a5426f")
 		)
 		(pad "49" thru_hole circle
 			(at 2.4 -1.2)
@@ -3565,7 +3896,7 @@
 			(pinfunction "PAD")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "5ca0b631-4966-43a4-ba56-951d685afe52")
+			(uuid "08c3b5ad-9953-4def-9b75-8aaa3d6d7ede")
 		)
 		(pad "49" thru_hole circle
 			(at 2.4 0)
@@ -3580,7 +3911,7 @@
 			(pinfunction "PAD")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "5ca0b631-4966-43a4-ba56-951d685afe52")
+			(uuid "a704f074-7ebf-4674-ac47-d0f22e1d645a")
 		)
 		(pad "49" thru_hole circle
 			(at 2.4 1.2)
@@ -3595,7 +3926,7 @@
 			(pinfunction "PAD")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "5ca0b631-4966-43a4-ba56-951d685afe52")
+			(uuid "58adf9d0-65c0-4af3-ac0e-8311a9d03526")
 		)
 		(pad "49" thru_hole circle
 			(at 2.4 2.4)
@@ -3610,7 +3941,7 @@
 			(pinfunction "PAD")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "5ca0b631-4966-43a4-ba56-951d685afe52")
+			(uuid "5fec184e-b7e9-4fd7-9466-4a1626b4968c")
 		)
 		(embedded_fonts no)
 		(model "../../3dmodels/V2_Package_DFN_QFN.3dshapes/QFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm.step"
@@ -3667,7 +3998,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -3675,6 +4006,58 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "810-CGA3E2X7R1H104MA"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b848d377-9255-4ac5-b8bf-ec87652f4685")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ad7a9060-3372-4015-b90d-be65c8b810c5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "CGA3E2X7R1H104M080AA"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3158b4d2-e7cc-4eea-abfa-f796840a492d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Rating" "50V"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7336e824-81d3-4b2b-89f3-cdd05a9b46d0")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -3811,7 +4194,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Fiducial Marker"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3904,7 +4287,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -3912,6 +4295,58 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "71-CRCW06035K10FKEAC"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2f2b3549-1e8c-482b-a64b-257eabd10c8e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "CRCW06035K10FKEAC"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fbaf20b7-95b2-4c09-a9a1-3d2565f7438e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5d2f34f8-d31b-44b5-b2d6-e6720a47f294")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Rating" "100mW"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4ac18493-90be-4fa9-85d8-4f820dc5603d")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -4206,7 +4641,7 @@
 			(pintype "power_in")
 			(zone_connect 2)
 			(thermal_bridge_angle 90)
-			(uuid "b347f182-ebf7-4ef7-8246-6442e413112e")
+			(uuid "f604b7ff-b216-4bed-9a67-b6b1fc603907")
 		)
 		(pad "2" smd circle
 			(at 2.54 1.27 180)
@@ -4242,7 +4677,7 @@
 			(pintype "power_in")
 			(zone_connect 2)
 			(thermal_bridge_angle 90)
-			(uuid "ef0cd628-956d-43e8-b808-2f66285b2ecd")
+			(uuid "5d37e435-eaaa-4c0a-9664-61c7ada667fd")
 		)
 		(pad "4" smd circle
 			(at 1.27 1.27 180)
@@ -4278,7 +4713,7 @@
 			(pintype "passive")
 			(zone_connect 2)
 			(thermal_bridge_angle 90)
-			(uuid "947f9808-34ff-4b30-8e22-5f5d539387a4")
+			(uuid "9824ea01-4aee-44e7-bcc2-d59da0e6f47e")
 		)
 		(pad "10" smd circle
 			(at -2.54 1.27 180)
@@ -4335,7 +4770,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -4343,6 +4778,58 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "810-CGA3E2X7R1H104MA"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "049ba0e0-8441-4161-b465-987d7b91371f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a4dab654-2cdb-4873-a486-daca8c594c5d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "CGA3E2X7R1H104M080AA"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5802522a-42b6-4d3b-9d4d-430f45d35f22")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Rating" "50V"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "26e95d7c-2b1a-462d-972f-e5def13f8547")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -4569,6 +5056,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "490-SJ2-25404BSMT-TR"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5c8bdf62-2b17-4f84-8ab0-471689436a69")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "SJ2-25404B-SMT-TR"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "42fa6fc7-2b24-40f1-9bf8-03dca19493ff")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Same Sky"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "02a49bc2-70f1-4db1-9793-bb422dc4b20d")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -4828,7 +5354,7 @@
 			(pinfunction "S")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
-			(uuid "e287d0b1-5db9-4aee-a7c4-3b68c5081c9a")
+			(uuid "7f75b035-b599-4ffb-88cb-c71709867c2a")
 		)
 		(pad "1" smd roundrect
 			(at -3.725 3 270)
@@ -4839,7 +5365,7 @@
 			(pinfunction "S")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
-			(uuid "e287d0b1-5db9-4aee-a7c4-3b68c5081c9a")
+			(uuid "8be25703-8bcc-4157-8a94-43536e539de1")
 		)
 		(pad "2" thru_hole circle
 			(at 3.75 -3.5 270)
@@ -4867,7 +5393,7 @@
 			(pinfunction "T")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
-			(uuid "4601d1b3-4fcb-408a-a256-b1efb1e2ca09")
+			(uuid "f5785460-8647-4623-90e0-ef00257d4a49")
 		)
 		(pad "2" smd roundrect
 			(at 4.5 -3 270)
@@ -4878,7 +5404,7 @@
 			(pinfunction "T")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
-			(uuid "4601d1b3-4fcb-408a-a256-b1efb1e2ca09")
+			(uuid "74ac4da1-8f84-4c92-ab16-aaac1dd81119")
 		)
 		(pad "3" thru_hole circle
 			(at 3.75 2.5 270)
@@ -4906,7 +5432,7 @@
 			(pinfunction "R1")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
-			(uuid "068bcd70-9884-40e8-bda8-0c3b6c3af8ef")
+			(uuid "ec12b274-d50c-4aaf-a03b-a35aedf814b8")
 		)
 		(pad "3" smd roundrect
 			(at 4.5 3 270)
@@ -4917,7 +5443,7 @@
 			(pinfunction "R1")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
-			(uuid "068bcd70-9884-40e8-bda8-0c3b6c3af8ef")
+			(uuid "8c9db89e-b622-49d7-8766-8a9f6d5f495d")
 		)
 		(pad "4" thru_hole circle
 			(at -4 -3.5 270)
@@ -4941,22 +5467,22 @@
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
 			(zone_layer_connections)
-			(net 83 "unconnected-(J201-R2-Pad4)_2")
+			(net 86 "unconnected-(J201-R2-Pad4)")
 			(pinfunction "R2")
 			(pintype "passive+no_connect")
 			(solder_mask_margin 0.102)
-			(uuid "e73651bb-401e-4417-a339-36b66e679bd9")
+			(uuid "83f447d4-678f-4647-9a1e-1062d0ddcf0b")
 		)
 		(pad "4" smd roundrect
 			(at -3.225 -3 270)
 			(size 2.05 2)
 			(layers "F.Cu")
 			(roundrect_rratio 0.1)
-			(net 83 "unconnected-(J201-R2-Pad4)_2")
+			(net 87 "unconnected-(J201-R2-Pad4)_1")
 			(pinfunction "R2")
 			(pintype "passive+no_connect")
 			(solder_mask_margin 0.102)
-			(uuid "e73651bb-401e-4417-a339-36b66e679bd9")
+			(uuid "8729732b-25f5-42bb-8356-8672aede8e3c")
 		)
 		(pad "10" thru_hole circle
 			(at 4.5 -1 270)
@@ -4966,7 +5492,7 @@
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
 			(zone_layer_connections)
-			(net 84 "unconnected-(J201-SW-Pad10)_1")
+			(net 85 "unconnected-(J201-SW-Pad10)")
 			(pinfunction "SW")
 			(pintype "passive+no_connect")
 			(solder_mask_margin 0.102)
@@ -4981,7 +5507,7 @@
 			(pinfunction "SW")
 			(pintype "passive+no_connect")
 			(solder_mask_margin 0.102)
-			(uuid "2b4d4aa8-57a2-4b4e-9dad-6aeec7b3cd5a")
+			(uuid "aeda5491-8dc4-497e-9730-9585702b11a9")
 		)
 		(embedded_fonts no)
 		(model "../../3dmodels/V2_Connector_Audio.3dshapes/SJ2-25404B-SMT-TR.step"
@@ -5038,7 +5564,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -5046,6 +5572,58 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "810-CGA3E2X7R1H104MA"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "821aa3a2-a854-4c98-8dfe-4f9de8f1dbba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "90fe0c18-bc4b-4387-a84c-43e8e0cf13a0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "CGA3E2X7R1H104M080AA"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "60ca06a3-b220-428c-9124-56a70c92a9d1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Rating" "50V"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6b9650f8-7563-4d54-ae43-cb8d5b643b45")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -5379,7 +5957,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5388,6 +5966,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7de1c2e7-404f-4fca-87cf-94a14e316325")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c950b9c1-6bd5-4bad-8d9a-a520f335124c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "61108806-e7de-432b-a270-142b7c3f0fdb")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -5556,7 +6173,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5564,6 +6181,58 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "810-CGA3E2X7R1H104MA"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2d2b1836-a5fc-4a71-899b-e4fa0b737acc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "173abc20-be9d-4487-8ab0-84d8eff2ef36")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "CGA3E2X7R1H104M080AA"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "35020f0a-2646-4f65-963d-7c881ae67fc5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Rating" "50V"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2f7f71a8-116b-4d12-82aa-3ae4dcdc8e5f")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -5701,7 +6370,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5710,6 +6379,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "688-SKSGACE010"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c33d9602-dc1b-4adc-9dda-24f0fa7881f3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Alps Alpine"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "091b9fd3-75dd-4c6a-8acc-aa8dfff0a6f9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "SKSGACE010"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8988ff3a-4ed0-40f6-8787-7a4789111bf5")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -5819,7 +6527,7 @@
 			(net 1 "GND")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "99320a9d-7071-415f-8b22-1b95a363b3dc")
+			(uuid "151db4ff-1c28-4fe5-b6d9-1f217adbc99a")
 		)
 		(pad "2" smd roundrect
 			(at -1.5625 0.8375)
@@ -5839,7 +6547,7 @@
 			(net 34 "/RESET")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "762fd02f-1d13-487a-87f4-b5de89275ce2")
+			(uuid "40e57bfb-4e50-4896-96f4-60270adb826e")
 		)
 		(embedded_fonts no)
 		(model "../../3dmodels/V2_Button_Switch_SMD.3dshapes/SKSG.step"
@@ -5896,7 +6604,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -5904,6 +6612,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "603-CC603JRNPO9BN180"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "89ed5145-d920-4d31-896d-2d48f5a2298b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "CC0603JRNPO9BN180"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bf6f51f8-a4b7-4775-88d4-c838b08e448f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e0bce094-2568-4c57-b3c5-efe2fc0142d4")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -6039,7 +6786,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -6047,6 +6794,58 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "810-C2012X5R1E106K"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fb3801ea-7418-4380-9c3f-4df3c83bf756")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Rating" "25V"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "71eec4b7-a486-4c79-9afe-f354798ccfab")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "C2012X5R1E106K125AB"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "42444360-6ef9-406c-af7c-625456ec034b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7cdd728b-3458-4097-b207-f79237bbf4d5")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -6183,7 +6982,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6192,6 +6991,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aec556e9-9ae4-4f9e-a652-7da6a0a29ce3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "08198472-c86c-41aa-970b-631ac1b87f6f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5a115209-c9dd-40cb-8f99-22d39eab17ea")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -6361,7 +7199,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6370,6 +7208,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a009a0c9-4a21-4665-9120-11bb0bf8ef90")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8007edd2-513f-47c8-90b4-f33ef650d011")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b7d6bf02-4bd3-426d-9f51-bda810b0c94d")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -6538,7 +7415,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -6546,6 +7423,58 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "71-CRCW0603100KFKEAC"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "127b9d28-0ce9-409a-9ce1-5230c16a13cc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Rating" "100mW"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f2a569a5-3d29-4e27-836a-4b81d6f6c859")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b9c7cc9a-0b99-41ca-9492-3c30826095fe")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "CRCW0603100KFKEAC"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f320e2d5-d26a-4587-8d3f-943e12f55782")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -6682,7 +7611,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6691,6 +7620,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d81b0514-0e0d-4170-9b23-8f0a2e885286")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "162ae717-e9ac-41a8-8a05-c983152db041")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e32164b3-103e-4981-986e-22b69f75eefc")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -6860,7 +7828,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6869,6 +7837,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ad224147-e191-4e65-a50d-d6515253eeca")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f5cf06de-2b5d-4a3d-a67c-3a78c4684348")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1bcc13a3-9ae7-45e6-810d-27c0e6487ade")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -7038,7 +8045,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole without connection"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7108,7 +8115,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7117,6 +8124,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "80ac8c81-360d-4e57-9b2e-0037319fa096")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c22c8ce7-9a3d-4fe4-b634-d6c972882250")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5d4ded29-6e99-43b6-a046-799ecef52c66")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -7286,7 +8332,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole without connection"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7355,7 +8401,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -7363,6 +8409,58 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "810-C1608X6S1A106M"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d529ffb2-4441-47c7-9541-1394a67cad83")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "C1608X6S1A106M080AC"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "26f3676c-3b78-4e1e-9823-e954c6d6fc0b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9f809c55-2930-4226-b6cf-b196e9c34b2b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Rating" "10V"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a5f9fae7-378d-4731-9cc3-c8c1f76fd538")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -7498,7 +8596,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -7506,6 +8604,58 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "810-CGA3E2X7R1H104MA"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "66edeeb1-cfa0-48cd-bb87-33cca974d06a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "101c88d2-77af-4625-8482-f1fba25ea31a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "CGA3E2X7R1H104M080AA"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1862ff5d-24a1-45c0-9f64-d076cf1d658b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Rating" "50V"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3908a9ab-3be8-4548-89b3-f785bb75f4f1")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -8111,7 +9261,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -8119,6 +9269,58 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "71-CRCW0603220RFKEAH"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "26552012-2419-482e-ba00-9b95d8bd5812")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "CRCW0603220RFKEAHP"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "de40cbbc-a7fc-433c-82d1-2395ce5beeeb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b76a8586-0d89-4e3f-a14a-7b102090b3d9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Rating" "330mW"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b8cfe94d-0a2f-4868-88e9-2c152f6a3322")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -8254,7 +9456,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -8262,6 +9464,58 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "810-CGA3E2X7R1H104MA"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "33365d7a-8586-4702-ad09-47e060906bad")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "24963e79-c2f7-40b2-b4f5-397bc26ddc7d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "CGA3E2X7R1H104M080AA"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f2aaae32-f732-4b35-990a-5dcfde5a1b9a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Rating" "50V"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4ff4b55e-ba3a-4c43-b8aa-69d7b4e53da2")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -8398,7 +9652,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole without connection"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8468,7 +9722,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8477,6 +9731,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f5b6ae51-e792-4142-a37b-d82bdc4b7fff")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ff4949a6-85a9-4c59-b846-85a2f97dd72a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5b0ea76b-9861-4423-89e9-5a82b69b1a2c")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -8653,6 +9946,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "757-TLP2361TPRE"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "04419b70-42a1-4aa5-8e8f-85b8219b6d93")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "TLP2361(TPR,E"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b69e1fbe-4b3e-43da-959b-6b4893526186")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Toshiba"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "97649985-666b-4ce6-8b0f-f67b98e360be")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -8992,7 +10324,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9001,6 +10333,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8789d47c-1e44-439e-9932-9c410a60f4b5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d0068466-bfbd-4fb5-9ab3-c795eaeb4496")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "10990cea-0951-45ee-965f-233984cf1f60")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -9278,7 +10649,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9287,6 +10658,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c7366230-cc0a-40ba-8489-d6908b04d3b7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7285597f-aa92-48ee-bf9d-4ec5818325f7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dd095d3a-fb27-4dfa-b8e5-1f0165716b3c")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -9455,7 +10865,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -9463,6 +10873,58 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "71-CRCW0603330RFKEAC"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "93dbbb7e-dc4c-479f-8817-af3fc0269e20")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "CRCW0603330RFKEAC"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dc293980-07f1-49a9-a766-2cd3c8027318")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "92f8cff3-4348-4001-9128-0e3beefd4e93")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Rating" "100mW"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3a6a24db-c7d1-4a99-b619-95e72e8ccb88")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -9599,7 +11061,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9608,6 +11070,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ec7528e3-0036-4066-9e4d-f8c76c743c23")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e42f2590-b5d1-4477-8999-b42b5a4ceafe")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "75bc8b49-b858-4c88-8a9e-a75b7fc0199f")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -9776,7 +11277,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9784,6 +11285,58 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "810-CGA3E2X7R1H104MA"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cb0e9dfb-b024-4cf9-8273-2ec26179b27d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bd22c753-d151-46d5-a3bb-d21fcf0bbe2f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "CGA3E2X7R1H104M080AA"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eaf8004c-baf0-4295-8a03-73f5e55111c9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Rating" "50V"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "954baa99-e4e1-4f73-bad5-65347e1be7f1")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -9920,7 +11473,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Two pin crystal, small symbol"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9929,6 +11482,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "815-ABS0716632.768KT"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4b54aaac-4a48-49d5-bcd5-1cb42b080bbd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "ABS07-166-32.768KHZ-T"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5c18cf66-8d1d-4cf2-816c-27a8ee707eba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "ABRACON"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "38814126-3c2b-48bb-920f-d81e29711dd6")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -10130,6 +11722,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "490-SJ2-25404BSMT-TR"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ee020c48-630b-405d-bbca-edcffe9c7d2d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "SJ2-25404B-SMT-TR"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9b684d2d-b650-45b2-bd42-36411322e44c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Same Sky"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8fdf6165-b1a6-4014-ad6d-788fe796f462")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -10389,7 +12020,7 @@
 			(pinfunction "S")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
-			(uuid "59fcd940-844b-4167-9dbc-9d4531b836bf")
+			(uuid "3efb08aa-23ea-4dd2-aefb-221fd668fa66")
 		)
 		(pad "1" smd roundrect
 			(at -3.725 3 270)
@@ -10400,7 +12031,7 @@
 			(pinfunction "S")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
-			(uuid "59fcd940-844b-4167-9dbc-9d4531b836bf")
+			(uuid "d98fa4be-f72f-4732-98ea-d2b6d6c41636")
 		)
 		(pad "2" thru_hole circle
 			(at 3.75 -3.5 270)
@@ -10428,7 +12059,7 @@
 			(pinfunction "T")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
-			(uuid "b18cdfbe-9b0d-4360-a7d6-874cecf9792f")
+			(uuid "5b8e3339-d227-423c-acd3-439a63e7df9e")
 		)
 		(pad "2" smd roundrect
 			(at 4.5 -3 270)
@@ -10439,7 +12070,7 @@
 			(pinfunction "T")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
-			(uuid "b18cdfbe-9b0d-4360-a7d6-874cecf9792f")
+			(uuid "02efdc47-cc25-404b-a951-dfe92d444bec")
 		)
 		(pad "3" thru_hole circle
 			(at 3.75 2.5 270)
@@ -10467,7 +12098,7 @@
 			(pinfunction "R1")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
-			(uuid "d44c8e73-73d6-4ce3-a609-e2fcb31ca29c")
+			(uuid "ec8d5743-258d-4262-8aa3-c6ccb8def45b")
 		)
 		(pad "3" smd roundrect
 			(at 4.5 3 270)
@@ -10478,7 +12109,7 @@
 			(pinfunction "R1")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
-			(uuid "d44c8e73-73d6-4ce3-a609-e2fcb31ca29c")
+			(uuid "672ae5f6-7f08-47e5-b301-ee64ed450f87")
 		)
 		(pad "4" thru_hole circle
 			(at -4 -3.5 270)
@@ -10502,22 +12133,22 @@
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
 			(zone_layer_connections)
-			(net 82 "unconnected-(J301-R2-Pad4)_1")
+			(net 90 "unconnected-(J301-R2-Pad4)_2")
 			(pinfunction "R2")
 			(pintype "passive+no_connect")
 			(solder_mask_margin 0.102)
-			(uuid "67c5fe57-2194-4b55-9c02-85d8ac4e8f82")
+			(uuid "dd529294-f4b6-467c-95d8-6683ac61aa1a")
 		)
 		(pad "4" smd roundrect
 			(at -3.225 -3 270)
 			(size 2.05 2)
 			(layers "F.Cu")
 			(roundrect_rratio 0.1)
-			(net 82 "unconnected-(J301-R2-Pad4)_1")
+			(net 88 "unconnected-(J301-R2-Pad4)")
 			(pinfunction "R2")
 			(pintype "passive+no_connect")
 			(solder_mask_margin 0.102)
-			(uuid "67c5fe57-2194-4b55-9c02-85d8ac4e8f82")
+			(uuid "1b3b8bbe-fe7c-4c01-9298-31d75dd6d9d9")
 		)
 		(pad "10" thru_hole circle
 			(at 4.5 -1 270)
@@ -10538,11 +12169,11 @@
 			(size 2.45 1.3)
 			(layers "F.Cu")
 			(roundrect_rratio 0.2)
-			(net 81 "unconnected-(J301-SW-Pad10)")
+			(net 89 "unconnected-(J301-SW-Pad10)_1")
 			(pinfunction "SW")
 			(pintype "passive+no_connect")
 			(solder_mask_margin 0.102)
-			(uuid "07f0b181-93cc-4fa6-a0db-170dab252370")
+			(uuid "2c21d44e-0977-4c7c-bdc2-821bb8b8b898")
 		)
 		(embedded_fonts no)
 		(model "../../3dmodels/V2_Connector_Audio.3dshapes/SJ2-25404B-SMT-TR.step"
@@ -10600,7 +12231,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10609,6 +12240,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "98aebcfd-6c90-4363-bc1f-dacfa1e835b2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f3f7055f-cede-4f2c-83b5-3caec8367619")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "40b80d7d-1979-4dac-9f9f-4c140c1e5a99")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -10778,7 +12448,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10787,6 +12457,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1cecddc1-ddab-4405-81a8-8ea0d0195748")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "63bcdf5f-ac99-421a-b63c-9aff9f588a3f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3593b74d-c9bf-42c0-b085-ae8a25db1841")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -10955,7 +12664,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Light emitting diode, small symbol"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -10963,6 +12672,58 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "755-SML-D12D1WT86"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cccc0bfa-cee9-4463-b1a9-f6d160836b13")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d9bff56b-e70f-4604-9315-0f505869e77f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "SML-D12D1WT86"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6326fa1f-51a4-4ec5-8eb4-8732f8f33057")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "ROHM Semiconductor "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "44402206-54de-4833-99a2-acf93ac4ff97")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -11158,6 +12919,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "595-THVD2442DRCR"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e95f480a-163f-4aa6-bbaf-4965251e6e85")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "THVD2442DRCR "
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3ea070cb-2971-45a7-a919-0541ccb4f2a2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "efb648ac-4916-4472-9245-ba387dedc307")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -11527,7 +13327,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "7130262f-a093-4279-9e70-9732d3dfaae5")
+			(uuid "d97a8f38-3e1a-4a06-92d8-5b8dcc0cf3de")
 		)
 		(pad "11" smd rect
 			(at -0.25 1.45 90)
@@ -11536,7 +13336,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "7130262f-a093-4279-9e70-9732d3dfaae5")
+			(uuid "779f4242-915d-4735-8d36-a1e286adde92")
 		)
 		(pad "11" thru_hole circle
 			(at 0 -0.9 90)
@@ -11550,7 +13350,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "7130262f-a093-4279-9e70-9732d3dfaae5")
+			(uuid "5f7ca0f0-22ff-4abc-a8cf-97334686b7fd")
 		)
 		(pad "11" smd rect
 			(at 0 0 90)
@@ -11559,7 +13359,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "7130262f-a093-4279-9e70-9732d3dfaae5")
+			(uuid "6195e74a-3beb-4dfb-bcef-7b071faa8466")
 		)
 		(pad "11" smd rect
 			(at 0 0 90)
@@ -11568,7 +13368,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "7130262f-a093-4279-9e70-9732d3dfaae5")
+			(uuid "e99d3302-cf1f-4f33-8b55-f441801616dd")
 		)
 		(pad "11" thru_hole circle
 			(at 0 0.9 90)
@@ -11582,7 +13382,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "7130262f-a093-4279-9e70-9732d3dfaae5")
+			(uuid "0c32e71d-0bd2-4621-beee-d16e6132d8d8")
 		)
 		(pad "11" smd rect
 			(at 0.25 -1.45 90)
@@ -11591,7 +13391,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "7130262f-a093-4279-9e70-9732d3dfaae5")
+			(uuid "40a56748-4d5b-42d2-8275-f633b0cbfdd6")
 		)
 		(pad "11" smd rect
 			(at 0.25 1.45 90)
@@ -11600,7 +13400,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "7130262f-a093-4279-9e70-9732d3dfaae5")
+			(uuid "c02e87f8-e6ec-4754-9d71-377212879891")
 		)
 		(pad "11" thru_hole circle
 			(at 0.5 0 90)
@@ -11614,7 +13414,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "7130262f-a093-4279-9e70-9732d3dfaae5")
+			(uuid "5cb75549-16b1-4234-bc69-4e9392ef93a7")
 		)
 		(embedded_fonts no)
 		(model "../../3dmodels/V2_Package_SON.3dshapes/VSON-10-1EP_3x3mm_P0.5mm_EP1.65x2.4mm.step"
@@ -11876,7 +13676,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11885,6 +13685,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c8944081-4be1-4f97-af74-fe58621fc7b8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8707f8b7-f126-4b47-9796-d458bfa101bd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "77d15578-07f8-4598-9ed2-3fbf01b16723")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -12053,7 +13892,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -12061,6 +13900,58 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "810-C2012X5R1E106K"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f67f7461-d3c3-4367-bf3c-e6850fe155be")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Rating" "25V"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d6ed01df-3d57-4877-b050-7b825bc13bd9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "C2012X5R1E106K125AB"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7c39d0a4-4ae6-4839-a16c-ad271649545d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b42ad54c-b518-4034-a40a-ca4e87b32656")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -12205,6 +14096,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "947-RCLAMP0582N.TCT"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "06f4c463-12f6-4f16-a6e5-d4196667c1c8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "RCLAMP0582N.TCT"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0e6a78e2-72ac-48a0-b8de-a6ff949b47b2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Semtech"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e8d544af-8498-494b-93dc-eee7c975fd37")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -12431,7 +14361,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12440,6 +14370,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9f1b1ec3-b9d9-4409-81b8-68245240749e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6088eb50-364d-4d43-90a9-7e1f1dab5a8c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cb581a2f-fee0-4089-b967-13a2edb955c9")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -12618,6 +14587,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "755-RB501SM-30FHT2R"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e51277fe-4651-4ee7-9afb-37b7deeaaf36")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "RB501SM-30FHT2R"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b343a6b1-d1fc-44f6-bb64-9e52aff28b20")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "ROHM Semiconductor"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2e454c9d-8d40-4f2d-a00e-b6df41a863c5")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -12823,7 +14831,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Fiducial Marker"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12903,7 +14911,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/product/TPS784-Q1"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12925,6 +14933,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "595-TPS78433QWDRBRQ1"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "02ac1d34-58b2-4323-8b01-cd8443d05d22")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "db524d52-5f48-4f2e-8daf-f7d462892423")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "TPS78433QWDRBRQ1"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2b2371da-680e-4768-b4a7-4184eaa025e3")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -13245,7 +15292,7 @@
 			(pinfunction "GND")
 			(pintype "passive")
 			(zone_connect 2)
-			(uuid "66660adc-2e6b-496d-8470-cc5d3dcae7fe")
+			(uuid "5186d2e6-e327-47eb-b4b8-8ceda46bdd9f")
 		)
 		(pad "9" smd rect
 			(at 0 0)
@@ -13254,7 +15301,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "66660adc-2e6b-496d-8470-cc5d3dcae7fe")
+			(uuid "29c99d59-bbd1-4035-896b-a0e6f496fb08")
 		)
 		(pad "9" thru_hole circle
 			(at 0 0.75)
@@ -13267,7 +15314,7 @@
 			(pinfunction "GND")
 			(pintype "passive")
 			(zone_connect 2)
-			(uuid "66660adc-2e6b-496d-8470-cc5d3dcae7fe")
+			(uuid "a56ca4e2-39a2-4373-9475-b7f72d9e0769")
 		)
 		(pad "9" thru_hole circle
 			(at 0.5 0)
@@ -13280,7 +15327,7 @@
 			(pinfunction "GND")
 			(pintype "passive")
 			(zone_connect 2)
-			(uuid "66660adc-2e6b-496d-8470-cc5d3dcae7fe")
+			(uuid "4ab10678-29a9-482a-a97d-eba1418248e0")
 		)
 		(embedded_fonts no)
 		(model "../../3dmodels/V2_Package_SON.3dshapes/Texas_S-PVSON-N8.wrl"
@@ -13338,7 +15385,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13347,6 +15394,45 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b7128fc1-44e2-4cc5-bf1e-53d1185415d3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9ff9f493-5d3a-46bf-b00b-d82ae90f4335")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "313d7ab1-cf30-46ef-b932-26b1be2f7d06")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -13556,6 +15642,18 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "db2e5211-7e6a-42a9-b2df-00728afba574")
+	)
+	(gr_text "2026-02-07 stencil\n"
+		(at 117 40 0)
+		(layer "F.Fab")
+		(uuid "7c349e23-8685-4885-999a-fba33d27b2ce")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.0625)
+			)
+			(justify left bottom)
+		)
 	)
 	(segment
 		(start 155.25 82.885)
@@ -20839,4 +22937,15 @@
 		)
 	)
 	(embedded_fonts no)
+	(embedded_files
+		(file
+			(name "V2_A4_Empty.kicad_wks")
+			(type worksheet)
+			(data |KLUv/SDtTQQA8kcaGHDNA0DI0YHeJkZJsFFVHWPECK8T+nf7Ruut19T/Wjj1lcRtZEY9sbORjzTz
+				BIaRKX941NSZJ0BmPfl9qd8ptZzn+0ZINNlsfT9aMk5jtv60TTtxar2BmQMgAoxWv7Yhp9ZdInlM
+				wxcXCyAQIoF8eJTajUPCXqolYFHFD/FgziWduMYHggI=|
+			)
+			(checksum "00BCE598336E5951A5D0C187D2E96FE2")
+		)
+	)
 )
