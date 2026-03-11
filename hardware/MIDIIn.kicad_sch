@@ -57,8 +57,8 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Unpolarized capacitor, small symbol"
-				(at 0 -12.7 0)
+			(property "Description" ""
+				(at 0 -13.462 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1318,8 +1318,8 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Resistor, small symbol"
-				(at 0 -12.7 0)
+			(property "Description" ""
+				(at 0 -12.192 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2101,7 +2101,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" ""
 			(at 154.432 97.79 0)
 			(effects
 				(font
@@ -2312,7 +2312,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" ""
 			(at 193.04 108.712 0)
 			(effects
 				(font
@@ -2577,7 +2577,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
+		(property "Description" ""
 			(at 168.402 107.95 0)
 			(effects
 				(font
