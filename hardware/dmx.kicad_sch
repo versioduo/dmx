@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "V2 dmx")
-		(date "2026-03-11")
+		(date "2026-03-14")
 		(rev "2026-01-06")
 		(company "Versio Duo")
 		(comment 1 "MIDI to DMX Bridge")
@@ -1965,7 +1965,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "ESD"
-				(at -6.35 6.35 0)
+				(at -6.35 11.43 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1974,7 +1974,7 @@
 				)
 			)
 			(property "Value" "RCLAMP0582N"
-				(at -6.35 3.81 0)
+				(at -6.35 8.89 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1983,7 +1983,7 @@
 				)
 			)
 			(property "Footprint" "V2_ESD_Suppressor:SLP1210N6"
-				(at 0 -17.78 0)
+				(at 0 -13.97 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2010,7 +2010,7 @@
 				)
 			)
 			(property "Mouser" "947-RCLAMP0582N.TCT"
-				(at 0 -25.4 0)
+				(at 0 -21.59 0)
 				(show_name)
 				(effects
 					(font
@@ -2020,7 +2020,7 @@
 				)
 			)
 			(property "Product" "RCLAMP0582N.TCT"
-				(at 0 -22.86 0)
+				(at 0 -19.05 0)
 				(show_name)
 				(effects
 					(font
@@ -2030,7 +2030,7 @@
 				)
 			)
 			(property "Manufacturer" "Semtech"
-				(at 0 -20.32 0)
+				(at 0 -16.51 0)
 				(show_name)
 				(effects
 					(font
@@ -2041,8 +2041,8 @@
 			)
 			(symbol "RCLAMP0582N_0_1"
 				(rectangle
-					(start -6.35 2.54)
-					(end 6.35 -5.08)
+					(start -6.35 7.62)
+					(end 6.35 -7.62)
 					(stroke
 						(width 0)
 						(type default)
@@ -2054,27 +2054,9 @@
 			)
 			(symbol "RCLAMP0582N_1_0"
 				(pin bidirectional line
-					(at -8.89 0 0)
+					(at -8.89 5.08 0)
 					(length 2.54)
-					(name "I/O2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -8.89 -2.54 0)
-					(length 2.54)
-					(name "I/O1"
+					(name "D1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2089,11 +2071,10 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at 2.54 -10.16 0)
+				(pin passive line
+					(at -8.89 2.54 0)
 					(length 2.54)
-					(hide yes)
-					(name ""
+					(name "D1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2108,8 +2089,26 @@
 						)
 					)
 				)
+				(pin bidirectional line
+					(at -8.89 -2.54 0)
+					(length 2.54)
+					(name "D2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin power_in line
-					(at 8.89 0 180)
+					(at 8.89 5.08 180)
 					(length 2.54)
 					(name "VBUS"
 						(effects
@@ -2127,7 +2126,7 @@
 					)
 				)
 				(pin power_in line
-					(at 8.89 -2.54 180)
+					(at 8.89 -5.08 180)
 					(length 2.54)
 					(name "GND"
 						(effects
@@ -2146,11 +2145,10 @@
 				)
 			)
 			(symbol "RCLAMP0582N_1_1"
-				(pin no_connect line
-					(at 2.54 -7.62 0)
+				(pin passive line
+					(at -8.89 -5.08 0)
 					(length 2.54)
-					(hide yes)
-					(name ""
+					(name "D2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5855,6 +5853,10 @@
 		(uuid "149b7f12-49e6-449f-a30c-f2fbb6294961")
 	)
 	(no_connect
+		(at 245.11 115.57)
+		(uuid "1ccddfc7-2381-4285-880d-52a07f9b89dd")
+	)
+	(no_connect
 		(at 59.69 88.9)
 		(uuid "3af1fd5f-8343-4312-8cf4-2c77032706ae")
 	)
@@ -5937,6 +5939,10 @@
 	(no_connect
 		(at 59.69 83.82)
 		(uuid "43a9dbb5-adde-4cc9-8631-905c5b889206")
+	)
+	(no_connect
+		(at 245.11 107.95)
+		(uuid "745ee791-316b-42ce-9043-1d2ed8f0be7c")
 	)
 	(no_connect
 		(at 71.12 33.02)
@@ -6160,6 +6166,16 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 105.41) (xy 245.11 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b5fcdfb-1d8e-47ad-b7ac-9185275b354c")
+	)
+	(wire
+		(pts
 			(xy 78.74 33.02) (xy 81.28 33.02)
 		)
 		(stroke
@@ -6230,7 +6246,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 105.41) (xy 243.84 105.41)
+			(xy 238.76 113.03) (xy 245.11 113.03)
 		)
 		(stroke
 			(width 0)
@@ -6570,16 +6586,6 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 107.95) (xy 243.84 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ecbd92a7-b394-441f-bb71-cae9b4b99aa8")
-	)
-	(wire
-		(pts
 			(xy 44.45 101.6) (xy 59.69 101.6)
 		)
 		(stroke
@@ -6788,16 +6794,6 @@
 		)
 		(uuid "8391e07a-0294-404a-ac78-a65a80af33a5")
 	)
-	(label "USB+"
-		(at 237.49 107.95 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "88526bc1-84d0-458a-9983-b0137da5cf2e")
-	)
 	(label "LED-DMX"
 		(at 280.67 54.61 180)
 		(effects
@@ -6807,6 +6803,16 @@
 			(justify right bottom)
 		)
 		(uuid "8a88734c-b28d-44ac-9be6-dffec726b13a")
+	)
+	(label "USB+"
+		(at 238.76 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "91727470-1891-42ff-99c9-39e55143381a")
 	)
 	(label "LED-Board"
 		(at 113.03 58.42 0)
@@ -6899,7 +6905,7 @@
 		(uuid "e528ebdd-eac6-4133-bc6e-0a6a9889578a")
 	)
 	(label "USB-"
-		(at 237.49 105.41 0)
+		(at 238.76 113.03 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7261,7 +7267,7 @@
 	)
 	(symbol
 		(lib_id "V2_ESD_Suppressor:RCLAMP0582N")
-		(at 252.73 105.41 0)
+		(at 254 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7269,7 +7275,7 @@
 		(dnp no)
 		(uuid "04efcacc-5cf4-4605-81ff-2960516efa9d")
 		(property "Reference" "ESD101"
-			(at 250.19 97.79 0)
+			(at 250.952 98.298 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7277,7 +7283,7 @@
 			)
 		)
 		(property "Value" "RCLAMP0582N"
-			(at 253.365 100.33 0)
+			(at 254.127 100.838 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7285,7 +7291,7 @@
 			)
 		)
 		(property "Footprint" "V2_ESD_Suppressor:SLP1210N6"
-			(at 252.73 120.65 0)
+			(at 254 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7294,7 +7300,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 252.73 105.41 0)
+			(at 254 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7303,7 +7309,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 252.73 105.41 0)
+			(at 254 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7312,7 +7318,7 @@
 			)
 		)
 		(property "Mouser" "947-RCLAMP0582N.TCT"
-			(at 252.73 124.46 0)
+			(at 254 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7321,7 +7327,7 @@
 			)
 		)
 		(property "Product" "RCLAMP0582N.TCT"
-			(at 252.73 128.27 0)
+			(at 254 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7330,7 +7336,7 @@
 			)
 		)
 		(property "Manufacturer" "Semtech"
-			(at 252.73 125.73 0)
+			(at 254 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7432,7 +7438,7 @@
 	)
 	(symbol
 		(lib_id "V2_power:Shield")
-		(at 255.27 78.74 90)
+		(at 255.27 86.36 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7440,7 +7446,7 @@
 		(dnp no)
 		(uuid "0615ba18-1030-4f2c-abb6-f575705d2ed8")
 		(property "Reference" "#PWR118"
-			(at 261.62 78.74 0)
+			(at 261.62 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7449,7 +7455,7 @@
 			)
 		)
 		(property "Value" "Shield"
-			(at 262.382 78.486 90)
+			(at 262.382 86.106 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7457,7 +7463,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 255.27 78.74 0)
+			(at 255.27 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7466,7 +7472,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 255.27 78.74 0)
+			(at 255.27 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7475,7 +7481,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 266.192 78.74 0)
+			(at 266.192 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7973,7 +7979,7 @@
 	)
 	(symbol
 		(lib_id "V2_power:+5V")
-		(at 261.62 105.41 270)
+		(at 262.89 105.41 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7982,7 +7988,7 @@
 		(fields_autoplaced yes)
 		(uuid "1b4db125-f7d9-4f6b-bb80-8b1c6fdcb409")
 		(property "Reference" "#PWR126"
-			(at 257.81 105.41 0)
+			(at 259.08 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7991,7 +7997,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 265.43 105.4099 90)
+			(at 266.7 105.4099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8000,7 +8006,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 261.62 105.41 0)
+			(at 262.89 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8009,7 +8015,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 261.62 105.41 0)
+			(at 262.89 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8018,7 +8024,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 247.142 105.41 0)
+			(at 248.412 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8572,7 +8578,7 @@
 	)
 	(symbol
 		(lib_id "V2_power:PWR_FLAG")
-		(at 255.27 78.74 90)
+		(at 255.27 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8580,7 +8586,7 @@
 		(dnp no)
 		(uuid "32c48d4c-8c8a-4d09-b2ab-5085c3826037")
 		(property "Reference" "#FLG101"
-			(at 253.365 78.74 0)
+			(at 255.27 84.455 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8589,7 +8595,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 245.11 78.74 90)
+			(at 245.11 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8597,7 +8603,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 255.27 78.74 0)
+			(at 255.27 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8606,7 +8612,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 255.27 78.74 0)
+			(at 255.27 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8615,7 +8621,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 272.542 78.74 0)
+			(at 255.27 103.632 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8874,7 +8880,7 @@
 	)
 	(symbol
 		(lib_id "V2_power:PWR_FLAG")
-		(at 255.27 86.36 90)
+		(at 255.27 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8882,7 +8888,7 @@
 		(dnp no)
 		(uuid "3d3195d9-cdc1-466d-b7f0-36196c39179a")
 		(property "Reference" "#FLG103"
-			(at 253.365 86.36 0)
+			(at 255.27 80.645 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8891,7 +8897,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 245.11 86.36 90)
+			(at 245.364 82.296 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8899,7 +8905,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 255.27 86.36 0)
+			(at 255.27 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8908,7 +8914,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 255.27 86.36 0)
+			(at 255.27 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8917,7 +8923,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 272.542 86.36 0)
+			(at 255.27 99.822 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9794,7 +9800,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "~"
 			(at 181.61 194.31 0)
 			(effects
 				(font
@@ -10866,7 +10872,7 @@
 	)
 	(symbol
 		(lib_id "V2_power:+5V")
-		(at 255.27 82.55 270)
+		(at 255.27 78.74 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10875,7 +10881,7 @@
 		(fields_autoplaced yes)
 		(uuid "ae7b9ee1-43cc-407c-9db1-a3df35209035")
 		(property "Reference" "#PWR119"
-			(at 251.46 82.55 0)
+			(at 251.46 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10884,7 +10890,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 259.08 82.5499 90)
+			(at 259.08 78.7399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10893,7 +10899,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 255.27 82.55 0)
+			(at 255.27 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10902,7 +10908,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 255.27 82.55 0)
+			(at 255.27 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10911,7 +10917,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 240.792 82.55 0)
+			(at 240.792 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11104,7 +11110,7 @@
 	)
 	(symbol
 		(lib_id "V2_power:GND")
-		(at 261.62 107.95 90)
+		(at 262.89 115.57 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11113,7 +11119,7 @@
 		(fields_autoplaced yes)
 		(uuid "b8d72967-847b-4ae0-adf9-630b91aaf6ed")
 		(property "Reference" "#PWR127"
-			(at 267.97 107.95 0)
+			(at 269.24 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11122,7 +11128,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 265.684 107.95 0)
+			(at 266.954 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11131,7 +11137,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 261.62 107.95 0)
+			(at 262.89 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11140,7 +11146,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 261.62 107.95 0)
+			(at 262.89 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11149,7 +11155,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 272.034 108.204 0)
+			(at 273.304 115.824 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11523,7 +11529,7 @@
 	)
 	(symbol
 		(lib_id "V2_power:GND")
-		(at 255.27 86.36 90)
+		(at 255.27 82.55 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11532,7 +11538,7 @@
 		(fields_autoplaced yes)
 		(uuid "d6a2dac8-bee1-4d74-8e21-6f456dad0794")
 		(property "Reference" "#PWR121"
-			(at 261.62 86.36 0)
+			(at 261.62 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11541,7 +11547,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 259.334 86.36 0)
+			(at 259.334 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11550,7 +11556,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 255.27 86.36 0)
+			(at 255.27 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11559,7 +11565,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 255.27 86.36 0)
+			(at 255.27 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11568,7 +11574,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 265.684 86.614 0)
+			(at 265.684 82.804 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12148,7 +12154,7 @@
 	)
 	(symbol
 		(lib_id "V2_power:PWR_FLAG")
-		(at 255.27 82.55 90)
+		(at 255.27 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12156,7 +12162,7 @@
 		(dnp no)
 		(uuid "f324be17-a1a7-44ec-8819-9987a7f6b424")
 		(property "Reference" "#FLG102"
-			(at 253.365 82.55 0)
+			(at 255.27 76.835 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12165,7 +12171,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 245.11 82.55 90)
+			(at 245.11 78.486 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12173,7 +12179,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 255.27 82.55 0)
+			(at 255.27 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12182,7 +12188,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 255.27 82.55 0)
+			(at 255.27 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12191,7 +12197,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 272.542 82.55 0)
+			(at 255.27 96.012 0)
 			(effects
 				(font
 					(size 1.27 1.27)
