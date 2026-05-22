@@ -164,8 +164,8 @@
         "min_text_thickness": 0.1,
         "min_through_hole_diameter": 0.2,
         "min_track_width": 0.2,
-        "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.4,
+        "min_via_annular_width": 0.125,
+        "min_via_diameter": 0.45,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
         "solder_mask_to_copper_clearance": 0.0,
@@ -617,7 +617,7 @@
     "netclass_patterns": [
       {
         "netclass": "USB",
-        "pattern": "/USB*"
+        "pattern": "*/USB*"
       },
       {
         "netclass": "Ground",
@@ -625,7 +625,7 @@
       },
       {
         "netclass": "Power",
-        "pattern": "/?\\+[0-9]*V.*"
+        "pattern": ".*/\\+.*|\\+.*"
       },
       {
         "netclass": "Link",
@@ -649,7 +649,7 @@
       },
       {
         "netclass": "I2C",
-        "pattern": "/SDA|/SCK|"
+        "pattern": "I2C-.*|.*SDA|.*SCL"
       }
     ]
   },
@@ -845,7 +845,7 @@
         "uuid": "6c8448b4-b04d-47e1-934e-e40cbe27a7be"
       }
     ],
-    "used_designators": "",
+    "used_designators": "SWB101,H101-104,R101-104,R301,J101-102,J201,J301,FID101-103,Y101,#PWR101-131,#PWR201-206,#PWR301-304,#PWR401-432,D101-103,D301,D401-416,U101-102,U201,U301,SW101-102,C101-109,C201,C301-302,ICON101-104,ESD101,INFO101-102,#FLG101-103",
     "variants": []
   },
   "sheets": [
