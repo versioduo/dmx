@@ -176,7 +176,7 @@
           "td_onpthpad": true,
           "td_onroundshapesonly": false,
           "td_onsmdpad": true,
-          "td_ontrackend": false,
+          "td_ontrackend": true,
           "td_onvia": true
         }
       ],
@@ -845,7 +845,7 @@
         "uuid": "6c8448b4-b04d-47e1-934e-e40cbe27a7be"
       }
     ],
-    "used_designators": "SWB101,H101-104,R101-104,R301,J101-102,J201,J301,FID101-103,Y101,#PWR101-131,#PWR201-206,#PWR301-304,#PWR401-432,D101-103,D301,D401-416,U101-102,U201,U301,SW101-102,C101-109,C201,C301-302,ICON101-104,ESD101,INFO101-102,#FLG101-103",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
