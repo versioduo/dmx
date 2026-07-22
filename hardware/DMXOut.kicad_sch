@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "V2 dmx")
-		(date "2026-05-27")
+		(date "2026-07-22")
 		(rev "2026-03-30")
 		(company "Versio Duo")
 		(comment 1 "MIDI to DMX Bridge")

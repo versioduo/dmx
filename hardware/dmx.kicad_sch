@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "V2 dmx")
-		(date "2026-05-27")
+		(date "2026-07-22")
 		(rev "2026-03-30")
 		(company "Versio Duo")
 		(comment 1 "MIDI to DMX Bridge")
@@ -8023,7 +8023,7 @@
 		(at 250.19 154.94 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
@@ -8076,6 +8076,17 @@
 			)
 		)
 		(property "Description" ""
+			(at 250.19 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 250.19 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -9673,7 +9684,7 @@
 		(at 200.66 162.56 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
@@ -9724,6 +9735,17 @@
 			)
 		)
 		(property "Description" ""
+			(at 200.66 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 200.66 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -12422,7 +12444,7 @@
 		(at 180.34 176.53 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
@@ -12474,6 +12496,17 @@
 			)
 		)
 		(property "Description" ""
+			(at 180.34 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 180.34 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -13300,7 +13333,7 @@
 		(at 250.19 161.29 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
@@ -13353,6 +13386,17 @@
 			)
 		)
 		(property "Description" ""
+			(at 250.19 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 250.19 161.29 0)
 			(hide yes)
 			(show_name no)
