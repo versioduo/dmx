@@ -5,7 +5,7 @@
 #include <V2MIDI.h>
 #include <V2Music.h>
 
-V2DEVICE_METADATA("com.versioduo.dmx", 60, "versioduo:samd:dmx");
+V2DEVICE_METADATA("com.versioduo.dmx", 61, "versioduo:samd:dmx");
 
 namespace {
   V2LED::WS2812        LED(18, PIN_LED_WS2812, &sercom2, SPI_PAD_0_SCK_1, PIO_SERCOM);
@@ -596,10 +596,21 @@ namespace {
           setting["title"] = name;
         }
 
+        if (config.devices[ch].count > 0) {
+          JsonObject setting = json.add<JsonObject>();
+          setting["type"]    = "text";
+          setting["label"]   = "Name";
+
+          char path[64];
+          sprintf(path, "devices[%d]/name", ch);
+          setting["path"] = path;
+        }
+
         {
           JsonObject setting = json.add<JsonObject>();
           setting["type"]    = "number";
-          setting["label"]   = "Channels";
+          setting["label"]   = "DMX";
+          setting["text"]    = "Channels";
           setting["max"]     = 32;
           setting["input"]   = "select";
 
@@ -613,18 +624,9 @@ namespace {
 
         {
           JsonObject setting = json.add<JsonObject>();
-          setting["type"]    = "text";
-          setting["label"]   = "Name";
-
-          char path[64];
-          sprintf(path, "devices[%d]/name", ch);
-          setting["path"] = path;
-        }
-
-        {
-          JsonObject setting = json.add<JsonObject>();
           setting["type"]    = "number";
-          setting["label"]   = "Address";
+          setting["label"]   = "DMX";
+          setting["text"]    = "Start Address";
           setting["min"]     = 1;
           setting["max"]     = 512;
 
@@ -646,12 +648,11 @@ namespace {
         for (uint8_t i = 0; i < config.devices[ch].count; i++) {
           JsonObject setting = json.add<JsonObject>();
           setting["type"]    = "number";
-          if (i == 0)
-            setting["ruler"] = true;
+          setting["label"]   = "DMX";
 
           char name[16];
           sprintf(name, "Channel %d", i + 1);
-          setting["label"] = name;
+          setting["text"] = name;
 
           char path[64];
           sprintf(path, "devices[%d]/channels[%d]", ch, i);
