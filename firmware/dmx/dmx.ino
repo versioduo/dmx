@@ -5,10 +5,10 @@
 #include <V2MIDI.h>
 #include <V2Music.h>
 
-V2DEVICE_METADATA("com.versioduo.dmx", 61, "versioduo:samd:dmx");
+V2DEVICE_METADATA("com.versioduo.dmx", 62, "versioduo:samd:dmx");
 
 namespace {
-  V2LED::WS2812        LED(18, PIN_LED_WS2812, &sercom2, SPI_PAD_0_SCK_1, PIO_SERCOM);
+  V2LED::WS2812<18>    LED(PIN_LED_WS2812, sercom2, SPI_PAD_0_SCK_1, PIO_SERCOM);
   V2DMX                DMX(PIN_DMX_TX, &sercom3, SPI_PAD_0_SCK_1, PIO_SERCOM);
   V2MIDI::SerialDevice MIDISerial(&SerialMIDI);
 
@@ -131,18 +131,15 @@ namespace {
 
       switch (_state) {
         case State::Off:
-          LED.setHSV(0, V2Colour::Yellow, 1, 0.1);
-          LED.setHSV(1, V2Colour::Yellow, 1, 0.1);
+          LED.hsv({V2Colour::Yellow, 1, 0.1}, 0, 2);
           break;
 
         case State::Config:
-          LED.setHSV(0, V2Colour::Green, 1, 0.4);
-          LED.setHSV(1, V2Colour::Green, 1, 0.4);
+          LED.hsv({V2Colour::Green, 1, 0.4}, 0, 2);
           break;
 
         case State::MIDI:
-          LED.setHSV(0, V2Colour::Cyan, 1, 0.4);
-          LED.setHSV(1, V2Colour::Cyan, 1, 0.4);
+          LED.hsv({V2Colour::Cyan, 1, 0.4}, 0, 2);
           break;
       }
     }
@@ -277,7 +274,7 @@ namespace {
     }
 
     void updateDMXHSV(uint8_t channel) {
-      LED.setHSV(2 + channel, _devices[channel].now.h, _devices[channel].now.s, _devices[channel].now.v);
+      LED.hsv({_devices[channel].now.h, _devices[channel].now.s, _devices[channel].now.v}, 2 + channel);
 
       uint8_t r, g, b;
       V2Colour::HSVtoRGB(_devices[channel].now.h, _devices[channel].now.s, _devices[channel].now.v, r, g, b);
@@ -896,7 +893,7 @@ auto setup() -> void {
   Serial.begin(9600);
 
   LED.begin();
-  LED.setMaxBrightness(0.5);
+  LED.brightnessMax(0.5);
 
   MIDISerial.begin();
   Device.serial = &MIDISerial;
