@@ -10,11 +10,11 @@ V2DEVICE_METADATA("com.versioduo.dmx", 62, "versioduo:samd:dmx");
 namespace {
   V2LED::WS2812<18>    LED(PIN_LED_WS2812, sercom2, SPI_PAD_0_SCK_1, PIO_SERCOM);
   V2DMX                DMX(PIN_DMX_TX, &sercom3, SPI_PAD_0_SCK_1, PIO_SERCOM);
-  V2MIDI::SerialDevice MIDISerial(&SerialMIDI);
+  V2MIDI::SerialDevice MIDISerial(&SerialMIDI, "serial");
 
   class Device : public V2Device {
   public:
-    Device() : V2Device(24 * 1024) {
+    Device() : V2Device() {
       metadata.vendor      = "Versio Duo";
       metadata.product     = "V2 dmx";
       metadata.description = "MIDI to DMX Bridge";
@@ -896,7 +896,7 @@ auto setup() -> void {
   LED.brightnessMax(0.5);
 
   MIDISerial.begin();
-  Device.serial = &MIDISerial;
+  Device.ports.push_back(&MIDISerial);
 
   DMX.begin();
   Button.begin();
