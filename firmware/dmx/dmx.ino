@@ -5,9 +5,8 @@
 #include <V2MIDI.h>
 #include <V2Music.h>
 
-V2DEVICE_METADATA("com.versioduo.dmx", 62, "versioduo:samd:dmx");
-
 namespace {
+  V2DeviceFirmware(Firmware, "com.versioduo.dmx", 62, "versioduo:samd:dmx");
   V2LED::WS2812<18>    LED(PIN_LED_WS2812, sercom2, SPI_PAD_0_SCK_1, PIO_SERCOM);
   V2DMX                DMX(PIN_DMX_TX, &sercom3, SPI_PAD_0_SCK_1, PIO_SERCOM);
   V2MIDI::SerialDevice MIDISerial(&SerialMIDI, "serial");
@@ -19,24 +18,21 @@ namespace {
       metadata.product     = "V2 dmx";
       metadata.description = "MIDI to DMX Bridge";
       metadata.home        = "https://versioduo.com/#dmx";
-
-      help.device        = "Up to 16 DMX devices are mapped to 16 MIDI channels. The DMX devices are configured by "
-                           "their base DMX address and the number of DMX channels to control.\n"
-                           "Control Change messages are mapped to DMX channel values. Notes are used to temporarily "
-                           "overwrite a control value for the duration of the note.\n"
-                           "For RGB devices it is possible to use a separate set of more intuitive CC values to "
-                           "control Brightness, Colour, Saturation; the controller will calculate the RGB channel "
-                           "values accordingly.";
-      help.configuration = "Default power-on values can be configured. An AllNotesOff control message will "
-                           "clear all power-on settings. A MIDI System-Reset message will reset all DMX devices "
-                           "and channels to their configured power-on values.";
-
-      system.download  = "https://versioduo.com/download";
-      system.configure = "https://versioduo.com/configure";
-
-      usb.ports.standard = 0;
-
-      configuration = {.size{sizeof(config)}, .data{&config}};
+      metadata.firmware    = &Firmware;
+      help.device          = "Up to 16 DMX devices are mapped to 16 MIDI channels. The DMX devices are configured by "
+                             "their base DMX address and the number of DMX channels to control.\n"
+                             "Control Change messages are mapped to DMX channel values. Notes are used to temporarily "
+                             "overwrite a control value for the duration of the note.\n"
+                             "For RGB devices it is possible to use a separate set of more intuitive CC values to "
+                             "control Brightness, Colour, Saturation; the controller will calculate the RGB channel "
+                             "values accordingly.";
+      help.configuration   = "Default power-on values can be configured. An AllNotesOff control message will "
+                             "clear all power-on settings. A MIDI System-Reset message will reset all DMX devices "
+                             "and channels to their configured power-on values.";
+      system.download      = "https://versioduo.com/download";
+      system.configure     = "https://versioduo.com/configure";
+      usb.ports.standard   = 0;
+      configuration        = {.size{sizeof(config)}, .data{&config}};
     }
 
     enum class CC {
