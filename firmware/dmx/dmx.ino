@@ -6,9 +6,9 @@
 #include <V2Music.h>
 
 namespace {
-  V2DeviceFirmware(Firmware, "com.versioduo.dmx", 62, "versioduo:samd:dmx");
+  V2Device::Info       Info{V2DeviceInfo("com.versioduo.dmx", 63, "versioduo:samd:dmx")};
   V2LED::WS2812<18>    LED(PIN_LED_WS2812, sercom2, SPI_PAD_0_SCK_1, PIO_SERCOM);
-  V2DMX                DMX(PIN_DMX_TX, &sercom3, SPI_PAD_0_SCK_1, PIO_SERCOM);
+  V2DMX                DMX(PIN_DMX_TX, sercom3, SPI_PAD_0_SCK_1, PIO_SERCOM);
   V2MIDI::SerialDevice MIDISerial(&SerialMIDI, "serial");
 
   class Device : public V2Device {
@@ -18,7 +18,6 @@ namespace {
       metadata.product     = "V2 dmx";
       metadata.description = "MIDI to DMX Bridge";
       metadata.home        = "https://versioduo.com/#dmx";
-      metadata.firmware    = &Firmware;
       help.device          = "Up to 16 DMX devices are mapped to 16 MIDI channels. The DMX devices are configured by "
                              "their base DMX address and the number of DMX channels to control.\n"
                              "Control Change messages are mapped to DMX channel values. Notes are used to temporarily "
@@ -266,7 +265,7 @@ namespace {
     }
 
     void setDMX(uint8_t channel, uint8_t address, float fraction) {
-      DMX.setChannel(config.devices[channel].address + address, roundf(fraction * 255.f));
+      DMX.channel(config.devices[channel].address + address, roundf(fraction * 255.f));
     }
 
     void updateDMXHSV(uint8_t channel) {
@@ -274,9 +273,9 @@ namespace {
 
       uint8_t r, g, b;
       V2Colour::HSVtoRGB(_devices[channel].now.h, _devices[channel].now.s, _devices[channel].now.v, r, g, b);
-      DMX.setChannel(config.devices[channel].address + 0, r);
-      DMX.setChannel(config.devices[channel].address + 1, g);
-      DMX.setChannel(config.devices[channel].address + 2, b);
+      DMX.channel(config.devices[channel].address + 0, r);
+      DMX.channel(config.devices[channel].address + 1, g);
+      DMX.channel(config.devices[channel].address + 2, b);
     }
 
     // Update the DMX channels, possibly overwriting the CC values for the duration
